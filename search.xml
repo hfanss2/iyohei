@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>域名的URL转发</title>
+      <link href="/2018/05/%E5%9F%9F%E5%90%8D%E7%9A%84URL%E8%BD%AC%E5%8F%91/"/>
+      <url>/2018/05/%E5%9F%9F%E5%90%8D%E7%9A%84URL%E8%BD%AC%E5%8F%91/</url>
+      <content type="html"><![CDATA[<p><img src="http://i2.bvimg.com/643862/849d7888acdf3925.jpg"></p><p>入手一个好的域名后，因为要备案，还没想好做什么，或者网站还没做好的时候，可以使域名先转到已有的地址如 博客，微博<br><a id="more"></a></p><p>在网上找了很久，感觉还是米发快捷点，适用于域名注册下来但是个人网站还没完成暂时转发至博客的，或者想给博客弄个个性点的域名的</p><p>工具：域名，米发帐号   </p><p>原理：域名商解析到第三方平台服务器，第三方平台帮你转发到你的地址</p><ol><li><p>在米发平台上添加域名</p></li><li><p>在米发平台上添加转发操作，  </p><p><img src="http://i1.bvimg.com/643862/6d6b6606e97d51ac.jpg"><br><img src="http://i1.bvimg.com/643862/ad4a99aed167c660.jpg"></p></li></ol><p>显性URL转发：只是跳转，网站显示的还是你跳转后的地址，不是你的域名</p><p>隐性URL转发：网站显示的是你的域名，内容是你要跳转的页面的内容</p><p>保存后出现如下界面</p><p>   <img src="http://i1.bvimg.com/643862/a8798a3572e41a33.jpg"></p><p>将红框内的网址复制下来，后面会用到</p><ol start="3"><li>在域名商那里做解析（万网为例）<br><img src="http://i1.bvimg.com/643862/83baf4d10b1f456f.jpg"><br><img src="http://i1.bvimg.com/643862/3196a9075712f98d.jpg"></li></ol><p>需要添加两条解析记录</p><p>1条的主机记录为www    访问的时候是   www.***.com</p><p>1条的主机记录为空    访问的时候是        ***.com</p><p>此项配置也可在米发完成，在添加转发记录时的主机记录一个加www前缀，一个不加</p><p>都完成后看下是否生效<br> <img src="http://i1.bvimg.com/643862/090f88575343cb22.jpg"><br> <img src="http://i1.bvimg.com/643862/cd7f114cdae6fa61.jpg"><br>红框内是对号就是生效成功，否则就是失败，另外域名商有延迟，所以可以直接测试网站，直接看网站是否能跳转就可以了</p><p>另外IE的生效时间比其他浏览器都慢，可以适当等待！</p>]]></content>
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> URL转发 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>2018  新的开始</title>
+      <link href="/2018/03/2018%20%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/"/>
+      <url>/2018/03/2018%20%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/</url>
+      <content type="html"><![CDATA[<p><img src="http://i2.bvimg.com/643862/85f8be24046f84e2.jpg"><br>做java开发也很久了，一直都有想写博客，但一直并没有付诸行动，很多时候都是想法来了兴致冲冲写一会，没过一会就放弃了。<br><a id="more"></a><br>后来一次出去面试的时候被鄙视的不行了：</p><p>   你有博客吗？<br>   你有自己的个人网站吗？<br>   你有github吗？<br>   你用过思否吗？</p><p>我靠，这都是些什么？一脸懵逼啊</p><p>回来后，一直就扒资料，哇，原来这么深哦，原来技术也可以这么有乐趣。</p><p>后来才坚持下来写博客，一个月1.2篇的样子，之前都是在CSDN上，现在做这个也是说对自己有一个更深的挖掘吧，比起那些博客平台，这个地方会更让自己有归属感！</p><p> 新的一年又开始了，又老了一岁，希望在今年可以有所收获，包括生活上，情感上，工作中！</p><p> 也希望在看这篇博客的你也可以事事顺利！一起加油！</p><p>本站刚建立，会一步一步去完善，尽量写一些有深度的文章，希望能得到你的认同！</p><pre><code>         幻凡梦想，是注定孤独的旅程！</code></pre>]]></content>
+      
+      <categories>
+          
+          <category> 个人随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 个人随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
+</search>
