@@ -16,7 +16,7 @@ daovoice('init',{app_id: "21c082c2"});daovoice('update');</script></head><body><
 <p>本站刚建立，会一步一步去完善，尽量写一些有深度的文章，希望能得到你的认同！</p>
 <pre><code>         幻凡
 梦想，是注定孤独的旅程！
-</code></pre></div><div class="tags"><a href="/tags/个人随笔/">个人随笔</a></div><div class="post-nav"><a class="pre" href="/2018/域名的URL转发.html">域名的URL转发</a></div><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//iyohei.com/js/Valine.min.js"></script><script>var notify = 'true' == true ? true : false;
+</code></pre></div><div class="tags"><a href="/tags/个人随笔/">个人随笔</a></div><div class="post-nav"><a class="pre" href="/2018/域名的URL转发.html">域名的URL转发</a></div><div id="vcomment"></div><script src="//iyohei.com/js/av-min.js"></script><script src="//iyohei.com/js/Valine.min.js"></script><script>var notify = 'true' == true ? true : false;
 var verify = 'false' == true ? true : false;
 var GUEST_INFO = ['nick','mail','link'];
 var guest_info = 'nick,mail'.split(',').filter(function(item){
@@ -24,6 +24,7 @@ var guest_info = 'nick,mail'.split(',').filter(function(item){
 });
 guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
 window.valine = new Valine({
+  av:AV,
   el:'#vcomment',
   notify:notify,
   verify:verify,
