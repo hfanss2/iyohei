@@ -24,7 +24,7 @@
     } else {
       var html = [
         '<div id="' + id + '" class="article-share-box">',
-          '<input class="article-share-input" value="' + url + '">',
+          '<input id="fenxiang" size="45" class="article-share-input" value="' + url + '">',
         '</div>'
       ].join('');
 
