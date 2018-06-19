@@ -1,5 +1,5 @@
 (function($){
-
+	
   // article-share
   $('body').on('click', function(){
     $('.article-share-box.on').removeClass('on');
@@ -7,7 +7,7 @@
     e.stopPropagation();
 
     var $this = $(this),
-      url = $this.attr('data-url'),
+      url = $this.attr('data-url').replace("http://yoursite.com/","https://iyohei.com/"),
       qrcode_img = $this.attr('data-qrcode'),
       encodedUrl = encodeURIComponent(url),
       id = 'article-share-box-' + $this.attr('data-id'),
@@ -25,13 +25,6 @@
       var html = [
         '<div id="' + id + '" class="article-share-box">',
           '<input class="article-share-input" value="' + url + '">',
-          '<div class="article-share-links">',
-            '<a href="//twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-            '<a href="//www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-            '<a href="//service.weibo.com/share/share.php?title=' + title + '&url=' + encodedUrl + '&searchPic=true&style=number' + '" class="article-share-weibo" target="_blank" title="Weibo"></a>',
-            '<a href="' + qrcode_img + '" class="article-share-qrcode" target="_blank" title="QR code"></a>',
-            '<div class="qrcode"><img src=' + qrcode_img + '></div>',
-          '</div>',
         '</div>'
       ].join('');
 
