@@ -99,6 +99,26 @@ div {
   margin-top: 40px;
   padding-bottom: 20px;
   word-wrap: break-word; }
+  #sidebar .widget2 {
+    font-size: 30px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    #sidebar .widget2 ul {
+      list-style: none;
+      padding: 0; }
+      #sidebar .widget2 ul li {
+        margin: 5px 0;
+        line-height: 3.5; }
+    #sidebar .widget2 .category-list-count {
+      padding-left: 5px;
+      color: #6E7173; }
+    #sidebar .widget2 .category-list-count::before {
+      content: "("; }
+    #sidebar .widget2 .category-list-count::after {
+      content: ")"; }
   #sidebar .widget {
     margin-bottom: 30px; }
     #sidebar .widget .widget-title {
