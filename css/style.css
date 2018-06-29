@@ -19,6 +19,7 @@ html, button, input, select, textarea,
   font-family: "PingFangSC-Regular", Helvetica, "Helvetica Neue", "Segoe UI", "Hiragino Sans GB", "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", sans-serif !important;
   weight: 100%; }
 
+/* 自定义css start*/
 html, body {
   height: 100%;
   margin: 0; }
@@ -30,6 +31,12 @@ html, body {
 
 .site-name {
   height: 70px; }
+
+.footer-a {
+  text-decoration: none;
+  color: #6E7173; }
+  .footer-a:hover {
+    color: #D26911 !important; }
 
 .nav {
   overflow: hidden;
@@ -45,6 +52,7 @@ html, body {
     font-size: 13px;
     border: 1px solid transparent; }
     .nav a:hover {
+      background: #F8F8F8;
       border-bottom-color: #D26911; }
     .nav a.current {
       border: 1px solid #ddd;
@@ -79,6 +87,7 @@ html, body {
   height: 50px;
   background: #ddd；; }
 
+/* 自定义css    end*/
 body {
   background-color: #FFF;
   color: #444;
