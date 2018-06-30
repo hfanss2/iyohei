@@ -9,7 +9,7 @@ $(document).ready(function(){
 	function setMenu1Class(){//菜单栏在滚动条高度上方
 		var width = document.documentElement.clientWidth;
 		var nav1 = document.getElementById('nav1'); 
-		if(width<500){//如果浏览器宽度小于500  nav
+		if(width<770){//如果浏览器宽度小于500  nav
 			nav1.className = 'nav'; 
 		}else{//如果浏览器宽度大于500   nav2
 			nav1.className = 'nav2'; 
@@ -19,7 +19,7 @@ $(document).ready(function(){
 	function setMenu2Class(){//菜单栏在滚动条高度下方
 		var width = document.documentElement.clientWidth;
 		var nav1 = document.getElementById('nav1'); 
-		if(width<500){//如果浏览器宽度小于500  fixedNav
+		if(width<770){//如果浏览器宽度小于500  fixedNav
 			nav1.className = 'fixedNav'; 
 		}else{//如果浏览器宽度大于500   fixedNav2
 			nav1.className = 'fixedNav2'; 
