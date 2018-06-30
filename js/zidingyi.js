@@ -1,17 +1,44 @@
 $(document).ready(function(){
 	$(window).scroll(function(){/**设置顶部固定      */  
-		var scrollPos = $(window).scrollTop();   //获取滚动条滚动的高度
-		if(scrollPos >= 120){   //70:头部高度-菜单栏的高度
-			$('#nav1').addClass('fixedNav')
-		}else{
-			$('#nav1').removeClass('fixedNav')
-		}			 
+				 setScrollTop();
 	})
+	setMenu1Class();
 	setHeight();
 })
+	
+	function setMenu1Class(){//菜单栏在滚动条高度上方
+		var width = document.documentElement.clientWidth;
+		var nav1 = document.getElementById('nav1'); 
+		if(width<500){//如果浏览器宽度小于500  nav
+			nav1.className = 'nav'; 
+		}else{//如果浏览器宽度大于500   nav2
+			nav1.className = 'nav2'; 
+		}
+	}
+	
+	function setMenu2Class(){//菜单栏在滚动条高度下方
+		var width = document.documentElement.clientWidth;
+		var nav1 = document.getElementById('nav1'); 
+		if(width<500){//如果浏览器宽度小于500  fixedNav
+			nav1.className = 'fixedNav'; 
+		}else{//如果浏览器宽度大于500   fixedNav2
+			nav1.className = 'fixedNav2'; 
+		}
+	}
+	
+	/**  设置头部高度小于滚动条位置时，置顶菜单栏   */
+	function setScrollTop(){
+		var scrollPos = $(window).scrollTop();   //获取滚动条滚动的高度
+		if(scrollPos >= 120){   //70:头部高度-菜单栏的高度
+			setMenu2Class();
+		}else{
+			setMenu1Class();
+		}	
+	}
+
+
 	/**设置底部固定      */  	
 	function setHeight(){
-		
 		var footerHeight = $('#123').height();
 		var bodyHeight = $('.body_container').height()+footerHeight;
 		var height = document.documentElement.clientHeight;
@@ -22,6 +49,8 @@ $(document).ready(function(){
 			$('.body_container').css('minHeight',minHeight);
 		}
 	}
+	//浏览器大小改变时
 	window.onresize=function(){
 		setHeight();
+		setScrollTop();
 	}

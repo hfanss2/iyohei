@@ -41,15 +41,15 @@ html, body {
 .nav {
   overflow: hidden;
   width: 100%;
-  text-align: right;
+  text-align: center;
   word-break: break-all;
   word-wrap: break-word; }
   .nav a {
     display: inline-block;
-    padding: 3px 12px 3px;
+    padding: 2px 12px 2px;
     line-height: 30px;
     color: #444;
-    font-size: 13px;
+    font-size: 15px;
     border: 1px solid transparent; }
     .nav a:hover {
       background: #F8F8F8;
@@ -58,24 +58,77 @@ html, body {
       border: 1px solid #ddd;
       border-bottom-color: #fff; }
 
+.nav2 {
+  overflow: hidden;
+  width: 100%;
+  text-align: right;
+  word-break: break-all;
+  word-wrap: break-word; }
+  .nav2 a {
+    display: inline-block;
+    padding: 2px 30px 2px;
+    line-height: 30px;
+    color: #444;
+    font-size: 13px;
+    border: 1px solid transparent; }
+    .nav2 a:hover {
+      background: #F8F8F8;
+      border-bottom-color: #D26911; }
+    .nav2 a.current {
+      border: 1px solid #ddd;
+      border-bottom-color: #fff; }
+
 .fixedNav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100px;
   text-align: center;
   background-color: #f5f5f5;
-  height: 38px; }
+  height: 38px;
+  border-bottom: 1px solid #ddd;
+  z-index: 999;
+  font-color: #242424; }
   .fixedNav a {
     display: inline-block;
     padding: 3px 15px 3px;
     line-height: 30px;
     color: #444;
     font-size: 13px;
-    border: 1px solid transparent; }
+    border: 1px solid transparent;
+    font-weight: bold; }
     .fixedNav a:hover {
-      border-bottom-color: #D26911; }
+      border-bottom-color: #D26911;
+      font-color: #1E1E1E; }
     .fixedNav a.current {
+      border: 1px solid #ddd;
+      border-bottom-color: #fff; }
+
+.fixedNav2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background-color: #f5f5f5;
+  height: 38px;
+  border-bottom: 1px solid #ddd;
+  z-index: 999;
+  font-color: #242424; }
+  .fixedNav2 a {
+    display: inline-block;
+    padding: 3px 30px 3px;
+    line-height: 30px;
+    color: #444;
+    font-size: 13px;
+    border: 1px solid transparent;
+    font-weight: bold; }
+    .fixedNav2 a:hover {
+      border-bottom-color: #D26911;
+      font-color: #1E1E1E; }
+    .fixedNav2 a.current {
       border: 1px solid #ddd;
       border-bottom-color: #fff; }
 
@@ -261,6 +314,8 @@ div {
     font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif; }
     .post .post-title a {
       color: #555; }
+    .post .post-title a:hover {
+      color: #D26911; }
   .post .post-meta {
     padding: 0;
     margin: 15px 0 0;
