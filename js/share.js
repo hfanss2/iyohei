@@ -7,7 +7,7 @@
     e.stopPropagation();
 
     var $this = $(this),
-      url = $this.attr('data-url').replace("http://yoursite.com/","https://iyohei.com/"),
+      url = $this.attr('data-url'),
       qrcode_img = $this.attr('data-qrcode'),
       encodedUrl = encodeURIComponent(url),
       id = 'article-share-box-' + $this.attr('data-id'),
