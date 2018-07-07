@@ -43,7 +43,7 @@ $(document).ready(function(){
 		var bodyHeight = $('.body_container').height()+footerHeight;
 		var height = document.documentElement.clientHeight;
 		if(bodyHeight<height){
-			var minHeight = height-footerHeight-5;
+			var minHeight = height-footerHeight-5-125;
 			minHeight=minHeight+'px';
 			//alert('底部高度:'+footerHeight+';body宽度:'+height+';修改后的宽度:'+minHeight);
 			$('.body_container').css('minHeight',minHeight);
