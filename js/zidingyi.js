@@ -4,7 +4,16 @@ $(document).ready(function(){
 	})
 	setMenu1Class();
 	setHeight();
-})
+	setIp();
+})	
+	
+	function setIp(){//设置访问者  ip,城市等信息
+		var ip=returnCitySN["cip"];//访问者ip
+		var city = returnCitySN["cname"];//访问者城市
+		var cid = returnCitySN["cid"];//访问者城市ID
+		
+        $("#ip-xxx").text(ip);$("#diqu-xxx").text(city);
+	}
 	
 	function setMenu1Class(){//菜单栏在滚动条高度上方
 		var width = document.documentElement.clientWidth;
