@@ -13,7 +13,6 @@ $(document).ready(function(){
 		var ip=returnCitySN["cip"];//访问者ip
 		var city = returnCitySN["cname"];//访问者城市
 		var cid = returnCitySN["cid"];//访问者城市ID
-		
         $("#ip-xxx").text(ip);$("#diqu-xxx").text(city);
 	}
 	
@@ -54,7 +53,6 @@ $(document).ready(function(){
 		$(".widget-title").css("font-size","12px");
 		$(".tagcloud").css("font-size","12px");
 		$("img[name='qitazujian-img']").css("width","15px");
-		$("img[name='qitazujian-img']").css("width","15px");
 		//$("#zdtongji").css("font-size","12px");
 		
 	}
@@ -62,8 +60,6 @@ $(document).ready(function(){
 		$(".widget-title").css("font-size","16px");
 		$(".tagcloud").css("font-size","16px");
 		$("img[name='qitazujian-img']").css("width","30px");
-		$("img[name='qitazujian-img']").css("width","30px");
-		//$("#zdtongji").css("font-size","14px");
 	}
 	
 	function setWidth(){
