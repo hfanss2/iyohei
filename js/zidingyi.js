@@ -1,3 +1,4 @@
+var value01=0;//   0=14px     1=10px
 $(document).ready(function(){
 	$(window).scroll(function(){/**设置顶部固定      */  
 				 setScrollTop();
@@ -5,6 +6,7 @@ $(document).ready(function(){
 	setMenu1Class();
 	setHeight();
 	setIp();
+	setWidth();
 })	
 	
 	function setIp(){//设置访问者  ip,城市等信息
@@ -45,21 +47,56 @@ $(document).ready(function(){
 		}	
 	}
 
-
+	//设置侧边栏  其他组件  的宽度
+	function setQiTaWidth(){//变小
+		//widget-title=侧边栏标题
+		//tagcloud=侧边栏正文
+		$(".widget-title").css("font-size","12px");
+		$(".tagcloud").css("font-size","12px");
+		$("img[name='qitazujian-img']").css("width","15px");
+		$("img[name='qitazujian-img']").css("width","15px");
+		//$("#zdtongji").css("font-size","12px");
+		
+	}
+	function setQiTaWidth2(){//变大
+		$(".widget-title").css("font-size","16px");
+		$(".tagcloud").css("font-size","16px");
+		$("img[name='qitazujian-img']").css("width","30px");
+		$("img[name='qitazujian-img']").css("width","30px");
+		//$("#zdtongji").css("font-size","14px");
+	}
+	
+	function setWidth(){
+		var width02 = document.documentElement.clientWidth;
+		if(width02<1007){
+			if(value01==0){
+				setQiTaWidth();//10px
+				value01=1;
+			}
+		} 
+		if(width02>=1007){
+			if(value01==1){
+				setQiTaWidth2();//14px
+				value01=0;
+			}
+		}
+	}
+	
+	
 	/**设置底部固定      */  	
 	function setHeight(){
 		var footerHeight = $('#123').height();
 		var bodyHeight = $('.body_container').height()+footerHeight;
 		var height = document.documentElement.clientHeight;
-		if(bodyHeight<height){
-			var minHeight = height-footerHeight-5-125;
-			minHeight=minHeight+'px';
-			//alert('底部高度:'+footerHeight+';body宽度:'+height+';修改后的宽度:'+minHeight);
-			$('.body_container').css('minHeight',minHeight);
-		}
+		var minHeight = height-footerHeight-5-125;
+		minHeight=minHeight+'px';
+		//alert('底部高度:'+footerHeight+';body宽度:'+height+';修改后的宽度:'+minHeight);
+		$('.body_container').css('minHeight',minHeight);
 	}
 	//浏览器大小改变时
+	
 	window.onresize=function(){
 		setHeight();
 		setScrollTop();
+		setWidth();
 	}
