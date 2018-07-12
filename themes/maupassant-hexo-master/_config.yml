@@ -1,0 +1,132 @@
+fancybox: true ## 是否启用Fancybox图片灯箱效果,建议开启（效果为点击图片既放大）
+valine: ## https://valine.js.org
+  enable: true ## If you want to use Valine comment system, please set the value to true.
+  appid: 5GMAO3V5MqR9DTfMnd73m8zT-gzGzoHsz ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
+  appkey: f6Ve1tpYqYSBefe5xp0OCKxR ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
+  notify: false ## Mail notifier, see https://github.com/xCss/Valine/wiki/Valine-评论系统中的邮件提醒设置
+  verify: true ## Validation code.
+  placeholder: 　 ## Comment box placeholders.留言板预设内容
+  visitor: true ##是否开启阅读统计
+  avatar: 'monsterid' ## Gravatar type, see https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
+  pageSize: 10 ## Number of comments per page.
+  guest_info: nick,mail,link ## Attributes of reviewers.
+ ##    以上都是评论。只需要开启一种即可
+##         自定义start
+# Online contact
+touxiangUrl: https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/pic/touxiang.jpeg ##头像外链
+banquan: ##版权声明，加在每篇文章下方
+  enable: true ##是否开启
+  note: 版权信息:本文所有权归博主-幻凡ss所有，转载请注明署名、出处！Thanks ##版权信息
+https: true ## 是否开启强制https（不影响本地调试）,本开关说明：https网站能正常访问，如www.baidu.com跳转到http://www.baidu.com，不自动跳到https开头的网址，而且https://www.baidu.com能正常访问才行
+weiXinGZHUrl: https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/pic/gongzhonghao.jpg ##微信公众号外链
+daovoice: true ## 页面右下角在线聊天
+daovoice_app_id: 21c082c2 ## daovice  ID 如：22c081c3
+baiduTongJi:    ##百度统计外链
+  enable: true
+  baiduTongJiUrl: https://tongji.baidu.com/web/25553450/overview/index?siteId=11976031 ##百度统计的网址，点开后登陆可看到网站统计\
+baidu_analytics: 0c1bd517c2ba117fcf5139a8e24b7631 ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
+wordcount: true ##字数统计
+readtime: true ##阅读时长
+cnzzTongJi:     ##cnzz站长统计
+  enable: false
+  cnzzTongJiUrl: http://new.cnzz.com/v1/login.php?siteid=1274037895 ##需替换footer.pug 第10行的代码（将复制的代码贴进去，注意前面空格不能动）
+weiXinPngUrl: https://i.loli.net/2018/07/08/5b41f338d5113.jpg ##微信个人二维码的图片地址
+qqPngUrl: https://wpa.qq.com/msgrd?v=3&uin=2158798&site=qq&menu=yes ##网页QQ聊天的外链  如  https://wpa.qq.com/msgrd?v=3&uin=2158798&site=qq&menu=yes 
+weiboPngUrl: https://weibo.com/0377k ##微博外链  如：https://weibo.com/0377k
+githubPngUrl: https://github.com/hfanss/ ##github外链 如 ：https://github.com/hfanss/
+eMailPngUrl: http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d ##邮箱外链  如：http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d
+cebianlan-wenzhang: true ##是否不在文章页显示侧边栏 true=不显示  false=显示
+##          自定义end
+self_search: true ## Use a jQuery-based local search engine, true/false.
+##  以上都是搜索，开启一种即可
+google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
+
+##  以上谷歌统计/百度统计，开启一项即可
+show_category_count: false ## 是否显示侧边栏分类数目
+toc_number: false ## 是否显示文章中目录列表自动编号
+shareto: true ## 文章分享开关
+busuanzi: false ## 不算子文章阅读次数统计
+busuanziIPUV: true ##不算子网站访问量 pv、uv统计
+widgets_on_small_screens: false ## 移动端是否显示侧边栏（页面最下方）
+
+canvas_nest:
+  enable: false ## If you want to use dynamic background please set the value to true, you can also fill the following parameters to customize the dynamic effect, or just leave them blank to keep the default effect.
+  color: ## RGB value of the color, e.g. "100,99,98"
+  opacity: ## Transparency of lines, e.g. "0.7"
+  zIndex: ## The z-index property of the background, e.g. "-1"
+  count: ## Quantity of lines, e.g. "150"
+##  上面为动态背景，建议不要开启。浪费性能，尤其在移动端（它需要在每一毫秒中计算出线条，并保持移动，需要持久调用资源）
+donate:
+  enable: false ## If you want to show the donate button after each post, please set the value to true and fill the following items according to your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
+  github: https://github.com/iyohei ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
+  alipay_qr: /img/AL.png ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
+  wechat_qr: /img/QQ.png## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
+  btc_qr: ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
+  btc_key: ## Bitcoin key, e.g. 1KuK5eK2BLsqpsFVXXSBG5wbSAwZVadt6L
+  paypal_url: ## Paypal URL, e.g. https://paypal.me/tufu9441
+## 捐赠按钮。赞赏按钮
+menu:
+  - page: home
+    directory: .
+    icon: fa-home2
+  - page: archive ##显示名字，根据中英文兑换，也可直接写中文
+    directory: archives/   ##链接地址（source下的文件夹）
+    icon: fa-archive2   ##图标。在线图标，http://www.fontawesome.com.cn/faicons/，把名字贴这里即可
+  - page: music
+    directory: music/
+    icon: fa-user2
+  - page: tool
+    directory: tool/
+    icon: fa-user2 
+  ##- page: href
+  ##  directory: href/
+  ##  icon: fa-user2
+  ##- page: about
+  ##  directory: about/
+  ##  icon: fa-user2
+  - page: guestbook
+    directory: comment/
+    icon: fa-rss2
+##  以上为菜单栏    为保持移动端菜单栏不换行（丑），建议菜单5个最佳，其余可以在页面底部添加，如果必须在此加又想保证移动端不换行具体可咨询博主   
+
+
+widgets: ## 侧边栏显示设置
+  - search
+  - tianqiyubao
+  - visitor
+  - qita
+  ##- category
+  ##- tag
+  ##- recent_posts
+  ##- recent_comments
+  ##- links
+
+
+
+
+links:
+  - title: CSDN博客
+    url: https://blog.csdn.net/q2158798
+  - title: 个人微博
+    url: https://weibo.com/0377k
+##   友情链接
+
+timeline:
+  - num: 1
+    word: 2014/06/12-Start
+  - num: 2
+    word: 2014/11/29-XXX
+  - num: 3
+    word: 2015/02/18-DDD
+  - num: 4
+    word: More
+##  网站地图
+    
+    
+    
+# Static files。缓存目录
+js: js
+css: css
+
+# Theme version 版本，方便刷新
+version: 0.1.0
