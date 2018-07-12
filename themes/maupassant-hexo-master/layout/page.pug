@@ -1,9 +1,8 @@
 extends base
 block title
-  title= config.title + ' | ' + page.title2
+  title= config.title + ' | ' + page.title
 block content
   .post
-    h1.post-title= page.title
     .post-content
       != page.content
   if page.donate

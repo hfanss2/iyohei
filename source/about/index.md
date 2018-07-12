@@ -1,5 +1,5 @@
 ---
-title2: 简历
+title: 简历
 date: 2018-05-01 16:49:45
 comments: false
 ---

@@ -9,6 +9,7 @@ $(document).ready(function(){
 	setWidth();
 })	
 	
+	
 	function setIp(){//设置访问者  ip,城市等信息
 		var ip=returnCitySN["cip"];//访问者ip
 		var city = returnCitySN["cname"];//访问者城市

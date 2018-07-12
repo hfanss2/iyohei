@@ -1,8 +1,7 @@
 ---
-title: 
 date: 2018-05-01 16:49:45
 comments: false
-title2: 友链
+title: 友链
 ---
 ||||
 |:-|-|:--|

@@ -43,7 +43,7 @@ google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
 
 ##  以上谷歌统计/百度统计，开启一项即可
 show_category_count: false ## 是否显示侧边栏分类数目
-toc_number: false ## 是否显示文章中目录列表自动编号
+toc_number: true ## 是否显示文章中目录列表自动编号
 shareto: true ## 文章分享开关
 busuanzi: false ## 不算子文章阅读次数统计
 busuanziIPUV: true ##不算子网站访问量 pv、uv统计
