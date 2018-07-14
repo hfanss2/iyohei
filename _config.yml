@@ -89,11 +89,11 @@ theme: maupassant-hexo-master
 #https://gitee.com/iyohei/iyohei.git码云
 # dev
 deploy:
-##- type: git
-##  repository: https://github.com/iyohei/iyohei.git 
-##  branch: master
-##- type: hfanss ## 百度推送插件
-##  bucket: hfanss.com
+- type: git
+  repository: https://github.com/iyohei/iyohei.git 
+  branch: master
+- type: baidu_url_submitter  ## 百度推送插件
+  bucket: hfanss.com
 - type: ftpsync
   host: hfanss.ftp-gz01.bcehost.com
   user: hfanss
@@ -103,6 +103,6 @@ deploy:
   ignore: ##
   connections: 1
   verbose: false
-##- type: git
-##  repository: https://gitee.com/iyohei/iyohei.git 
-##  branch: dev
+- type: git
+  repository: https://gitee.com/iyohei/iyohei.git 
+  branch: dev

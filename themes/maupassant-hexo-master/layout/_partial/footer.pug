@@ -16,13 +16,13 @@ footer
         a(rel='nofollow')= ' '
         a(rel='nofollow')= '©'+date(Date.now(), 'YYYY')+' ' + ' ❤ '
         a(href=url_for('.'), rel='nofollow',font-size='14px',font-weight='bold')= config.title
-        a(href='http://www.miibeian.gov.cn/' target="_Blank") &nbsp;•&nbsp;豫ICP备18024944号&nbsp;•&nbsp;
+        a(href='http://www.miibeian.gov.cn/' target="_Blank")=' • '+theme.beianhao+' • '
         if theme.baiduTongJi.enable
           a(href=theme.baiduTongJi.baiduTongJiUrl,class='footer-a',target="_Blank") 百度统计
 script.
     var now = new Date(); 
     function createtime() { 
-        var grt= new Date("05/01/2018 12:00:00");//此处修改你的建站时间或者网站上线时间 
+        var grt= new Date("07/14/2018 12:00:00");//此处修改你的建站时间或者网站上线时间 
         now.setTime(now.getTime()+250); 
         days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
         hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
