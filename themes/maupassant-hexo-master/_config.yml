@@ -1,47 +1,42 @@
 fancybox: true ## 是否启用Fancybox图片灯箱效果,建议开启（效果为点击图片既放大）
-valine: ## https://valine.js.org
-  enable: true ## If you want to use Valine comment system, please set the value to true.
-  appid: 5GMAO3V5MqR9DTfMnd73m8zT-gzGzoHsz ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
-  appkey: f6Ve1tpYqYSBefe5xp0OCKxR ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
+valine: ## https://valine.js.org        评论系统
+  enable: true ## 是否开启valine评论系统
+  appid: 5GMAO3V5MqR9DTfMnd73m8zT-gzGzoHsz ## LeanCloud App ID, pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
+  appkey: f6Ve1tpYqYSBefe5xp0OCKxR ##LeanCloud App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
   notify: false ## Mail notifier, see https://github.com/xCss/Valine/wiki/Valine-评论系统中的邮件提醒设置
-  verify: true ## Validation code.
-  placeholder: 　 ## Comment box placeholders.留言板预设内容
-  visitor: true ##是否开启阅读统计
-  avatar: 'monsterid' ## Gravatar type, see https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
-  pageSize: 10 ## Number of comments per page.
-  guest_info: nick,mail,link ## Attributes of reviewers.
- ##    以上都是评论。只需要开启一种即可
+  verify: true ## 启用评论校验功能
+  placeholder: 　 ## 留言板预设内容
+  visitor: true ## 1.2版本新增功能阅读统计，具体使用参考https://valine.js.org/visitor.html
+  avatar: 'monsterid' ## 默认头像 参考 https://valine.js.org/avatar.html
+  pageSize: 10 ## 每页显示评论条数
+  guest_info: nick,mail,link ## 昵称，邮箱，网站
+
 ##         自定义start
 # Online contact
 touxiangUrl: https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/pic/touxiang.jpeg ##头像外链
+weiXinGZHUrl: https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/pic/gongzhonghao.jpg ##微信公众号外链（侧边栏 公众号 图片）
+baidu_analytics: 0c1bd517c2ba117fcf5139a8e24b7631 ## 百度统计ID id, e.g. 8006843039519956000
+## 以下为侧边栏最下 第一栏的外链
+weiXinPngUrl: https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/pic/302701117226241178.jpg ##微信个人二维码的图片地址
+qqPngUrl: https://wpa.qq.com/msgrd?v=3&uin=2158798&site=qq&menu=yes ##网页QQ聊天的外链  如  https://wpa.qq.com/msgrd?v=3&uin=2158798&site=qq&menu=yes 
+weiboPngUrl: https://weibo.com/0377k ##微博外链  如：https://weibo.com/0377k
+githubPngUrl: https://github.com/hfanss/ ##github外链 如 ：https://github.com/hfanss/
+eMailPngUrl: http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d ##邮箱外链  如：http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d
+
 banquan: ##版权声明，加在每篇文章下方
   enable: true ##是否开启
   note: 版权信息:本文所有权归博主-幻凡ss所有，转载请注明署名、出处！Thanks ##版权信息
-https: true ## 是否开启强制https（不影响本地调试）,本开关说明：https网站能正常访问，如www.baidu.com跳转到http://www.baidu.com，不自动跳到https开头的网址，而且https://www.baidu.com能正常访问才行
-weiXinGZHUrl: https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/pic/gongzhonghao.jpg ##微信公众号外链
+https: true ## 是否开启强制https（不影响本地调试）,本开关说明：https网站能正常访问开启才有效，如www.baidu.com跳转到http://www.baidu.com，不自动跳到https开头的网址，而且https://www.baidu.com能正常访问才行
+wordcount: true ##文章字数统计
 daovoice: true ## 页面右下角在线聊天
 daovoice_app_id: 21c082c2 ## daovice  ID 如：22c081c3
 baiduTongJi:    ##百度统计外链
   enable: true
   baiduTongJiUrl: https://tongji.baidu.com/web/25553450/overview/index?siteId=11976031 ##百度统计的网址，点开后登陆可看到网站统计\
-baidu_analytics: 0c1bd517c2ba117fcf5139a8e24b7631 ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
-wordcount: true ##字数统计
-readtime: true ##阅读时长
-cnzzTongJi:     ##cnzz站长统计
-  enable: false
-  cnzzTongJiUrl: http://new.cnzz.com/v1/login.php?siteid=1274037895 ##需替换footer.pug 第10行的代码（将复制的代码贴进去，注意前面空格不能动）
-weiXinPngUrl: https://i.loli.net/2018/07/08/5b41f338d5113.jpg ##微信个人二维码的图片地址
-qqPngUrl: https://wpa.qq.com/msgrd?v=3&uin=2158798&site=qq&menu=yes ##网页QQ聊天的外链  如  https://wpa.qq.com/msgrd?v=3&uin=2158798&site=qq&menu=yes 
-weiboPngUrl: https://weibo.com/0377k ##微博外链  如：https://weibo.com/0377k
-githubPngUrl: https://github.com/hfanss/ ##github外链 如 ：https://github.com/hfanss/
-eMailPngUrl: http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d ##邮箱外链  如：http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d
-cebianlan-wenzhang: true ##是否不在文章页显示侧边栏 true=不显示  false=显示
+baidutuisong: true ##开启百度链接推送，默认推送文章页
 ##          自定义end
-self_search: true ## Use a jQuery-based local search engine, true/false.
-##  以上都是搜索，开启一种即可
-google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
 
-##  以上谷歌统计/百度统计，开启一项即可
+self_search: true ## 页面jquery搜索，需安装插件
 show_category_count: false ## 是否显示侧边栏分类数目
 toc_number: true ## 是否显示文章中目录列表自动编号
 shareto: true ## 文章分享开关
@@ -78,12 +73,6 @@ menu:
   - page: tool
     directory: tool/
     icon: fa-user2 
-  ##- page: href
-  ##  directory: href/
-  ##  icon: fa-user2
-  ##- page: about
-  ##  directory: about/
-  ##  icon: fa-user2
   - page: guestbook
     directory: comment/
     icon: fa-rss2
@@ -93,7 +82,6 @@ menu:
 widgets: ## 侧边栏显示设置
   - search
   - tianqiyubao
-  - visitor
   - qita
   ##- category
   ##- tag

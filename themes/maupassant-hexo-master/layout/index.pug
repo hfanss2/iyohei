@@ -20,7 +20,7 @@ block content
             for category in post.categories.toArray()
               a(href=url_for(category.path))= category.name
         if theme.valine.visitor == true
-          span(id=url_for(post.path),class='leancloud_visitors',data-flag-title="文章阅读量统计") &nbsp;| <i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;
+          span(id=url_for(post.path),class='leancloud_visitors',data-flag-title="文章阅读量统计") &nbsp;| <i class="fa fa-eye" aria-hidden="true"></i>&nbsp;
             span.leancloud-visitors-count
             span() 阅读
         if theme.wordcount

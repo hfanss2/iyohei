@@ -1,10 +1,12 @@
 .widget
   .widget-title#qitazujian
-      a(href="#qitazujian",onclick="setShow('lianxiMe');") 联系我&nbsp;&nbsp;&nbsp;
+      a(href="#sidebar",onclick="setShow('lianxiMe');") 联系我&nbsp;&nbsp;
       ||
-      a(href="#qitazujian",onclick="setShow('gzHao');") &nbsp;&nbsp;&nbsp;公众号&nbsp;&nbsp;&nbsp;
+      a(href="#sidebar",onclick="setShow('gzHao');") &nbsp;&nbsp;公众号&nbsp;&nbsp;
+      ||
+      a(href="#sidebar",onclick="setShow('zdtongji');") &nbsp;&nbsp;站点统计
   .tagcloud
-      div(id='lianxiMe',style="display:block;heigth:200px;") <br>
+      div(id='lianxiMe',style="display:block;") <br>
          a(href=theme.weiXinPngUrl)
            <img name="qitazujian-img" class="nofancybox" src="../img/weixinPng.png" style="width:30px;heigth:30px;background-color:#9BCD9B;border-radius:20%;padding: 5px 5px;"/>
          a(href=theme.qqPngUrl,target="_blank")
@@ -15,17 +17,32 @@
            <img name="qitazujian-img" class="nofancybox" src="../img/githubPng.png" style="width:30px;heigth:30px;background-color:#999;border-radius:20%;padding: 5px 5px;"/>
          a(href=theme.eMailPngUrl,target="_blank")
            <img name="qitazujian-img" class="nofancybox" src="../img/eMailPng.png" style="width:30px;heigth:30px;background-color:#00CED1;border-radius:20%;padding: 5px 5px;"/>
+         <script>cambrian.render('tail')</script>
       div(id='gzHao',href=theme.weiXinGZHUrl,style="display:none;")
         img(width='60%',heigth='50%',src=theme.weiXinGZHUrl)
+      div(id='zdtongji',href="",style="display:none;")
+        a(href='/archives/')='文章总数：'+site.posts.length
+        <br>
+        a(href='/archives/')='分类总数：'+site.categories.length
+        <br>
+        a(href='/archives/')='标签总数：'+site.tags.length
+        <br>
+        a(href='/site/') 网站运行时间：<span id='timeDate-a'></span>
 script.
     function setShow(id)
     {
       if(id=='lianxiMe'){
-        $('#gzHao').attr("style","display:none");
+        $('#gzHao').attr("style","display:none");$('#zdtongji').attr("style","display:none");
         $('#lianxiMe').attr("style","display:block");
       }
       if(id=='gzHao'){
-        $('#lianxiMe').attr("style","display:none");
+        $('#lianxiMe').attr("style","display:none");$('#zdtongji').attr("style","display:none");
         $('#gzHao').attr("style","display:block;text-align: center;");
       }
+      if(id=='zdtongji'){
+        $('#lianxiMe').attr("style","display:none");$('#gzHao').attr("style","display:none");
+        var timeDate = $("#timeDate").text().replace(/[^0-9]/ig,"");$("#timeDate-a").html(timeDate+"天");
+        $('#zdtongji').attr("style","display:block;text-align: left;");
+      }
+	  
     }

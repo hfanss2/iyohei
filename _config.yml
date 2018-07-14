@@ -14,7 +14,7 @@ comments: true
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://www.iyohei.com
+url: https://www.hfanss.com
 root: /
 permalink: :year/:title.html
 permalink_defaults:
@@ -28,6 +28,13 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+
+baidu_url_submit:
+  count: 1 ## 提交最新的一个链接
+  host: www.hfanss.com ## 在百度站长平台中注册的域名
+  token: VpavqEmMn3wbiTEk ## 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
+  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
+
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -82,9 +89,11 @@ theme: maupassant-hexo-master
 #https://gitee.com/iyohei/iyohei.git码云
 # dev
 deploy:
-- type: git
-  repository: https://github.com/iyohei/iyohei.git 
-  branch: master
+##- type: git
+##  repository: https://github.com/iyohei/iyohei.git 
+##  branch: master
+##- type: hfanss ## 百度推送插件
+##  bucket: hfanss.com
 - type: ftpsync
   host: hfanss.ftp-gz01.bcehost.com
   user: hfanss
@@ -94,6 +103,6 @@ deploy:
   ignore: ##
   connections: 1
   verbose: false
-- type: git
-  repository: https://gitee.com/iyohei/iyohei.git 
-  branch: dev
+##- type: git
+##  repository: https://gitee.com/iyohei/iyohei.git 
+##  branch: dev

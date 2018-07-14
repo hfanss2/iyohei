@@ -7,14 +7,15 @@ block content
   .post
     h1.post-title
       a(href=url_for(site.path))=page.title
-    .post-meta= page.date.format('MM-DD')
+    .post-meta
+      a(href="https://ziyuan.baidu.com/xzh/commit/method?appid=1603347506741536",target="_Blank")= page.date.format('MM-DD')
       if page.categories.length > 0
         span= ' | '
         span.category
           for category in page.categories.toArray()
             a(href=url_for(category.path))= category.name
       if theme.valine.visitor == true
-        span(id=url_for(page.path),class='leancloud_visitors',data-flag-title="文章阅读量统计") &nbsp;| <i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;
+        span(id=url_for(page.path),class='leancloud_visitors',data-flag-title="文章阅读量统计") &nbsp;| <i class="fa fa-eye" aria-hidden="true"></i>&nbsp;
           span.leancloud-visitors-count
           span()=' '+__('Hits')
       if theme.busuanzi == true
@@ -24,9 +25,6 @@ block content
       if theme.wordcount
         span() &nbsp;|&nbsp;<i class="fa fa-keyboard-o"></i>&nbsp;
             span.post-count= wordcount(page.content)+' 字 '
-      if theme.readtime
-        span() &nbsp;|&nbsp;<i class="fa fa-hourglass-half"></i>&nbsp;
-            span.post-count= ' 时长 '+min2read(page.content) +'分'
     if(page.top || page.yuanchuang || theme.valine.enable)
       div(style="float:right;margin:15px 0 0;")
         if theme.valine.enable
