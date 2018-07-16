@@ -1,7 +1,7 @@
 extends base
 
 block title
-  title= config.title + ' | ' + page.title
+  title= page.title + ' | ' + config.title
 
 block content
   .post
@@ -18,10 +18,6 @@ block content
         span(id=url_for(page.path),class='leancloud_visitors',data-flag-title="文章阅读量统计") &nbsp;| <i class="fa fa-eye" aria-hidden="true"></i>&nbsp;
           span.leancloud-visitors-count
           span()=' '+__('Hits')
-      if theme.busuanzi == true
-        span#busuanzi_container_page_pv= ' | '
-          span#busuanzi_value_page_pv
-          span= ' ' + __('Hits')
       if theme.wordcount
         span() &nbsp;|&nbsp;<i class="fa fa-keyboard-o"></i>&nbsp;
             span.post-count= wordcount(page.content)+' 字 '

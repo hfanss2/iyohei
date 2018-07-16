@@ -34,7 +34,7 @@ baiduTongJi:    ##百度统计外链
   enable: true
   baiduTongJiUrl: https://tongji.baidu.com/web/25553450/overview/index?siteId=11976031 ##百度统计的网址，点开后登陆可看到网站统计\
 baidutuisong: true ##开启百度链接推送，默认推送文章页
-beianhao: 豫ICP备18024944号 ##备案号
+beianhao: 豫ICP备18024944号-1 ##备案号
 ##          自定义end
 
 self_search: true ## 页面jquery搜索，需安装插件
@@ -89,7 +89,11 @@ widgets: ## 侧边栏显示设置
   ##- recent_posts
   ##- recent_comments
   ##- links
-
+footers: ## 底部显示设置
+  - gywo
+  - gzhao
+  - lxwo
+ ## - xzhao
 
 
 
