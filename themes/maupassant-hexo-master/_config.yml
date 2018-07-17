@@ -77,23 +77,27 @@ menu:
   - page: guestbook
     directory: comment/
     icon: fa-rss2
+  ##- page: rss
+   ## directory: atom.xml
+   ## icon: fa-rss2
 ##  以上为菜单栏    为保持移动端菜单栏不换行（丑），建议菜单5个最佳，其余可以在页面底部添加，如果必须在此加又想保证移动端不换行具体可咨询博主   
 
 
 widgets: ## 侧边栏显示设置
   - search
-  - tianqiyubao
-  - qita
+  ##- tianqiyubao
+  ##- qita
   ##- category
   ##- tag
   ##- recent_posts
   ##- recent_comments
-  ##- links
+  - links
 footers: ## 底部显示设置
   - gywo
   - gzhao
-  - lxwo
- ## - xzhao
+  ##- lxwo
+  - xzhao
+  - links
 
 
 

@@ -2,7 +2,7 @@ extends base
 block title
   title= page.title + ' | ' + config.title
 block content
-  .post
+  .post(style="padding-top:50px;")
     .post-content
       != page.content
   if page.donate

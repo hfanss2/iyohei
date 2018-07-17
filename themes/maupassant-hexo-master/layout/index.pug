@@ -8,7 +8,7 @@ block title
 
 block content
   for post in page.posts.toArray()
-    .post
+    .post(style="padding-top:50px;")
       h1.post-title
         include _partial/helpers.pug
         a(href=url_for(post.path))

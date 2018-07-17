@@ -1,12 +1,12 @@
 var value01=0;//   0=14px     1=10px
 $(document).ready(function(){
 	$(window).scroll(function(){/**设置顶部固定      */  
-				 setScrollTop();
+				// setScrollTop();
 	})
-	setMenu1Class();
-	//setHeight();
-	setIp();
-	setWidth();
+	//setMenu1Class();
+	setHeight();
+	//setIp();
+	//setWidth();
 })	
 	
 	
@@ -82,12 +82,10 @@ $(document).ready(function(){
 	
 	/**设置底部固定      */  	
 	function setHeight(){
-		var footerHeight = $('#footer').height();
-		var footerHeight02 = $('#footer-02').height();
-		var headerHeight = $('#header').height();
-		var bodyHeight = $('.body_container').height()+footerHeight;
+		var footerHeight = $('#footer-000').height();
+		var headerHeight = $('#header-02').height();
 		var height = document.documentElement.clientHeight;
-		var minHeight = height-footerHeight-footerHeight02-headerHeight;
+		var minHeight = height-footerHeight;
 		minHeight=minHeight+'px';
 		//alert('底部高度:'+footerHeight+';body宽度:'+height+';修改后的宽度:'+minHeight);
 		$('.body_container').css('minHeight',minHeight);
@@ -95,8 +93,8 @@ $(document).ready(function(){
 	//浏览器大小改变时
 	
 	window.onresize=function(){
-		//setHeight();
-		setScrollTop();
-		setWidth();
+		setHeight();
+		//setScrollTop();
+		//setWidth();
 	}
 
