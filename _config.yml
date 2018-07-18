@@ -89,20 +89,20 @@ theme: maupassant-hexo-master
 #https://gitee.com/iyohei/iyohei.git码云
 # dev
 deploy:
-- type: git
-  repository: https://github.com/iyohei/iyohei.git 
-  branch: master
-- type: baidu_url_submitter  ## 百度推送插件
-  bucket: hfanss.com
-- type: ftpsync
-  host: hfanss.ftp-gz01.bcehost.com
-  user: hfanss
-  pass: 533520
-  remote: /webroot/
-  port: 8010
-  ignore: ##
-  connections: 1
-  verbose: false
+##- type: git
+##  repository: https://github.com/iyohei/iyohei.git 
+##  branch: master
+##- type: baidu_url_submitter  ## 百度推送插件
+##  bucket: hfanss.com
+##- type: ftpsync
+##  host: hfanss.ftp-gz01.bcehost.com
+##  user: hfanss
+##  pass: 533520
+##  remote: /webroot/
+##  port: 8010
+##  ignore: ##
+##  connections: 1
+##  verbose: false
 - type: git
   repository: https://gitee.com/iyohei/iyohei.git 
   branch: dev
