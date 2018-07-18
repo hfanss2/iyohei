@@ -31,18 +31,17 @@ block content
           span() &nbsp;|&nbsp;<i class="fa fa-hourglass-half"></i>&nbsp;
             a(href=url_for(post.path))
               span.post-count= ' 时长 '+min2read(post.content) +'分'
-      if(post.top || post.yuanchuang)
-        div(style="float:right;margin:15px 0 0;")
-          if theme.valine.enable
-            a(href=url_for(post.path)) <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;
-              span.valine-comment-count(data-xid=url_for(post.path))
-              span= ' ' + __('Comment') +' '
-          if post.yuanchuang
-            span() <i class="fa fa-ravelry"></i>&nbsp;
-            a(href=url_for(post.path)) 原创&nbsp;
-          if post.top
-            span() <i class="fa fa-thumb-tack"></i>&nbsp;
-            a(href=url_for(post.path)) 置顶&nbsp;
+      div(style="float:right;margin:15px 0 0;")
+        if theme.valine.enable
+          a(href=url_for(post.path)) <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;
+            span.valine-comment-count(data-xid=url_for(post.path))
+            span= ' ' + __('Comment') +' '  
+        if post.yuanchuang
+          span() <i class="fa fa-ravelry"></i>&nbsp;
+          a(href=url_for(post.path)) 原创&nbsp;
+        if post.top
+          span() <i class="fa fa-thumb-tack"></i>&nbsp;
+          a(href=url_for(post.path)) 置顶&nbsp;
       if post.description
         .post-content
           != post.description
