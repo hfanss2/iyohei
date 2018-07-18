@@ -152,8 +152,9 @@ body {
     margin: 0 auto;
 }
 .content_container {
-    padding-right: 50px;
+    padding-right: 20px;
     padding-top: 20px;
+	padding-left: 20px;
 }
 a, button.submit {
     color: #6E7173;
@@ -591,6 +592,7 @@ div {
     font-size: 15px;
     line-height: 2;
     padding-bottom: .8em;
+	text-align:center;
     h2 {
         margin: 0;
         font: bold 25px / 1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
@@ -605,9 +607,10 @@ div {
 @media print, screen and (max-width: 48em) {
     .body_container {
         padding: 0 30px;
+		max-width: 1150px;
     }
     .content_container {
-        padding-right: 15px;
+        padding-right: 20px;
     }
     .hidden_mid_and_down {
         display: none !important;
@@ -644,6 +647,98 @@ div {
     }
 }
 
+		.footer-02{
+			text-align:center;
+			margin:auto;
+			font-size:14px;
+			background-color:#f5f5f5;
+			border-top:1px solid #ddd;
+		}
+
+
+
+/* small*/
+@media print, screen and (max-width: 48em) {
+		.footer-02{
+		text-align:center;
+		margin:auto;
+		font-size:14px;
+		background-color:#f5f5f5;
+		border-top:1px solid #ddd;
+		display:none;
+		}
+}
+
+	.header-02{
+		background-color:#f5f5f5;
+		border-bottom:1px solid #ddd;
+		z-index:999;
+		font-color: #242424;
+		position: fixed;
+		width: 100%;
+		text-align:center;
+		margin:0 auto;
+		overflow: hidden;
+	}
+	.header-02-1{
+			margin: 0 auto;
+			max-width:1150px;
+		}
+	.header-02-2{
+			float:left;
+			font-size: 25px;
+			padding: 5px 0 0;
+		}
+@media print, screen and (max-width: 48em) {
+		.header-02-2{
+		display:none;
+		}
+		.nav2{
+			overflow: hidden;width: 100%;text-align:center;word-break: break-all; word-wrap:break-word;
+			a {
+				display: inline-block;
+				padding: 2px 30px 2px;
+				line-height: 30px;
+				color: #444;
+				font-size: 13px;
+				border: 1px solid transparent;
+				&:hover {
+					background: #F8F8F8;
+					border-bottom-color: #D26911;
+					color: #D26911;
+				}
+				&.current {
+					border: 1px solid #ddd;
+					border-bottom-color: #fff;
+					color: #D26911;
+				}
+			}
+		}
+}	
+@media print, screen and (max-width: 29em) {
+		.nav2{
+			overflow: hidden;width: 100%;text-align:center;word-break: break-all; word-wrap:break-word;
+			a {
+				display: inline-block;
+				padding: 2px 10px 2px;
+				line-height: 30px;
+				color: #444;
+				font-size: 15px;
+				border: 1px solid transparent;
+				&:hover {
+					background: #F8F8F8;
+					border-bottom-color: #D26911;
+					color: #D26911;
+				}
+				&.current {
+					border: 1px solid #ddd;
+					border-bottom-color: #fff;
+					color: #D26911;
+				}
+			}
+		}
+
+}
 blockquote,.stressed {
     -moz-box-sizing: border-box;
     /* box-sizing: border-box; */
