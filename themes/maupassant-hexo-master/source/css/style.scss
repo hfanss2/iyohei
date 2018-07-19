@@ -63,7 +63,7 @@ html, button, input, select, textarea,
 			}
 		}
 		.nav2{
-			overflow: hidden;width: 100%;text-align:right;word-break: break-all; word-wrap:break-word;
+			overflow: hidden;width: 100%;text-align:left;word-break: break-all; word-wrap:break-word;padding-top: 20px;
 			a {
 				display: inline-block;
 				padding: 2px 30px 2px;
@@ -72,13 +72,13 @@ html, button, input, select, textarea,
 				font-size: 13px;
 				border: 1px solid transparent;
 				&:hover {
-					background: #F8F8F8;
+					background:  #C9C9C9;
+					border-top-color: #D26911;
 					border-bottom-color: #D26911;
 					color: #D26911;
+					
 				}
 				&.current {
-					border: 1px solid #ddd;
-					border-bottom-color: #fff;
 					color: #D26911;
 				}
 			}
@@ -255,11 +255,11 @@ div {
 }
 
 #sidebar {
-    border-left: 1px solid #ddd;
     padding-left: 25px;
-    margin-top: 40px;
+    margin-top: 0px;
     padding-bottom: 20px;
     word-wrap: break-word;
+	z-index:999;
 	.widget2 {
 		font-size: 30px;
 		text-align: center;
@@ -592,7 +592,6 @@ div {
     font-size: 15px;
     line-height: 2;
     padding-bottom: .8em;
-	text-align:center;
     h2 {
         margin: 0;
         font: bold 25px / 1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
@@ -687,11 +686,36 @@ div {
 	.header-02-2{
 			float:left;
 			font-size: 25px;
-			padding: 5px 0 0;
+			padding: 0 50px 0;
+			a {
+				display: inline-block;
+				padding: 2px 10px 2px;
+				line-height: 30px;
+				color: #444;
+				font-size: 30px;
+				border: 1px solid transparent;
+				&:hover {
+					background: #f5f5f5;
+					border-bottom-color: #D26911;
+					border-top-color: #D26911;
+					color: #242424;
+				}
+				&.current {
+					border: 1px solid #ddd;
+					border-bottom-color: #fff;
+					color: #D26911;
+				}
+			}
+			
+			
+			
+			
 		}
+		
+		
 @media print, screen and (max-width: 48em) {
 		.header-02-2{
-		display:none;
+			display:none;
 		}
 		.nav2{
 			overflow: hidden;width: 100%;text-align:center;word-break: break-all; word-wrap:break-word;
@@ -705,6 +729,7 @@ div {
 				&:hover {
 					background: #F8F8F8;
 					border-bottom-color: #D26911;
+					border-top-color: #D26911;
 					color: #D26911;
 				}
 				&.current {
@@ -715,6 +740,16 @@ div {
 			}
 		}
 }	
+/* 响应式设计   */
+@media print, screen and (max-height: 10em) {
+		
+		
+		
+		
+}	
+
+
+
 @media print, screen and (max-width: 29em) {
 		.nav2{
 			overflow: hidden;width: 100%;text-align:center;word-break: break-all; word-wrap:break-word;
@@ -1941,10 +1976,11 @@ table {
 /* search result*/
 ul.search-result-list {
   padding-left: 10px;
+  padding-top: 0px;
 }
 a.search-result-title {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
   color: #555;
 }
 p.search-result {

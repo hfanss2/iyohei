@@ -7,7 +7,7 @@ else
 
 if config.feed
   case config.feed.type
-    when 'rss2'
+    when 'rss'
       - var feed_type='application/rss+xml'
     when 'atom'
     default
@@ -22,9 +22,13 @@ html(lang=config.language)
   div(id='header-02',class="header-02")
     .header-02-1
       .nav2#nav1
-        .header-02-2(style="float:left;")= config.title
-        - for (var i in theme.menu)
-            +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)
+        .header-02-2
+          a(href=url_for('.'))= config.title
+        .header-02-3(style="float:left")
+          - for (var i in theme.menu)
+             +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)
+        .pure-u-1-4.hidden_mid_and_down(style="float:right"): #sidebar
+          != partial('_widget/search.pug')
   .body_container
     #layout.pure-g
       .pure-u-1.pure-u-md-3-4: .content_container
