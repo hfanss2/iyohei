@@ -133,7 +133,9 @@ html, button, input, select, textarea,
 		.footer{
 			height: 50px;background: #ddd；
 		}
-		
+		.header-02-3{
+			float:left;
+		}
 		
 		/* 自定义css    end*/
 		
@@ -369,7 +371,7 @@ div {
     .post-title {
         margin: 0;
         color: #555;
-        text-align: left;
+        text-align: center;
         font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
         a {
             color: #555;
@@ -601,7 +603,32 @@ div {
     }
 }
 /* for archive page ends*/
-
+/* middle*/
+@media print, screen and (max-width: 57em) {
+	#sidebar {
+        border-left-width: 0px;
+		display: none !important;
+    }
+		.header-02{
+		background-color:#f5f5f5;
+		border-bottom:1px solid #ddd;
+		z-index:999;
+		font-color: #242424;
+		position: fixed;
+		width: 100%;
+		text-align:center;
+		margin:0 auto;
+		overflow: hidden;
+		height:80px;
+	}
+		.header-02-2{
+		display: none !important;
+		}
+	
+	.header-02-3{
+			float:center;
+		}
+}
 /* middle*/
 @media print, screen and (max-width: 48em) {
     .body_container {
@@ -614,9 +641,7 @@ div {
     .hidden_mid_and_down {
         display: none !important;
     }
-    #sidebar {
-        border-left-width: 0px;
-    }
+    
     #header {
 		
         .site-name {
@@ -705,12 +730,8 @@ div {
 					border-bottom-color: #fff;
 					color: #D26911;
 				}
-			}
-			
-			
-			
-			
-		}
+			}	
+	}
 		
 		
 @media print, screen and (max-width: 48em) {
@@ -1812,6 +1833,7 @@ figure.highlight,
   margin: 1.1em 0 0 2em;
   padding: 0.7em 0.7em 0 0.7em;
   max-width: 40%;
+  
 }
 .toc-title {
   font-size: 120%;
