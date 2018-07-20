@@ -19,6 +19,10 @@ html(lang=config.language)
   include _partial/head.pug
 
   body
+  .search-total
+    .search-quanbu
+    .showSerch
+      != partial('search.pug')
   div(id='header-02',class="header-02")
     .header-02-1
       .nav2#nav1
@@ -27,8 +31,7 @@ html(lang=config.language)
         .header-02-3
           - for (var i in theme.menu)
              +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)
-        .pure-u-1-4.hidden_mid_and_down(style="float:right"): #sidebar
-          != partial('search.pug')
+        .header-02-4  <a onclick="showSerch()" href="#"><i class="fa fa-search" aria-hidden="true"></i>搜索</a>
   .body_container
     #layout.pure-g
       .pure-u-1.pure-u-md-3-4(style="width: -moz-available;"): .content_container

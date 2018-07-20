@@ -90,8 +90,16 @@ $(document).ready(function(){
 		//alert('底部高度:'+footerHeight+';body宽度:'+height+';修改后的宽度:'+minHeight);
 		$('.body_container').css('minHeight',minHeight);
 	}
-	//浏览器大小改变时
 	
+	function showSerch(){
+		$(".search-total").css('display', 'initial');
+	}
+	
+	function outSerch(){
+		$(".search-total").css('display', 'none');
+	}
+	
+	//浏览器大小改变时
 	window.onresize=function(){
 		setHeight();
 		//setScrollTop();

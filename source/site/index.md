@@ -20,4 +20,4 @@ comments: false
 #### 版权声明：本站所有博文均可转载，但请保留署名和原文链接
 
 
-<script>$("#nav1 a:first").addClass('current');</script>
+<script>$(".header-02-3 a:first").addClass('current');</script>

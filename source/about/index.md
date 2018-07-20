@@ -19,7 +19,7 @@ comments: false
 - 个性：代码使我快乐
 - 喜好：电影、小说、音乐、无辣不欢。有轻微洁癖。宅、瘦！渴望技术进步。
 ---      
-<script>$("#nav1 a:first").addClass('current');</script>
+<script>$(".header-02-3 a:first").addClass('current');</script>
 
 　　
 

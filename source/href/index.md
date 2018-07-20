@@ -27,7 +27,7 @@ table th:nth-of-type(3){
 width: 10%;
 }
 </style>
-<script>$("#nav1 a:first").addClass('current');</script>
+<script>$(".header-02-3 a:first").addClass('current');</script>
 
 　　
 

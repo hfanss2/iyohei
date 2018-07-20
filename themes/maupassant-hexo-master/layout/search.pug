@@ -20,8 +20,10 @@ if theme.tinysou
     form
       input#ts-search-input(class='ts-search-input' placeholder='Search' type='text')
 if theme.self_search == true
+  .div(class="serach-span") <a href="#" onclick="outSerch()">关闭&nbsp;&nbsp;&nbsp;</a><br><br>
   .widget
     .search-form
       input(id='local-search-input' placeholder='Search' type='text' name='q' results='0')
+      <br><br><br>
       div#local-search-result
 
