@@ -15,6 +15,16 @@ title: 友链
 |杨云召|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i> [blog.znmlr.cn](https://blog.znmlr.cn/)|<a href="https://blog.znmlr.cn/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
 |一世长安|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i> [zine-fj.github.io](http://zine-fj.github.io/)|<a href="http://zine-fj.github.io/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
 |hojun|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i> [hojun.cn](http://www.hojun.cn/)|<a href="http://www.hojun.cn/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
+|死宅桶|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i> [Paomiantong.coding.me](https://paomiantong.coding.me/)|<a href="https://paomiantong.coding.me/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
+
+
+
+
+
+
+
+
+
 <style>
 table th:nth-of-type(1){
 width: 30%;

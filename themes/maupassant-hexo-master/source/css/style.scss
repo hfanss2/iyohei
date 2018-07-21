@@ -139,6 +139,7 @@ html, button, input, select, textarea,
 		.header-02-4{
 			text-align: end;
 			font-size: 25px;
+			padding-right: 10px;
 			a {
 				display: inline-block;
 				padding: 2px 10px 2px;
@@ -169,7 +170,8 @@ html, button, input, select, textarea,
 		z-index:9999;
 		background:#FFFFFF;
 		border: 1px solid #ddd;
-		border-radius: 10px;
+		border-radius: 5px;
+		min-height: 150px;
 		}
 		.serach-span{
 		height:10px;
@@ -190,7 +192,13 @@ html, button, input, select, textarea,
 		.search-total{
 			display:none;
 		}
-		
+		.footer-02{
+			text-align:center;
+			margin:auto;
+			font-size:14px;
+			background-color:#f5f5f5;
+			border-top:1px solid #ddd;
+		}
 		
 		
 		/* 自定义css    end*/
@@ -400,6 +408,7 @@ div {
             overflow: hidden;
 			text-align:center;
 			padding-top:20px;
+			padding-left: 35px;
             input {
                 background: #fff 8px 8px no-repeat
                     url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6%2BR8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG11AABzoAAA%2FN0AAINkAABw6AAA7GgAADA%2BAAAQkOTsmeoAAAESSURBVHjajNCxS9VRGMbxz71E4OwgoXPQxVEpXCI47%2BZqGP0LCoJO7UVD3QZzb3SwcHB7F3Uw3Zpd%2FAPCcJKG7Dj4u%2FK7Pwp94HDg5Xyf5z1Pr9YKImKANTzFXxzjU2ae6qhXaxURr%2FAFl9hHDy%2FwEK8z89sYVEp5gh84wMvMvGiSJ%2FEV85jNzLMR1McqfmN5BEBmnmMJFSvtpH7jdJiZv7q7Z%2BZPfMdcF6rN%2FT%2F1m2LGBkd4HhFT3dcRMY2FpskxaLNpayciHrWAGeziD7b%2BVfkithuTk8bkGa4wgWFmbrSTZOYeBvjc%2BucQj%2FEe6xHx4Taq1nrnKaW8K6XUUsrHWuvNevdRRLzFGwzvDbXAB9cDAHvhedDruuxSAAAAAElFTkSuQmCC);
@@ -728,13 +737,7 @@ div {
     }
 }
 
-		.footer-02{
-			text-align:center;
-			margin:auto;
-			font-size:14px;
-			background-color:#f5f5f5;
-			border-top:1px solid #ddd;
-		}
+		
 
 
 
@@ -807,17 +810,12 @@ div {
 			}
 		}
 		
-		.footer-02{
-		text-align:center;
-		margin:auto;
-		font-size:14px;
-		background-color:#f5f5f5;
-		border-top:1px solid #ddd;
-		display:none;
-		}
+		
+		
 		.header-02-4{
 			text-align: end;
 			font-size: 25px;
+			padding-right: 10px;
 			a {
 				display: inline-block;
 				padding: 2px 10px 2px;
@@ -840,9 +838,16 @@ div {
 		}
 }	
 /* 响应式设计   */
-@media print, screen and (max-height: 10em) {
+@media print, screen and (max-width: 608px) {
 		
-		
+		.footer-02{
+			text-align:center;
+			margin:auto;
+			font-size:14px;
+			background-color:#f5f5f5;
+			border-top:1px solid #ddd;
+			display:none;
+		}
 		
 		
 }	

@@ -1,4 +1,4 @@
-fancybox: true ## 是否启用Fancybox图片灯箱效果,建议开启（效果为点击图片既放大）
+
 valine: ## https://valine.js.org        评论系统
   enable: true ## 是否开启valine评论系统
   appid: 5GMAO3V5MqR9DTfMnd73m8zT-gzGzoHsz ## LeanCloud App ID, pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
@@ -10,48 +10,30 @@ valine: ## https://valine.js.org        评论系统
   avatar: 'monsterid' ## 默认头像 参考 https://valine.js.org/avatar.html
   pageSize: 10 ## 每页显示评论条数
   guest_info: nick,mail,link ## 昵称，邮箱，网站
-
-##         自定义start
-# Online contact
-touxiangUrl: https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/pic/touxiang.jpeg ##头像外链
-weiXinGZHUrl: https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/pic/gongzhonghao.jpg ##微信公众号外链（侧边栏 公众号 图片）
+## 百度统计ID
 baidu_analytics: 0c1bd517c2ba117fcf5139a8e24b7631 ## 百度统计ID id, e.g. 8006843039519956000
-## 以下为侧边栏最下 第一栏的外链
-weiXinPngUrl: https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/pic/302701117226241178.jpg ##微信个人二维码的图片地址
-qqPngUrl: https://wpa.qq.com/msgrd?v=3&uin=2158798&site=qq&menu=yes ##网页QQ聊天的外链  如  https://wpa.qq.com/msgrd?v=3&uin=2158798&site=qq&menu=yes 
-weiboPngUrl: https://weibo.com/0377k ##微博外链  如：https://weibo.com/0377k
-githubPngUrl: https://github.com/hfanss/ ##github外链 如 ：https://github.com/hfanss/
-eMailPngUrl: http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d ##邮箱外链  如：http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d
-
-banquan: ##版权声明，加在每篇文章下方
+## 图片灯箱开关
+fancybox: true ## 是否启用Fancybox图片灯箱效果,建议开启（效果为点击图片既放大）
+##版权声明，加在每篇文章下方
+banquan: 
   enable: true ##是否开启
   note: 版权信息:本文所有权归博主-幻凡ss所有，转载请注明署名、出处！Thanks ##版权信息
+## 强制https访问开关
 https: true ## 是否开启强制https（不影响本地调试）,本开关说明：https网站能正常访问开启才有效，如www.baidu.com跳转到http://www.baidu.com，不自动跳到https开头的网址，而且https://www.baidu.com能正常访问才行
+## 文章字数统计开关
 wordcount: true ##文章字数统计
+readtime: false ##文章阅读时长统计
+## daovice在线聊天相关 官网：http://www.daovoice.io/
 daovoice: true ## 页面右下角在线聊天
 daovoice_app_id: 21c082c2 ## daovice  ID 如：22c081c3
-baiduTongJi:    ##百度统计外链
-  enable: true
-  baiduTongJiUrl: https://tongji.baidu.com/web/25553450/overview/index?siteId=11976031 ##百度统计的网址，点开后登陆可看到网站统计\
-baidutuisong: true ##开启百度链接推送，默认推送文章页
-beianhao: 豫ICP备18024944号-1 ##备案号
-##          自定义end
-
+##搜索相关
 self_search: true ## 页面jquery搜索，需安装插件
-show_category_count: false ## 是否显示侧边栏分类数目
-toc_number: true ## 是否显示文章中目录列表自动编号
+baidu_search: false ##百度搜索
+## 文章目录开关
+toc_number: true ## 文章目录开关 使用方法：#一级目录  ##二级目录  。。。 以此类推
+## 文章分享开关
 shareto: true ## 文章分享开关
-busuanzi: false ## 不算子文章阅读次数统计
-busuanziIPUV: true ##不算子网站访问量 pv、uv统计
-widgets_on_small_screens: false ## 移动端是否显示侧边栏（页面最下方）
-
-canvas_nest:
-  enable: false ## If you want to use dynamic background please set the value to true, you can also fill the following parameters to customize the dynamic effect, or just leave them blank to keep the default effect.
-  color: ## RGB value of the color, e.g. "100,99,98"
-  opacity: ## Transparency of lines, e.g. "0.7"
-  zIndex: ## The z-index property of the background, e.g. "-1"
-  count: ## Quantity of lines, e.g. "150"
-##  上面为动态背景，建议不要开启。浪费性能，尤其在移动端（它需要在每一毫秒中计算出线条，并保持移动，需要持久调用资源）
+## 文章捐赠按钮。赞赏按钮
 donate:
   enable: false ## If you want to show the donate button after each post, please set the value to true and fill the following items according to your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
   github: https://github.com/iyohei ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
@@ -60,7 +42,65 @@ donate:
   btc_qr: ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
   btc_key: ## Bitcoin key, e.g. 1KuK5eK2BLsqpsFVXXSBG5wbSAwZVadt6L
   paypal_url: ## Paypal URL, e.g. https://paypal.me/tufu9441
-## 捐赠按钮。赞赏按钮
+
+
+## 微信相关信息
+weixin:
+    enable: true
+    name: hyaini ##微信号码
+    url:  https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/pic/302701117226241178.jpg ##微信个人二维码url       
+## 微博相关信息
+weibo:
+    enable: true
+    name: 幻凡ss ##微博名字
+    url: https://weibo.com/0377k  ##微博外链  如：https://weibo.com/0377k
+## QQ相关信息
+qq:
+    enable: true
+    name: 2158798 ##QQ号码
+    url: https://wpa.qq.com/msgrd?v=3&uin=2158798&site=qq&menu=yes ##网页QQ聊天的外链  如  https://wpa.qq.com/msgrd?v=3&uin=2158798&site=qq&menu=yes 
+## email相关信息
+email:
+    enable: true
+    name: hfans@foxmail.com  ##邮箱地址
+    url: http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d ##邮箱外链  如：http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d
+## 联系地址相关信息
+address:
+    enable: true
+    name: Pudong New Area, Shanghai, China ##地理位置的英文（请不要太过具体）
+    url: http://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%B5%A6%E4%B8%9C%E6%96%B0%E5%8C%BA%E5%94%90%E9%95%87%E6%9D%A5%E5%AE%89%E8%B7%AF%E5%85%B4%E4%B8%9A%E9%93%B6%E8%A1%8C%28%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%29 ##公司在百度地图上的位置的网址
+## 百度熊掌号相关信息
+xzHao:
+    enable: true
+    note: 专注Java • 分享生活 • 记录人生 ##熊掌号描述
+    url: https://author.baidu.com/home/1603347506741536?from=dusite_artdetailh5 ##熊掌号url
+## 备案相关信息
+beian:
+    enable: true
+    note: 豫ICP备18024944号-1 ##备案号
+## 百度统计相关信息
+baidu:
+    enable: true
+    url: https://tongji.baidu.com/web/25553450/overview/index?siteId=11976031 ##百度统计的网址，点开百度云图标后登陆可看到网站统计\
+## github相关信息
+github:
+    enable: true
+    url: https://github.com/hfanss/ ##github外链 如 ：https://github.com/hfanss/
+## 码云相关信息
+gitee:
+    enable: true
+    url: https://gitee.com/iyohei ##码云外链 如 ：https://gitee.com/iyohei
+## CSDN相关信息
+csdn:
+    enable: true
+    url: https://blog.csdn.net/q2158798 ##CSDN博客外链 如：https://blog.csdn.net/q2158798
+## 底部显示设置
+footers: 
+  - gywo    ##关于我
+  - gzhao   ##公众号或微信二维码
+  - xzhao   ##百度熊掌号相关信息
+  - links   ##友情链接/关于本站/关于博主(简历)
+## 菜单选项  为保持移动端菜单栏不换行（丑），建议菜单5个最佳，其余可以在页面底部添加，如果必须在此加又想保证移动端不换行具体可咨询博主   
 menu:
   - page: home
     directory: .
@@ -77,37 +117,7 @@ menu:
   - page: guestbook
     directory: comment/
     icon: fa-rss2
-  ##- page: rss
-   ## directory: atom.xml
-   ## icon: fa-rss2
-##  以上为菜单栏    为保持移动端菜单栏不换行（丑），建议菜单5个最佳，其余可以在页面底部添加，如果必须在此加又想保证移动端不换行具体可咨询博主   
-
-
-widgets: ## 侧边栏显示设置
-  - search
-  ##- tianqiyubao
-  ##- qita
-  ##- category
-  ##- tag
-  ##- recent_posts
-  ##- recent_comments
-  - links
-footers: ## 底部显示设置
-  - gywo
-  - gzhao
-  ##- lxwo
-  - xzhao
-  - links
-
-
-
-links:
-  - title: CSDN博客
-    url: https://blog.csdn.net/q2158798
-  - title: 个人微博
-    url: https://weibo.com/0377k
-##   友情链接
-
+## 网站地图   博主没用过，意义不大
 timeline:
   - num: 1
     word: 2014/06/12-Start
@@ -117,13 +127,9 @@ timeline:
     word: 2015/02/18-DDD
   - num: 4
     word: More
-##  网站地图
-    
-    
-    
 # Static files。缓存目录
 js: js
 css: css
 
-# Theme version 版本，方便刷新
+# 主题版本，方便刷新
 version: 0.1.0

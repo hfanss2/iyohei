@@ -42,6 +42,7 @@ block content
         if post.top
           span() <i class="fa fa-thumb-tack"></i>&nbsp;
           a(href=url_for(post.path)) 置顶&nbsp;
+      <br>&emsp;
       if post.description
         .post-content
           != post.description
