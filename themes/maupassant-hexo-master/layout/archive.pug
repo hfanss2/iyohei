@@ -8,7 +8,7 @@ block title
   if page.archive
      title= __('archive') + ' | ' + config.title
 block content
-  .post(style="padding-top:80px;width: -moz-available;")
+  .post(style="width: -moz-available;")
     .post-archive
         //Use lodash to classify posts. See https://lodash.com/docs#groupBy
         h2='目前共有  '+site.categories.length+'个分类'+'、'+site.tags.length+'个标签、'+site.posts.length+'篇文章'

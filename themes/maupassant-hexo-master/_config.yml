@@ -17,7 +17,8 @@ fancybox: true ## 是否启用Fancybox图片灯箱效果,建议开启（效果�
 ##版权声明，加在每篇文章下方
 banquan: 
   enable: true ##是否开启
-  note: 版权信息:本文所有权归博主-幻凡ss所有，转载请注明署名、出处！Thanks ##版权信息
+  name: 幻凡ss
+  note: 本文所有权归博主所有，转载请注明署名、出处！Thanks ##版权信息
 ## 强制https访问开关
 https: true ## 是否开启强制https（不影响本地调试）,本开关说明：https网站能正常访问开启才有效，如www.baidu.com跳转到http://www.baidu.com，不自动跳到https开头的网址，而且https://www.baidu.com能正常访问才行
 ## 文章字数统计开关
@@ -31,12 +32,12 @@ self_search: true ## 页面jquery搜索，需安装插件
 baidu_search: false ##百度搜索
 ## 文章目录开关
 toc_number: true ## 文章目录开关 使用方法：#一级目录  ##二级目录  。。。 以此类推
-## 文章分享开关
+## 文章分享开关  使用bshare.js  官网：http://www.bshare.cn/、注册站长并输入网址  需替换post.pug  55行script
 shareto: true ## 文章分享开关
 ## 文章捐赠按钮。赞赏按钮
 donate:
-  enable: false ## If you want to show the donate button after each post, please set the value to true and fill the following items according to your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
-  github: https://github.com/iyohei ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
+  enable: true ## If you want to show the donate button after each post, please set the value to true and fill the following items according to your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
+  github: https://github.com/hfanss ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
   alipay_qr: /img/AL.png ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
   wechat_qr: /img/QQ.png## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
   btc_qr: ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
