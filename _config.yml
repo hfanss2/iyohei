@@ -14,7 +14,7 @@ comments: true
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://www.hfanss.com
+url: https://www.hfanss.com 
 root: /
 permalink: :year/:title.html
 permalink_defaults:

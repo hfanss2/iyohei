@@ -27,16 +27,16 @@ readtime: false ##文章阅读时长统计
 ## daovice在线聊天相关 官网：http://www.daovoice.io/
 daovoice: true ## 页面右下角在线聊天
 daovoice_app_id: 21c082c2 ## daovice  ID 如：22c081c3
-##搜索相关
-self_search: true ## 页面jquery搜索，需安装插件
-baidu_search: false ##百度搜索
+##搜索相关,只能开启一项
+self_search: true ## 页面jquery搜索，需安装插件,开启此搜索后，博客根目录的  url属性必须带有http://和https://
+baidu_search: false ##百度搜索.开启百度搜索后，博客根目录的  url属性不能带有http://和https://,否则会导致搜索不到东西（原理：基于你的网站百度收录结果搜索，如果没有被百度收录，就不会有结果）
 ## 文章目录开关
 toc_number: true ## 文章目录开关 使用方法：#一级目录  ##二级目录  。。。 以此类推
 ## 文章分享开关  使用bshare.js  官网：http://www.bshare.cn/、注册站长并输入网址  需替换post.pug  55行script
 shareto: true ## 文章分享开关
 ## 文章捐赠按钮。赞赏按钮
 donate:
-  enable: true ## If you want to show the donate button after each post, please set the value to true and fill the following items according to your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
+  enable: false ## If you want to show the donate button after each post, please set the value to true and fill the following items according to your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
   github: https://github.com/hfanss ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
   alipay_qr: /img/AL.png ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
   wechat_qr: /img/QQ.png## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
