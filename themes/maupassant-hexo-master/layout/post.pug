@@ -4,6 +4,7 @@ block title
   title= page.title + ' | ' + config.title
 
 block content
+  .post-02
   .post
     h1.post-title
       a(href=url_for(site.path))=page.title
@@ -29,6 +30,8 @@ block content
               span= ' ' + __('Comment')+' '
         if page.yuanchuang
            span()  <i class="fa fa-ravelry"></i> 原创&nbsp;
+        if page.zhzai
+           span()  <i class="fa fa-ravelry"></i> 转载&nbsp;
         if page.top
            span()  <i class="fa fa-thumb-tack"></i> 置顶&nbsp;
     if page.toc
@@ -36,24 +39,37 @@ block content
         div(id='toc' class='toc-article')
           div(class='toc-title')= __('contents')
           != toc(page.content, {list_number: theme.toc_number})
+    <br>
     .post-content
       != page.content
     if theme.donate.enable == true
       iframe(src='/donate/?AliPayQR=' + theme.donate.alipay_qr + '&WeChatQR=' + theme.donate.wechat_qr + '&GitHub=' + theme.donate.github , style='overflow-x:hidden; overflow-y:hidden; border:0xp none #fff; min-height:200px; width:100%;', frameborder='0', scrolling='no')
-    if theme.banquan.enable
+    if page.zhzai
       div(style="padding-bottom: 10px;")
         <ul class="post-copyright">
         <li class="post-copyright-author">
-          <strong>本文作者：</strong>
-            a(href="/about/")=theme.banquan.name
+          <strong>原文作者：</strong>
+            a(href="/about/")=page.zhzaiName
         <li class="post-copyright-link">
-          <strong>本文链接：</strong>
-            if theme.baidu_search
-              a(href='https://'+page.permalink)='https://'+page.permalink
-            else
-              a(href=page.permalink)=page.permalink
+          <strong>原文链接：</strong>
+          a(href=page.zhzaiUrl)=page.zhzaiUrl
         <li class="post-copyright-license"><strong>版权声明：</strong>
             a(href="/site/")=theme.banquan.note
+    else
+      if theme.banquan.enable
+        div(style="padding-bottom: 10px;")
+          <ul class="post-copyright">
+          <li class="post-copyright-author">
+            <strong>本文作者：</strong>
+              a(href="/about/")=theme.banquan.name
+          <li class="post-copyright-link">
+            <strong>本文链接：</strong>
+              if theme.baidu_search
+                a(href='https://'+page.permalink)='https://'+page.permalink
+              else
+                a(href=page.permalink)=page.permalink
+          <li class="post-copyright-license"><strong>版权声明：</strong>
+              a(href="/site/")=theme.banquan.note
     if theme.shareto== true
       script(type="text/javascript",charset="utf-8",src="https://static.bshare.cn/b/buttonLite.js#uuid=2aceecbb-21d7-4746-a9db-3f8da046a833&style=10&bgcolor=Grey&bp=sinaminiblog,qqim,qzone,weixin&ssc=false")
       div(style="float:right;")

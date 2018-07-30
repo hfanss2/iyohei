@@ -25,7 +25,7 @@ https: true ## 是否开启强制https（不影响本地调试）,本开关说�
 wordcount: true ##文章字数统计
 readtime: false ##文章阅读时长统计
 ## daovice在线聊天相关 官网：http://www.daovoice.io/
-daovoice: true ## 页面右下角在线聊天
+daovoice: false ## 页面右下角在线聊天
 daovoice_app_id: 21c082c2 ## daovice  ID 如：22c081c3
 ##搜索相关,只能开启一项
 self_search: true ## 页面jquery搜索，需安装插件,开启此搜索后，博客根目录的  url属性必须带有http://和https://

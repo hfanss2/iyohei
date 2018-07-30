@@ -50,7 +50,7 @@ favicon: /favicon.ico
 highlight:
   enable: true
   line_number: true
-  auto_detect: true
+  auto_detect: false
   tab_replace:
   
 # Home page setting
@@ -92,17 +92,23 @@ deploy:
 ##- type: git
 ##  repository: https://github.com/iyohei/iyohei.git 
 ##  branch: master
-##- type: baidu_url_submitter  ## 百度推送插件
-##  bucket: hfanss.com
-##- type: ftpsync
-##  host: hfanss.ftp-gz01.bcehost.com
-##  user: hfanss
-##  pass: 533520
-##  remote: /webroot/
-##  port: 8010
-##  ignore: ##
-##  connections: 1
-##  verbose: false
+- type: baidu_url_submitter   ##百度推送插件
+  bucket: hfanss.com
+- type: ftpsync
+  host: hfanss.ftp-gz01.bcehost.com
+  user: hfanss
+  pass: 533520
+  remote: /webroot/
+  port: 8010
+  ignore: 
+  connections: 1
+  verbose: false
+- type: cos
+  appId: 1252958858
+  secretId: AKIDa0CAuP5hW6SZT9pooZ6TcXDhxzmLHkcF
+  secretKey: VosuiHciaDblgNs9C1c2GG1ZsxoW2NTM
+  bucket: hfanss-1252958858
+  region: ap-shanghai
 - type: git
   repository: https://gitee.com/iyohei/iyohei.git 
   branch: dev

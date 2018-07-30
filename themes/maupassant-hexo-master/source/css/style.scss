@@ -210,6 +210,9 @@ html, button, input, select, textarea,
 				margin: 8px 0;
 			}
 		}
+		.post-boder{
+			border-left: 3px solid #D26911;
+		}
 		
 		/* 自定义css    end*/
 		
@@ -443,13 +446,15 @@ div {
     font-weight: normal;
     color: #888;
 }
+.post-02{
+	height:90px;
 
+}
 .post {
-    padding: 90px 0 15px;
     .post-title {
         margin: 0;
         color: #555;
-        text-align: center;
+        text-align: left;
         font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
         a {
             color: #555;
@@ -671,6 +676,7 @@ div {
     font-size: 15px;
     line-height: 2;
     padding-bottom: .8em;
+	border-left: 3px solid #D26911;
     h2 {
         margin: 0;
         font: bold 25px / 1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
@@ -926,8 +932,14 @@ blockquote,.stressed {
     color: #555;
     border-left: none;
 }
+blockquote{
+	margin: 0;
+	padding: 0 15px;
+	color: #666;
+	border-left: 4px solid #ddd;
+}
+
 blockquote::before,.stressed-quote::before {
-    content: "\201C";
     display: block;
     font-family: times;
     font-style: normal;
@@ -1287,23 +1299,26 @@ pre {
 }
 
 /* read more*/
-.readmore a {
-    font-size: 14px;
-    color: #444;
-    margin: -10px 0;
-    padding: 5px 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    float: right;
-    &:after {
-        font-family: "FontAwesome";
-        content: "\f101";
-        padding-left: 0.3em;
-    }
-    &:hover {
-        background: #F8F8F8;
-        border-bottom-color: #D26911;
-    }
+.readmore {
+		padding-bottom:15px;
+		a {
+		font-size: 14px;
+		color: #444;
+		margin: -10px 0;
+		padding: 5px 10px;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		float: right;
+		&:after {
+			font-family: "FontAwesome";
+			content: "\f101";
+			padding-left: 0.3em;
+		}
+		&:hover {
+			background: #F8F8F8;
+			border-bottom-color: #D26911;
+		}
+	}
 }
 
 /* syntax highlight*/

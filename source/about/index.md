@@ -3,7 +3,6 @@ title: 简历
 date: 2018-05-01 16:49:45
 comments: false
 ---
-<img id="imgPhoto" style="border-radius: 100px;border: none;" width="350px" height="200px" src=" https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/pic/blog-0036.jpg" />
  - 幻凡ss/男/1990
  - 工作年限：3年
  - 技术博客：[hfanss.com](https://www.hfanss.com)、[CSDN](https://blog.csdn.net/q2158798)
@@ -13,7 +12,7 @@ comments: false
  - 居住城市：魔都-上海
 --- 
 
-- Email： <a title="发送邮件" href="mailto:hfans@foxmail.com">hfans@foxmail.com</a>
+- Email： <a title="发送邮件" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d">hfans@foxmail.com</a>
 - QQ：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2158798&site=qq&menu=yes">2158798</a>
 - 微信公众号：iyohei
 - 个性：代码使我快乐

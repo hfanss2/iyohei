@@ -9,7 +9,7 @@ title: 友链
 |屠城|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i> [haomwei.com](https://www.haomwei.com/)|<a href="https://www.haomwei.com/"><i class="fa fa-chain" aria-hidden="true"  style="color:#8B3A3A"></i></a>|
 |赵俊|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i> [zhaojun.im](https://www.zhaojun.im/)|<a href="https://www.zhaojun.im/"><i class="fa fa-chain" aria-hidden="true"  style="color:#8B3A3A"></i></a>|
 |Deserts|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i> [panjunwen.com](https://panjunwen.com/)|<a href="https://panjunwen.com/"><i class="fa fa-chain" aria-hidden="true"  style="color:#8B3A3A"></i></a>|
-|游魂|<i class="fa fa-fire"></i> [iyouhun.com](https://www.iyouhun.com/)|<a href="https://www.iyouhun.com/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A"></i></a>|
+|游魂|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i> [iyouhun.com](https://www.iyouhun.com/)|<a href="https://www.iyouhun.com/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A"></i></a>|
 |慧行说|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i> [liuyude.com](https://liuyude.com/)|<a href="https://liuyude.com/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
 |李策|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i> [ailice.cn](https://ailice.cn/)|<a href="https://ailice.cn/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
 |杨云召|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i> [blog.znmlr.cn](https://blog.znmlr.cn/)|<a href="https://blog.znmlr.cn/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|

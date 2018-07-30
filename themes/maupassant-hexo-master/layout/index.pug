@@ -7,6 +7,7 @@ block title
     title= config.title
 
 block content
+  .post-02
   for post in page.posts.toArray()
     .post
       h1.post-title
@@ -39,10 +40,13 @@ block content
         if post.yuanchuang
           span() <i class="fa fa-ravelry"></i>&nbsp;
           a(href=url_for(post.path)) 原创&nbsp;
+        if post.zhzai
+          span() <i class="fa fa-ravelry"></i>&nbsp;
+          a(href=url_for(post.path)) 转载&nbsp;
         if post.top
           span() <i class="fa fa-thumb-tack"></i>&nbsp;
           a(href=url_for(post.path)) 置顶&nbsp;
-      <br>&emsp;
+    <br><br>
       if post.description
         .post-content
           != post.description
