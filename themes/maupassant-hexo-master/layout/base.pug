@@ -27,11 +27,13 @@ html(lang=config.language)
     .header-02-1
       .nav2#nav1
         .header-02-2
+          span(class="logo-line-before") <i></i>
           a(href=url_for('.'))= config.title
+          span(class="logo-line-before") <i></i>
         .header-02-3
           - for (var i in theme.menu)
              +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)
-        .header-02-4  <a onclick="showSerch()" href="#"><i class="fa fa-search" aria-hidden="true"></i>搜索</a>
+        .header-02-4  <a onclick="showSerch()" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
   .body_container
     #layout.pure-g
       .pure-u-1.pure-u-md-3-4(style="width: 100%;"): .content_container

@@ -51,7 +51,7 @@ block content
         .post-content
           != post.description
       else if post.excerpt
-        .post-content
+        .post-content(style="border-bottom: 1px dashed #ddd;")
           != post.excerpt
       else if post.content
         - var br = 0
@@ -63,10 +63,10 @@ block content
             - break
         - }
         if br < 0
-          .post-content
+          .post-content(style="border-bottom: 1px dashed #ddd;")
             != post.content
         else
-          .post-content
+          .post-content(style="border-bottom: 1px dashed #ddd;")
             != post.content.substring(0, br)
       p(class='readmore')
         a(href=url_for(post.path))= __('Readmore')

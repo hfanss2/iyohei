@@ -8,7 +8,9 @@ tags: [屠城hexo主题优化,Maupassant主题优化,简洁主题] #文章标签
 categories: hexo #文章分类
 toc: true
 ---
->基于屠城hexo主题优化版,个人自用版。优化部分显示效果，增加部分配置，详情参阅下文
+> 基于屠城hexo主题优化版,个人自用版
+> 
+> 优化部分显示效果，增加部分配置
 <!--more-->
 # 原版主题
 - [https://www.haomwei.com/technology/maupassant.html](https://www.haomwei.com/technology/maupassant.html)
