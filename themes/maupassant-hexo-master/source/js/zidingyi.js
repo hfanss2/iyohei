@@ -23,6 +23,23 @@ function outSerch(){
 	$(".search-total").css('display', 'none');
 }
 
+/*  移动端下显示菜单栏 */
+function showBars(){
+	if(document.getElementById("header-04").style.display=="none")
+	{
+		$("#header-04").css('display', 'initial');
+	}else
+	{
+		$("#header-04").css('display', 'none');
+	}
+	
+}
+
+
+
+
+
+
 //浏览器大小改变时
 window.onresize=function(){
 	setHeight();

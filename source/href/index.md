@@ -16,6 +16,10 @@ title: 友链
 |一世长安|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i> [zine-fj.github.io](http://zine-fj.github.io/)|<a href="http://zine-fj.github.io/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
 |hojun|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i> [hojun.cn](http://www.hojun.cn/)|<a href="http://www.hojun.cn/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
 |死宅桶|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i> [Paomiantong.coding.me](https://paomiantong.coding.me/)|<a href="https://paomiantong.coding.me/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
+|网中的小鱼|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i> [blog.wzdxy.com](https://blog.wzdxy.com/)|<a href="https://blog.wzdxy.com/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
+|零一序列|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i>[booolen.com](http://www.booolen.com)|<a href="http://www.booolen.com"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
+|TaylorTaurus'Site|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i>[taylortaurus.top](https://taylortaurus.top/)|<a href="https://taylortaurus.top/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
+|緣來來來|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i>[fkomm.cn](https://www.fkomm.cn/)|<a href="https://www.fkomm.cn/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
 
 
 

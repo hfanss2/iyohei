@@ -33,7 +33,13 @@ html(lang=config.language)
         .header-02-3
           - for (var i in theme.menu)
              +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)
-        .header-02-4  <a onclick="showSerch()" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+        .header-03
+          .header-02-4  <a onclick="showSerch()" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+          .header-02-5(onclick="showBars()")  <a  href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+  div(id='header-04',class="header-04",style="display: none;") 
+        .nav2
+          - for (var i in theme.menu)
+             +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)
   .body_container
     #layout.pure-g
       .pure-u-1.pure-u-md-3-4(style="width: 100%;"): .content_container
