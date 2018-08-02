@@ -96,12 +96,13 @@ csdn:
     enable: true
     url: https://blog.csdn.net/q2158798 ##CSDN博客外链 如：https://blog.csdn.net/q2158798
 ## 底部显示设置
+footersenable: true   ##是否开启底部菜单栏
 footers: 
   - gywo    ##关于我
   - gzhao   ##公众号或微信二维码
   - xzhao   ##百度熊掌号相关信息
   - links   ##友情链接/关于本站/关于博主(简历)
-## 菜单选项  为保持移动端菜单栏不换行（丑），建议菜单5个最佳，其余可以在页面底部添加，如果必须在此加又想保证移动端不换行具体可咨询博主   
+## PC菜单显示选项  
 menu:
   - page: home
     directory: .
@@ -117,6 +118,33 @@ menu:
     icon: fa-user2 
   - page: guestbook
     directory: comment/
+    icon: fa-rss2
+
+## 移动端菜单显示选项  
+mobileMenu:
+  - page: home
+    directory: .
+    icon: fa-home2
+  - page: archive ##显示名字，根据中英文兑换，也可直接写中文
+    directory: archives/   ##链接地址（source下的文件夹）
+    icon: fa-archive2   ##图标。在线图标，http://www.fontawesome.com.cn/faicons/，把名字贴这里即可
+  - page: music
+    directory: music/
+    icon: fa-user2
+  - page: tool
+    directory: tool/
+    icon: fa-user2 
+  - page: guestbook
+    directory: comment/
+    icon: fa-rss2
+  - page: about
+    directory: about/
+    icon: fa-rss2
+  - page: site
+    directory: site/
+    icon: fa-rss2
+  - page: href
+    directory: href/
     icon: fa-rss2
 ## 网站地图   博主没用过，意义不大
 timeline:
