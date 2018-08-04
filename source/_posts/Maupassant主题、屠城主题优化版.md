@@ -255,7 +255,10 @@ version: 0.1.0
 npm install --save hexo-deployer-git hexo-generator-archive hexo-generator-category hexo-generator-index-pin-top hexo-generator-search hexo-generator-tag hexo-helper-qrcode hexo-renderer-ejs hexo-renderer-marked hexo-renderer-pug hexo-renderer-sass hexo-renderer-stylus hexo-server hexo-tag-aplayer hexo-wordcount
 ```
 
+安装不成功可以通过 [淘宝镜像](https://npm.taobao.org) 下载
+
 # 修改配置	
+
 ```YAML
 博客根目录下
 config.yml
