@@ -31,9 +31,9 @@ toc: true
 > [https://www.haomwei.com/](https://www.haomwei.com/)
 
 ## 本优化版
-> gitee地址：
+> github地址：
 >
-> [https://gitee.com/iyohei/hfanss.git](https://gitee.com/iyohei/hfanss.git)
+> [https://github.com/iyohei/maupassant-hexo-hfanss](https://github.com/iyohei/maupassant-hexo-hfanss)
 
 > 相关配置介绍：
 >
@@ -46,6 +46,7 @@ toc: true
 ---
 # 现版主题
 ## 主要优化点
+- 增加强制https 开关
 - 归档页集成分类、标签、全部文章
 - 菜单栏置顶
 - 侧边栏删除
@@ -61,6 +62,10 @@ toc: true
 - 集成百度主动推送插件
 - 优化整体布局
 - 优化移动端菜单单独配置
+
+> 图片效果
+
+![](https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/2018/08/QQ%E5%9B%BE%E7%89%8720180804130958.jpg)
 
 ## 增加配置开关
 ```YAML
@@ -366,6 +371,6 @@ valine评论个性头像：https://cn.gravatar.com/全球头像分享网站-注�
 
 ------
 
- 如有本主题的相关优化问题，可在下方评论区留言
-
+如有本主题的相关优化问题，可在下方评论区留言
+github有时候会抽风，提供码云备用地址：[点我](https://gitee.com/iyohei/hfanss)
 另：如大家使用本主题，还请在下载主题页  右上角   star  一下，感谢！
