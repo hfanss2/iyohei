@@ -76,27 +76,25 @@ zhzaiUrl: https://blog.znmlr.cn/2018/05/06/4cabcca1.html
 
 ## 安装腾讯云SDK
 
-- 安装nodejs运行环境
+- 安装运行环境 [node.js](https://nodejs.org/en/)
 
   这个没什么好说的，双击下一步就好了
 
 - 安装sdk
 
 ```
-C:\Users\ZNMLR>npm i cos-nodejs-sdk-v5 --save -g
+npm i cos-nodejs-sdk-v5 --save -g
 ```
 
 - 再次安装SDK
 
 > 不要问我为何有这一步，腾讯云文档这样写的  
 >
-> 先下载[腾讯云SDK](https://github.com/tencentyun/cos-nodejs-sdk-v5)，解压，到指定目录执行命令
+> 先下载[腾讯云SDK](https://github.com/tencentyun/cos-nodejs-sdk-v5)，解压，进入到解压后的目录里执行命令
 
-- ```
-  C:\Users\ZNMLR>d:
-  D:\>cd cos-nodejs-sdk-v5-master
-  D:\cos-nodejs-sdk-v5-master>npm install -g
-  ```
+```
+D:\cos-nodejs-sdk-v5-master>npm install -g
+```
 
 ## 获取腾讯云上传鉴权码
 
@@ -190,5 +188,5 @@ cos.sliceUploadFile({
 ## 关联bat与上传脚本
 
 >打开刚才建的yunCos.js，将上面内容复制进去，并修改相关内容，保存
->在任意文件上点击右键，选择  上传腾讯云   会有脚本框一闪而过，找个文本框粘贴下，就得到你想要的URL了
+>在任意文件上点击右键，选择  上传腾讯云   会有脚本框一闪而过，找个文本框粘贴下，就得到你想要的URL
 

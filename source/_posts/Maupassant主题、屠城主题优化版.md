@@ -9,32 +9,39 @@ categories: hexo #文章分类
 toc: true
 ---
 > 基于屠城hexo主题优化版,个人自用版
-> 
+>
 > 优化部分显示效果，增加部分配置
 <!--more-->
+
 # 原版主题
-- [https://www.haomwei.com/technology/maupassant.html](https://www.haomwei.com/technology/maupassant.html)
+
+> [https://www.haomwei.com/technology/maupassant.html](https://www.haomwei.com/technology/maupassant.html)
 
 ## 屠城hexo版
-github地址：
-- [https://github.com/tufu9441/maupassant-hexo](https://github.com/tufu9441/maupassant-hexo)
+> github地址：
+>
+> [https://github.com/tufu9441/maupassant-hexo](https://github.com/tufu9441/maupassant-hexo)
 
-相关配置介绍：
-- [https://www.haomwei.com/technology/maupassant-hexo.html](https://www.haomwei.com/technology/maupassant-hexo.html)
+> 相关配置介绍：
+>
+> [https://www.haomwei.com/technology/maupassant-hexo.html](https://www.haomwei.com/technology/maupassant-hexo.html)
 
-效果地址：
-- [https://www.haomwei.com/](https://www.haomwei.com/)
+> 效果地址：
+>
+> [https://www.haomwei.com/](https://www.haomwei.com/)
 
 ## 本优化版
-gitee地址：
-- [https://gitee.com/iyohei/hfanss.git](https://gitee.com/iyohei/hfanss.git)
+> gitee地址：
+>
+> [https://gitee.com/iyohei/hfanss.git](https://gitee.com/iyohei/hfanss.git)
 
-相关配置介绍：
-- [https://www.hfanss.com/2018/Maupassant主题、屠城主题优化版.html](https://www.hfanss.com/2018/Maupassant主题、屠城主题优化版.html)
+> 相关配置介绍：
+>
+> [https://www.hfanss.com/2018/Maupassant主题优化、屠城主题优化版.html](https://hfanss.com/2018/Maupassant%E4%B8%BB%E9%A2%98%E3%80%81%E5%B1%A0%E5%9F%8E%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E7%89%88.html)
 
-效果地址：
-- [https://www.hfanss.com/](https://www.hfanss.com/)
-
+> 效果地址：
+>
+> [https://www.hfanss.com/](https://www.hfanss.com/)
 
 ---
 # 现版主题
@@ -45,17 +52,19 @@ gitee地址：
 - 增加底部栏
 - 搜索移至顶部菜单栏
 - 文章页添加统一版权声明
-- 文章添加置顶标志
-- 文章添加原创标志
+- 文章添加置顶、原创、转载标志
 - 底部文件始终在浏览器最下方
 - 底部文件集成 关于我、微信二维码、熊掌号、关于博主，关于本站，友情链接
 - 底部文件集成备案号，百度云统计、github、码云、CSDN外链
 - 分享使用bshare，集成更多分享
 - config.yml一些常用属性都做了中文注释
 - 集成百度主动推送插件
+- 优化整体布局
+- 优化移动端菜单单独配置
 
 ## 增加配置开关
 ```YAML
+
 
 valine: ## https://valine.js.org        评论系统
   enable: false ## 是否开启valine评论系统
@@ -94,8 +103,8 @@ toc_number: true ## 文章目录开关 使用方法：#一级目录  ##二级目
 shareto: true ## 文章分享开关
 ## 文章捐赠按钮。赞赏按钮
 donate:
-  enable: false ## 打赏开关
-  github: https://github.com/hfanss ## GitHub URL
+  enable: false ## If you want to show the donate button after each post, please set the value to true and fill the following items according to your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
+  github: https://github.com/hfanss ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
   alipay_qr: /img/AL.png ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
   wechat_qr: /img/QQ.png## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
   btc_qr: ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
@@ -122,7 +131,7 @@ qq:
 email:
     enable: true
     name: hfans@foxmail.com  ##邮箱地址
-    url: http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d ##邮箱外链  如：http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d
+    url: http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d ##邮箱外链,邮我  如：http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d
 ## 联系地址相关信息
 address:
     enable: true
@@ -154,12 +163,13 @@ csdn:
     enable: true
     url: https://blog.csdn.net/q2158798 ##CSDN博客外链 如：https://blog.csdn.net/q2158798
 ## 底部显示设置
+footersenable: true   ##是否开启底部菜单栏
 footers: 
   - gywo    ##关于我
   - gzhao   ##公众号或微信二维码
   - xzhao   ##百度熊掌号相关信息
   - links   ##友情链接/关于本站/关于博主(简历)
-## 菜单选项  为保持移动端菜单栏不换行（丑），建议菜单5个最佳，其余可以在页面底部添加，如果必须在此加又想保证移动端不换行具体可咨询博主   
+## PC菜单显示选项  
 menu:
   - page: home
     directory: .
@@ -175,6 +185,33 @@ menu:
     icon: fa-user2 
   - page: guestbook
     directory: comment/
+    icon: fa-rss2
+
+## 移动端菜单显示选项  
+mobileMenu:
+  - page: home
+    directory: .
+    icon: fa-home2
+  - page: archive ##显示名字，根据中英文兑换，也可直接写中文
+    directory: archives/   ##链接地址（source下的文件夹）
+    icon: fa-archive2   ##图标。在线图标，http://www.fontawesome.com.cn/faicons/，把名字贴这里即可
+  - page: music
+    directory: music/
+    icon: fa-user2
+  - page: tool
+    directory: tool/
+    icon: fa-user2 
+  - page: guestbook
+    directory: comment/
+    icon: fa-rss2
+  - page: about
+    directory: about/
+    icon: fa-rss2
+  - page: site
+    directory: site/
+    icon: fa-rss2
+  - page: href
+    directory: href/
     icon: fa-rss2
 ## 网站地图   博主没用过，意义不大
 timeline:
@@ -200,83 +237,135 @@ version: 0.1.0
 - 评论只支持valine
 - 搜索只支持self_search、baidu_search
 - 网站统计只有百度统计
-- 移动端默认不显示底部菜单、搜索
+- 移动端默认不显示底部(关于我、熊掌号...)菜单
 
 ---
 # 使用方法
 ## 下载主题	
-- https://gitee.com/iyohei/hfanss.git
+> https://gitee.com/iyohei/hfanss.git
 
-## 安装插件	
-- npm install hexo-renderer-pug --save	渲染器
-- npm install hexo-renderer-sass --save	
-- npm install hexo-generator-search --save	  ## 本地jquery搜索插件
-- npm uninstall hexo-generator-index --save	   ## 文章置顶插件
-- npm install hexo-generator-index-pin-top --save	## 文章置顶插件
-- npm i --save hexo-wordcount  ##文章字数统计+阅读时长
-- npm install hexo-baidu-url-submit --save  ##百度链接主动推送
+# 安装插件	
+```YAML
+npm install hexo-renderer-pug --save	##渲染器
 
-## 修改配置	
+npm install hexo-renderer-sass --save	
+
+npm install hexo-generator-search --save	  ## 本地jquery搜索插件
+
+npm uninstall hexo-generator-index --save	   ## 文章置顶插件
+
+npm install hexo-generator-index-pin-top --save	## 文章置顶插件
+
+npm i --save hexo-wordcount  ##文章字数统计+阅读时长
+
+npm install hexo-baidu-url-submit --save  ##百度链接主动推送
+
+```
+
+# 修改配置	
+```YAML
 博客根目录下
-config.yml中site分类下	
-- language: zh-CN	
-- subtitle: xxxxx ## 显示在浏览器网站标题右侧	
-- description: XXXXX ## 显示在左上角头像下方	
-- comments: true ## 默认开启全局评论显示	
-
+config.yml
 URL分类下	
-- url: http://www.baidu.com ## 分享页的头网址，域名地址或iyohei.githug.io	
-- permalink: :year/:title.html ## 更改文章页的地址带有.html后缀	
-
+ url: http://www.baidu.com ## 分享页的头网址，域名地址或iyohei.githug.io	
+ permalink: :year/:title.html ## 更改文章页的地址带有.html后缀	
 博客根目录下 source文件夹下	
-- 新建about文件夹--含一个index.md文件--最下方  关于博主页（内容自行书写）	
-- 新建comment文件夹--含一个index.md文件--菜单栏  留言页（内容自行书写）	
-- 新建href文件夹--含一个index.md文件--最下方  友情链接页（内容自行书写）	
-- 新建music文件夹--含一个index.md文件--菜单栏  音乐页（内容自行书写）	
-- 新建tool文件夹--含一个index.md文件--菜单栏    工具页（内容自行书写）	
-- 粘贴一个favicon.ico的文件（网站图标）	
-- 新建CNAME文件，无后缀（需要绑定域名的请在里面书写你的域名）	、
-- 以上新建文件博主都集成在主题中，大家下载下来有两个文件夹，一个为主题，一个为source，复制其中的内容覆盖自己的source即可
+ 新建about文件夹--含一个index.md文件--最下方  关于博主页（内容自行书写）	
+ 新建comment文件夹--含一个index.md文件--菜单栏  留言页（内容自行书写）	
+ 新建href文件夹--含一个index.md文件--最下方  友情链接页（内容自行书写）	
+ 新建music文件夹--含一个index.md文件--菜单栏  音乐页（内容自行书写）	
+ 新建tool文件夹--含一个index.md文件--菜单栏    工具页（内容自行书写）	
+ 粘贴一个favicon.ico的文件（网站图标）	
+ 新建CNAME文件，无后缀（需要绑定域名的请在里面书写你的域名）	、
 
----
+```
+
+以上新建文件博主都集成在主题中，大家下载下来有两个文件夹，一个为主题，一个为source，复制其中的内容覆盖自己的source即可
+
+------
+
 ## 注意事项
-- 新建文章时，文章front-matter中   top: true  开启文章置顶，yuanchuang: true 开启原创标签,toc: true 目录
-- 新建的页面如果没在菜单栏显示需要在index.md中  文章最下方加入以下代码：（目的是保证菜单栏的首页为选中样式）
-```
-<script>$(".header-02-3 a:first").addClass('current');</script>
+
+> 文章页增添开关
+
+```YAML
+top: true  ##开启文章置顶
+yuanchuang: true ##开启原创标签
+toc: true ##开启目录
+如果文章为转载，需要配置以下开关
+    zhzai: true ##开启转载标签
+    zhzaiName: 杨云召 ##原文作者
+    zhzaiUrl: https://blog.znmlr.cn/4cabcca.html ##原文链接
 ```
 
-- 使用侧边栏熊掌号需更改
--- qita.pug 20 行代码为自己的熊掌号script,
--- head.pug 19行代码为自己熊掌号ID声明
-- 百度主动推送请阅读 [说明文档](https://hui-wang.info/2016/10/23/Hexo%E6%8F%92%E4%BB%B6%E4%B9%8B%E7%99%BE%E5%BA%A6%E4%B8%BB%E5%8A%A8%E6%8F%90%E4%BA%A4%E9%93%BE%E6%8E%A5/)
+ zhzai(转载) && yuanchuang(原创)只能开启一项
+
+> 非菜单页选中样式问题
+
+```
+新建的页面如果没在菜单栏显示需要在index.md中  文章最下方加入以下代码：（目的是保证菜单栏的首页为选中样式）
+<script>$(".header-02-3 a:first").addClass('current');</script>
+效果：例如友情链接在菜单栏中没有，加入此行代码会默认选中首页这个样式
+```
+
+> 底部熊掌号使用
+
+```YAML
+qita.pug 20 行代码为自己的熊掌号script
+head.pug 19行代码为自己熊掌号ID声明
+```
+
+> 百度主动推送请阅读 [说明文档](https://hui-wang.info/2016/10/23/Hexo%E6%8F%92%E4%BB%B6%E4%B9%8B%E7%99%BE%E5%BA%A6%E4%B8%BB%E5%8A%A8%E6%8F%90%E4%BA%A4%E9%93%BE%E6%8E%A5/)
 
 ## 自行优化
-另外附上几个重要的文件作用，方便大家自行优化：
-- base.pug	集成head部分模版+底部
-- archive.pug	归档页的模版
-- page.pug	自定义页面的模版
-- post.pug	文章页模版
-- footer.pug	尾部文件模版
-- footer.pug  底部菜单模版
-- head.pug	首页的模版（主要是通用JS的引用，如评论，计数器）
-- tianqiyubao.pug 新增侧边栏天气预报 模版
-- qita.pug 新增侧边栏 联系我-公众号-站点统计 模版
-- _footer文件夹	底部菜单各模版
-- 推荐插件：
--- [音乐播放插件](https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md)
--- [hexo博客上传至ftp服务器](https://hexo.io/zh-cn/docs/deployment.html#FTPSync)
--- [hexo博客上传至腾讯云COS](https://github.com/sdlzhd/hexo-deployer-cos#user-content-options)
-- valine评论优化：增加邮箱提醒 [http://www.zhaojun.im/hexo-valine-admin/](http://www.zhaojun.im/hexo-valine-admin/)
-- valine评论个性头像：[https://cn.gravatar.com/](https://cn.gravatar.com/)全球头像分享网站-注册-设置头像,在valine评论中，填上注册时的邮箱就会显示头像
+> 附上几个重要的文件作用，方便大家自行优化：
 
- 底部文件可自行添加信息
-添加：在_footer文件夹中新建xxx.pug,写上内容
-在config文件中的footer下 添加进去 -xxx  即可显示
+```YAML
+base.pug		集成head部分模版+底部
+archive.pug		归档页的模版
+page.pug		自定义页面的模版
+post.pug		文章页模版
+footer.pug		尾部文件模版
+footer02.pug  	底部菜单模版
+head.pug		首页的模版（主要是通用JS的引用，如评论，计数器）
+_footer文件夹	  底部菜单各模版
+search.pug		搜索模版
+推荐插件：
+ 详见另一篇博文  hexo博客常用插件及教程
+valine评论个性头像：https://cn.gravatar.com/全球头像分享网站-注册-设置头像,在valine评论中，填上注册时的邮箱就会显示头像
+```
 
----
+> 详细diy
+
+```YAML
+底部菜单栏diy:
+    _footer文件夹
+    添加:
+         在_footer文件夹中新建xxx.pug,写上内容
+         在config文件中的footer下 添加进去 -xxx  即可显示
+    修改:
+        gywo.pug		##关于我
+        gzhao.pug   	##公众号或微信二维码
+        xzhao.pug  		##百度熊掌号相关信息
+        links.pug  		##友情链接/关于本站/关于博主(简历)
+友情链接:
+	sources/href/index.md
+关于本站:
+	sources/site/index.md
+关于博主:
+	sources/about/index.md
+留言:
+	sources/comment/index.md
+工具:
+	sources/tool/index.md
+音乐:
+	sources/music/index.md
+```
+
+> 原版主题的配置只要没跟本主题冲突，没有特别说明，都可以支持
+
+------
 
  如有本主题的相关优化问题，可在下方评论区留言
- 
- 
-      
+
+另：如大家使用本主题，还请在下载主题页  右上角   star  一下，感谢！
