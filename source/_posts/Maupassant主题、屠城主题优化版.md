@@ -247,24 +247,12 @@ version: 0.1.0
 ---
 # 使用方法
 ## 下载主题	
-> https://gitee.com/iyohei/hfanss.git
+> [https://github.com/iyohei/maupassant-hexo-hfanss](https://github.com/iyohei/maupassant-hexo-hfanss)
+如下载不下来可从备份地址下载：[点我](https://gitee.com/iyohei/hfanss)
 
 # 安装插件	
 ```YAML
-npm install hexo-renderer-pug --save	##渲染器
-
-npm install hexo-renderer-sass --save	
-
-npm install hexo-generator-search --save	  ## 本地jquery搜索插件
-
-npm uninstall hexo-generator-index --save	   ## 文章置顶插件
-
-npm install hexo-generator-index-pin-top --save	## 文章置顶插件
-
-npm i --save hexo-wordcount  ##文章字数统计+阅读时长
-
-npm install hexo-baidu-url-submit --save  ##百度链接主动推送
-
+npm install --save hexo-deployer-git hexo-generator-archive hexo-generator-category hexo-generator-index-pin-top hexo-generator-search hexo-generator-tag hexo-helper-qrcode hexo-renderer-ejs hexo-renderer-marked hexo-renderer-pug hexo-renderer-sass hexo-renderer-stylus hexo-server hexo-tag-aplayer hexo-wordcount
 ```
 
 # 修改配置	
@@ -313,13 +301,6 @@ toc: true ##开启目录
 效果：例如友情链接在菜单栏中没有，加入此行代码会默认选中首页这个样式
 ```
 
-> 底部熊掌号使用
-
-```YAML
-qita.pug 20 行代码为自己的熊掌号script
-head.pug 19行代码为自己熊掌号ID声明
-```
-
 > 百度主动推送请阅读 [说明文档](https://hui-wang.info/2016/10/23/Hexo%E6%8F%92%E4%BB%B6%E4%B9%8B%E7%99%BE%E5%BA%A6%E4%B8%BB%E5%8A%A8%E6%8F%90%E4%BA%A4%E9%93%BE%E6%8E%A5/)
 
 ## 自行优化
@@ -335,10 +316,10 @@ footer02.pug  	底部菜单模版
 head.pug		首页的模版（主要是通用JS的引用，如评论，计数器）
 _footer文件夹	  底部菜单各模版
 search.pug		搜索模版
-推荐插件：
- 详见另一篇博文  hexo博客常用插件及教程
 valine评论个性头像：https://cn.gravatar.com/全球头像分享网站-注册-设置头像,在valine评论中，填上注册时的邮箱就会显示头像
 ```
+
+> 推荐插件：  [hexo博客常用插件及教程](https://hfanss.com/2018/hexo%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E5%8F%8A%E6%95%99%E7%A8%8B.html)
 
 > 详细diy
 
