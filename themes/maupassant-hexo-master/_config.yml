@@ -20,7 +20,7 @@ banquan:
   name: 幻凡ss
   note: 本文所有权归博主所有，转载请注明署名、出处！Thanks ##版权信息
 ## 强制https访问开关
-https: true ## 是否开启强制https（不影响本地调试）,本开关说明：https网站能正常访问开启才有效，如www.baidu.com跳转到http://www.baidu.com，不自动跳到https开头的网址，而且https://www.baidu.com能正常访问才行
+https: false ## 是否开启强制https（不影响本地调试）,本开关说明：https网站能正常访问开启才有效，如www.baidu.com跳转到http://www.baidu.com，不自动跳到https开头的网址，而且https://www.baidu.com能正常访问才行
 ## 文章字数统计开关
 wordcount: true ##文章字数统计
 readtime: false ##文章阅读时长统计
