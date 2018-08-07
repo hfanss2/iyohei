@@ -10,8 +10,8 @@ valine: ## https://valine.js.org        评论系统
   avatar: 'monsterid' ## 默认头像 参考 https://valine.js.org/avatar.html
   pageSize: 10 ## 每页显示评论条数
   guest_info: nick,mail,link ## 昵称，邮箱，网站
-## 百度统计ID
-baidu_analytics: 0c1bd517c2ba117fcf5139a8e24b7631 ## 百度统计ID id, e.g. 8006843039519956000
+## 百度统计ID    0c1bd517c2ba117fcf5139a8e24b7631
+baidu_analytics: 4e950a5dd7243ac97e882fe04d3fa1f7 ## 百度统计ID id, e.g. 8006843039519956000
 ## 图片灯箱开关
 fancybox: true ## 是否启用Fancybox图片灯箱效果,建议开启（效果为点击图片既放大）
 ##版权声明，加在每篇文章下方
