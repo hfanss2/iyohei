@@ -1,39 +1,43 @@
 ---
 title: Maupassant主题优化、屠城hexo主题优化版
-date: 2018-07-14 18:33:45
+date: 2018-07-14 17:10:38
 comments: true
-top: true
-yuanchuang: true
-tags: [屠城hexo主题优化,Maupassant主题优化,简洁主题] #文章标签
+tags: [Maupassant主题优化,屠城hexo主题优化版,hexo主题,hexo主题优化,hexo-maupassant] #文章标签
 categories: hexo #文章分类
 toc: true
+top: true
+yuanchuang: true
 ---
+
 > 基于屠城hexo主题优化版,个人自用版
 >
 > 优化部分显示效果，增加部分配置
+
 <!--more-->
 
 # 原版主题
 
-> [https://www.haomwei.com/technology/maupassant.html](https://www.haomwei.com/technology/maupassant.html)
+> <https://www.haomwei.com/technology/maupassant.html>
 
 ## 屠城hexo版
+
 > github地址：
 >
-> [https://github.com/tufu9441/maupassant-hexo](https://github.com/tufu9441/maupassant-hexo)
+> <https://github.com/tufu9441/maupassant-hexo>
 
 > 相关配置介绍：
 >
-> [https://www.haomwei.com/technology/maupassant-hexo.html](https://www.haomwei.com/technology/maupassant-hexo.html)
+> <https://www.haomwei.com/technology/maupassant-hexo.html>
 
 > 效果地址：
 >
-> [https://www.haomwei.com/](https://www.haomwei.com/)
+> <https://www.haomwei.com/>
 
 ## 本优化版
+
 > github地址：
 >
-> [https://github.com/iyohei/maupassant-hexo-hfanss](https://github.com/iyohei/maupassant-hexo-hfanss)
+> <https://github.com/iyohei/maupassant-hexo-hfanss>
 
 > 相关配置介绍：
 >
@@ -41,11 +45,14 @@ toc: true
 
 > 效果地址：
 >
-> [https://www.hfanss.com/](https://www.hfanss.com/)
+> <https://www.hfanss.com/>
 
----
+------
+
 # 现版主题
+
 ## 主要优化点
+
 - 增加强制https 开关
 - 归档页集成分类、标签、全部文章
 - 菜单栏置顶
@@ -65,12 +72,11 @@ toc: true
 
 > 图片效果
 
-![](https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/2018/08/QQ%E5%9B%BE%E7%89%8720180804130958.jpg)
+[![img](https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/2018/08/QQ%E5%9B%BE%E7%89%8720180804130958.jpg)](https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/2018/08/QQ%E5%9B%BE%E7%89%8720180804130958.jpg)
 
 ## 增加配置开关
-```YAML
 
-
+```
 valine: ## https://valine.js.org        评论系统
   enable: false ## 是否开启valine评论系统
   appid:  ## LeanCloud App ID, pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
@@ -234,32 +240,37 @@ css: css
 
 # 主题版本，方便刷新
 version: 0.1.0
-
-
 ```
+
 开关的一些说明在配置文件中都有中文解释
+
 ## 额外说明
+
 - 评论只支持valine
 - 搜索只支持self_search、baidu_search
 - 网站统计只有百度统计
-- 移动端默认不显示底部(关于我、熊掌号...)菜单
+- 移动端默认不显示底部(关于我、熊掌号…)菜单
 
----
+------
+
 # 使用方法
-## 下载主题	
-> [https://github.com/iyohei/maupassant-hexo-hfanss](https://github.com/iyohei/maupassant-hexo-hfanss)
-如下载不下来可从备份地址下载：[点我](https://gitee.com/iyohei/hfanss)
 
-# 安装插件	
-```YAML
+## 下载主题
+
+> <https://github.com/iyohei/maupassant-hexo-hfanss>
+> 如下载不下来可从备份地址下载：[点我](https://gitee.com/iyohei/hfanss)
+
+# 安装插件
+
+```
 npm install --save hexo-deployer-git hexo-generator-archive hexo-generator-category hexo-generator-index-pin-top hexo-generator-search hexo-generator-tag hexo-helper-qrcode hexo-renderer-ejs hexo-renderer-marked hexo-renderer-pug hexo-renderer-sass hexo-renderer-stylus hexo-server hexo-tag-aplayer hexo-wordcount
 ```
 
 安装不成功可以通过 [淘宝镜像](https://npm.taobao.org) 下载
 
-# 修改配置	
+# 修改配置
 
-```YAML
+```
 博客根目录下
 config.yml
 URL分类下	
@@ -273,7 +284,6 @@ URL分类下
  新建tool文件夹--含一个index.md文件--菜单栏    工具页（内容自行书写）	
  粘贴一个favicon.ico的文件（网站图标）	
  新建CNAME文件，无后缀（需要绑定域名的请在里面书写你的域名）	、
-
 ```
 
 以上新建文件博主都集成在主题中，大家下载下来有两个文件夹，一个为主题，一个为source，复制其中的内容覆盖自己的source即可
@@ -284,7 +294,7 @@ URL分类下
 
 > 文章页增添开关
 
-```YAML
+```
 top: true  ##开启文章置顶
 yuanchuang: true ##开启原创标签
 toc: true ##开启目录
@@ -307,9 +317,10 @@ toc: true ##开启目录
 > 百度主动推送请阅读 [说明文档](https://hui-wang.info/2016/10/23/Hexo%E6%8F%92%E4%BB%B6%E4%B9%8B%E7%99%BE%E5%BA%A6%E4%B8%BB%E5%8A%A8%E6%8F%90%E4%BA%A4%E9%93%BE%E6%8E%A5/)
 
 ## 自行优化
+
 > 附上几个重要的文件作用，方便大家自行优化：
 
-```YAML
+```
 base.pug		集成head部分模版+底部
 archive.pug		归档页的模版
 page.pug		自定义页面的模版
@@ -326,7 +337,7 @@ valine评论个性头像：https://cn.gravatar.com/全球头像分享网站-注�
 
 > 详细diy
 
-```YAML
+```
 底部菜单栏diy:
     _footer文件夹
     添加:
