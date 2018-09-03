@@ -20,7 +20,7 @@ title: 友链
 |零一序列|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i>[booolen.com](http://www.booolen.com)|<a href="http://www.booolen.com"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
 |TaylorTaurus'Site|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i>[taylortaurus.top](https://taylortaurus.top/)|<a href="https://taylortaurus.top/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
 |緣來來來|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i>[fkomm.cn](https://www.fkomm.cn/)|<a href="https://www.fkomm.cn/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
-
+|voicezyx's Blog|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i>[voicezyx.top](http://voicezyx.top/)|<a href="http://voicezyx.top/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
 
 
 
