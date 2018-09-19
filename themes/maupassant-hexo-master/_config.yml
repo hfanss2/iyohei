@@ -100,8 +100,9 @@ footersenable: true   ##是否开启底部菜单栏
 footers: 
   - gywo    ##关于我
   - gzhao   ##公众号或微信二维码
-  - xzhao   ##百度熊掌号相关信息
   - links   ##友情链接/关于本站/关于博主(简历)
+  - xzhao   ##百度熊掌号相关信息
+
 ## PC菜单显示选项  
 menu:
   - page: home
