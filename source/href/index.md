@@ -13,9 +13,10 @@ title: 友链
 |网中的小鱼|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i> [blog.wzdxy.com](https://blog.wzdxy.com/)|<a href="https://blog.wzdxy.com/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
 |零一序列|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i>[booolen.com](http://www.booolen.com)|<a href="http://www.booolen.com"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
 |voicezyx's Blog|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i>[voicezyx.top](http://voicezyx.top/)|<a href="http://voicezyx.top/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
-|Mr.zhang|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i>[Mr.zhang](https://zzmao.top/)|<a href="https://zzmao.top/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
-|青松吐丝|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i>[青松吐丝](https://www.ds-vip.top/)|<a href="https://www.ds-vip.top/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
-|Fangzh|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i>[Fangzh](http://fangzh.top/)|<a href="http://fangzh.top/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
+|Mr.zhang|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i>[zzmao.top](https://zzmao.top/)|<a href="https://zzmao.top/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
+|青松吐丝|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i>[ds-vip.top](https://www.ds-vip.top/)|<a href="https://www.ds-vip.top/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
+|Fangzh|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i>[fangzh.top](http://fangzh.top/)|<a href="http://fangzh.top/"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
+|StaunchKai|<i class="fa fa-fire" aria-hidden="true" style="color:#DC143C"></i>[staunchkai.com](https://staunchkai.com)|<a href="https://staunchkai.com"><i class="fa fa-chain" aria-hidden="true" style="color:#8B3A3A" ></i></a>|
 
 
 
