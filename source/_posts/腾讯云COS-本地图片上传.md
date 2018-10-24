@@ -8,6 +8,9 @@ zhzai: true
 zhzaiName: 杨云召
 zhzaiUrl: https://blog.znmlr.cn/2018/05/06/4cabcca1.html
 ---
+
+
+
 > 在图片上右键上传，自动生成`图片URL`到剪切板中，任意地方`Ctrl+v`均可粘贴
 > 
 > 在文件上右键上传，自动生成`图片URL`到剪切板中，任意地方`Ctrl+v`均可粘贴
@@ -42,9 +45,16 @@ zhzaiUrl: https://blog.znmlr.cn/2018/05/06/4cabcca1.html
 
   ### 环境变量配置
 
-- 在`windows环境变量`中增加一项`NODE_PATH`，最好同时指向2处，例如：`C:\Users\ZNMLR\node_modules`和`C:\Users\ZNMLR\AppData\Roaming\npm\node_modules`最少指向一处
+  ```
+  在windows环境变量中增加一项NODE_PATH
+  最好同时指向2处，
+  例如：
+  C:\Users\ZNMLR\node_modules
+  lC:\Users\ZNMLR\AppData\Roaming\npm\node_modules
+  最少指向一处前者对应npm的本地安装，后者对应npm的全局安装
+  ```
 
-- 前者对应npm的本地安装，后者对应npm的全局安装
+  
 
 ## 使用
 
