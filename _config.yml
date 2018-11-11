@@ -14,7 +14,7 @@ comments: true
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://www.hfanss.com 
+url: https://hfanss.com 
 root: /
 permalink: :year/:title.html
 permalink_defaults:
@@ -84,6 +84,15 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: maupassant-hexo-master
 
+
+
+
+# sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 #https://gitee.com/iyohei/iyohei.git码云
@@ -103,12 +112,12 @@ deploy:
   ignore: 
   connections: 1
   verbose: false
-- type: cos
-  appId: 1252958858
-  secretId: AKIDa0CAuP5hW6SZT9pooZ6TcXDhxzmLHkcF
-  secretKey: VosuiHciaDblgNs9C1c2GG1ZsxoW2NTM
-  bucket: hfanss-1252958858
-  region: ap-shanghai
+##- type: cos
+##  appId: 1252958858
+##  secretId: AKIDa0CAuP5hW6SZT9pooZ6TcXDhxzmLHkcF
+##  secretKey: VosuiHciaDblgNs9C1c2GG1ZsxoW2NTM
+##  bucket: hfanss-1252958858
+##  region: ap-shanghai
 - type: git
   repository: https://gitee.com/iyohei/iyohei.git 
   branch: dev
