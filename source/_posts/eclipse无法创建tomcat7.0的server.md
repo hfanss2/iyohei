@@ -18,10 +18,20 @@ yuanchuang: true
 
 如图：
 
-解决方法：
-1. 关闭Eclipse
-2. 打开WorkSpace所在的位置。 {workspace-directory}/.metadata/.plugins/org.eclipse.core.runtime/.settings 删除以下文件
+![](https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/2018/11/1527859422596.jpg)
 
+解决方法：
+> 关闭Eclipse
+
+> 打开WorkSpace所在的位置。
+>
+>  {workspace}/.metadata/.plugins/org.eclipse.core.runtime/.settings 
+>
+> 删除以下文件
+
+```
 org.eclipse.wst.server.core.prefs
 org.eclipse.jst.server.tomcat.core.prefs
-3. 重启 Eclipse，即可解决所有问题。
+```
+
+> 重启 Eclipse，即可解决问题
