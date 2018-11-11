@@ -1,6 +1,6 @@
 ---
 title: springboot项目错误页面的设置
-date: 2018-08-13 20:29:38
+date: 2018-11-11 13:14:38
 comments: true
 tags: [spingboot设置错误页面,springboot,错误页面设置] #文章标签
 categories: java #文章分类
@@ -21,4 +21,4 @@ yuanchuang: true
 
 如图
 
-![](https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/2018/11/1541320088(1).jpg)
+![](https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/2018/11/1541320088.jpg)
