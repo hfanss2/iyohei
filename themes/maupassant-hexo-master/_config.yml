@@ -94,7 +94,7 @@ gitee:
 ## CSDN相关信息
 csdn:
     enable: true
-    url: https://blog.csdn.net/q2158798 ##CSDN博客外链 如：https://blog.csdn.net/q2158798
+    url: https://me.csdn.net/q2158798 ##CSDN博客外链 如：https://blog.csdn.net/q2158798
 ## 底部显示设置
 footersenable: true   ##是否开启底部菜单栏
 footers: 
