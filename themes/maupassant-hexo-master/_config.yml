@@ -82,7 +82,7 @@ beian:
 ## 百度统计相关信息
 baidu:
     enable: true
-    url: https://tongji.baidu.com/web/25553450/overview/index?siteId=11976031 ##百度统计的网址，点开百度云图标后登陆可看到网站统计\
+    url: https://tongji.baidu.com/web/welcome/ico?s=4e950a5dd7243ac97e882fe04d3fa1f7 ##百度统计的网址，点开百度云图标后登陆可看到网站统计\
 ## github相关信息
 github:
     enable: true
