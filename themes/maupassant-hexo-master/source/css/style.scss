@@ -34,6 +34,78 @@ html, button, input, select, textarea,
 			list-style: none;
 			width: 100%;
 		}
+		.container {
+			background: #fff;
+			-moz-border-radius: 5px;
+			-khtml-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px；
+		}	
+		.demo {
+			width: 700px;
+			margin: 0 auto
+		}
+		.service {
+			position: fixed;
+			top: 350px;
+			right: 0px;
+			z-index: 100;
+			ul {
+				list-style: none;
+			}
+			li {
+				width: 35px;
+				height: 40px;
+				border: 0;
+				font-family: inherit;
+				font-size: 100%;
+				font-style: inherit;
+				margin: 0;
+				outline: 0;
+				padding: 0;
+				vertical-align: baseline;
+				a{
+					height: 35px;
+					float: right;
+					display: block;
+					width: 35px;
+					text-align: center;
+					background-color: rgba(255, 255, 255, 0.8);
+					border: 1px solid rgba(211, 211, 211, 1);
+					border-radius: 4px;
+					font-family: inherit;
+					font-size: 100%;
+					font-style: inherit;
+					margin: 0;
+					outline: 0;
+					padding: 0;
+					vertical-align: baseline;
+					font-family: inherit;
+					font-size: 100%;
+					font-style: inherit;
+					vertical-align: baseline;
+					color: #444;
+					text-decoration: none;
+				}
+				i{
+					margin-top: 7px;
+					font-size: 18px;
+					color: rgba(211, 211, 211, 1);
+				}
+			}
+			li .bottom_btn:hover {
+				background-color:#CD3333;
+			}
+			li .top_btn:hover {
+				background-color:#CD3333;
+			}
+			li .weixin_btn:hover {
+				background-color:#62b900;
+			}
+			li .qq_btn:hover {
+				background-color:#5CACEE;
+			}
+		}
 		.footer-a{
 			text-decoration: none;
 			color:#6E7173;
@@ -43,6 +115,20 @@ html, button, input, select, textarea,
 		}
 		.post-03{
 			height:80px;
+		}
+		.nav-search:hover {
+			background: #595959;
+			border: 1px solid #595959;
+		}
+		.nav-search {
+			background: #5CACEE;
+			float: right;
+			color: #fff;
+			padding: 0 8px 3px;
+			cursor: pointer;
+			border-radius: 3px;
+			border: 1px solid #5CACEE;
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
 		}
 		.nav{
 			overflow: hidden;width: 100%;text-align:center;word-break: break-all; word-wrap:break-word;
@@ -75,14 +161,11 @@ html, button, input, select, textarea,
 				font-size: 16px;
 				border: 1px solid transparent;
 				&:hover {
-					background:  #C9C9C9;
-					border-top-color: #D26911;
-					border-bottom-color: #D26911;
-					color: #D26911;
-					
+					border-bottom-color: #5CACEE;
+					color: #5CACEE;
 				}
 				&.current {
-					color: #D26911;
+					color: #5CACEE;
 				}
 			}
 		}
@@ -137,10 +220,10 @@ html, button, input, select, textarea,
 			height: 50px;background: #ddd；
 		}
 		.header-02-3{
-			float:left;
+			float:right;
 		}
 		.header-03{
-			text-align: end;
+			float:right;
 		
 		}
 		
@@ -158,10 +241,10 @@ html, button, input, select, textarea,
 				font-size: 16px;
 				border: 1px solid transparent;
 				&:hover {
-					background: white;
-					border-bottom-color: #D26911;
-					border-top-color: #D26911;
-					color: #242424;
+					background: none;
+					border-bottom-color: rgba(0, 0, 0, 0);
+					border-top-color: rgba(0, 0, 0, 0);
+					color: rgba(0, 0, 0, 0);
 				}
 				&.current {
 					border: 1px solid #ddd;
@@ -639,7 +722,6 @@ div {
 }
 
 .page-navigator {
-    border-top: 1px solid #ddd;
     list-style: none;
     margin-top: 25px;
     padding: 25px 0 0;
@@ -648,6 +730,8 @@ div {
     .page-number {
         display: inline-block;
         margin: 0 5px 5px 0;
+		border-radius: 5px;
+		width: 30px;
     }
     a, span {
         display: inline-block;
@@ -670,6 +754,7 @@ div {
         }
         &.next {
             float: right;
+			border-radius: 5px;
             &:after {
                 font-family: "FontAwesome";
                 content: "\f101";
@@ -1728,12 +1813,13 @@ pre {
 		padding-bottom:10px;
 		a {
 		font-size: 14px;
-		color: #444;
+		color: white;
 		margin: -10px 0;
 		padding: 5px 10px;
 		border: 1px solid #ddd;
 		border-radius: 5px;
 		float: right;
+		background-color: #5CACEE;
 		&:after {
 			font-family: "FontAwesome";
 			content: "\f101";
@@ -1741,7 +1827,7 @@ pre {
 		}
 		&:hover {
 			background: #F8F8F8;
-			border-bottom-color: #D26911;
+			color: black;
 		}
 	}
 }

@@ -1,6 +1,19 @@
 //页面加载完成执行的方法
 $(document).ready(function(){
 	setHeight();
+	//微信图片  显示 js
+	$("#weixin").mouseover(function() {
+		$(".weixin_img").show();
+	});//微信图片  隐藏 js
+	$("#weixin").mouseout(function() {
+		$(".weixin_img").hide();
+	});//页面滑动到顶部 js
+	$("#top_btn").click(function() {
+		$("html,body").animate({scrollTop:0}, 500);
+	});//页面滑动到底部 js
+	$("#bottom_btn").click(function() {
+		$("html,body").animate({scrollTop: document.body.scrollHeight}, 500);
+	});
 })	
 	
 /**设置底部固定      */  	
