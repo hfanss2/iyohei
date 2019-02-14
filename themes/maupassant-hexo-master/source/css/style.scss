@@ -41,9 +41,16 @@ html, button, input, select, textarea,
 			-webkit-border-radius: 5px;
 			border-radius: 5px；
 		}	
+		.content_container {
+			padding-right: 10px;
+			padding-left: 10px;
+		}
 		.demo {
 			width: 700px;
 			margin: 0 auto
+		}
+		.guanyuwo{
+			display:inline-block; font-size: 14px;color: white;padding: 5px 10px;border: 1px solid #ddd;border-radius: 5px;background-color: #5CACEE;width:35%;margin:5px;
 		}
 		.service {
 			position: fixed;
@@ -443,9 +450,11 @@ div {
 }
 
 #sidebar {
-    margin-top: 0px;
-    padding-bottom: 20px;
+    margin-top: 110px;
+	padding-left: 10px;
+    padding-right: 10px;
     word-wrap: break-word;
+	border-left: 1px solid #ddd;
 	z-index:999;
 	.widget2 {
 		font-size: 30px;
@@ -481,7 +490,7 @@ div {
             line-height: 2.7;
             margin-top: 0;
             font-size: 16px;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px dashed #ddd;
             display: block;
             font-weight: normal;
         }
@@ -1341,7 +1350,8 @@ div {
         padding: 0 20px ;
     }
     .content_container {
-        padding-right: 0;
+        padding-right: 10px;
+		padding-left: 10px;
     }
 	.logo-line-before{
 		display: block;

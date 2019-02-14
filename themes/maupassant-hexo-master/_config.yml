@@ -44,7 +44,7 @@ donate:
   btc_key: ## Bitcoin key, e.g. 1KuK5eK2BLsqpsFVXXSBG5wbSAwZVadt6L
   paypal_url: ## Paypal URL, e.g. https://paypal.me/tufu9441
 
-
+widgets_on_small_screens: true
 ## 微信相关信息
 weixin:
     enable: true
@@ -102,7 +102,14 @@ footers:
   - gzhao   ##公众号或微信二维码
   - links   ##友情链接/关于本站/关于博主(简历)
   - xzhao   ##百度熊掌号相关信息
-
+widgets: ## 右侧边栏
+  #- search
+  - gywo
+  - archive
+  - tag
+  #- recent_posts
+  #- recent_comments
+  #- links
 ## PC菜单显示选项  
 menu:
   - page: home
