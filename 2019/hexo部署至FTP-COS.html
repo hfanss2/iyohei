@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>标签: hexo主题优化-幻凡ss
+  <title>hexo部署至FTP-COS-幻凡ss
   </title>
   <meta name="description" content="专注Java • 分享生活 • 记录人生">
   
@@ -189,51 +189,162 @@
     <div>
     <div class="container clearfix">
         <div class="l_main">
-      <div class="catags"> 
-  hexo主题优化
-</div>
+      <article id="post-hexo部署至FTP-COS" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
+    <section class="meta">
 
-<section class="post-list">
+        <h1 class="title">
+            <center>hexo部署至FTP-COS</center>
+        </h1>
+
+
+ <center>
+    <time>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+    <span>发表于 </span>2019-03-24-星期日&nbsp;&nbsp;|&nbsp;&nbsp;
+    <i class="fa fa-eye fa-fw" aria-hidden="true"></i>&nbsp;
+    阅读 &nbsp;(
+    <span id="busuanzi_value_page_pv">计算中...</span>&nbsp;)
     
-        <div class="post-wrapper">
-            <article class="hover-bgcolor post">
+    </time>
+</center>
 
 
-      
 
-        <section class="meta mpost">
-   <div class="cats">
-        <a href="/categories/hexo/">hexo</a>
-    </div>
-        <h2>
-            <a title="点击阅读全文" href="/2018/Maupassant主题、屠城主题优化版.html">
-               <span class="post-title"><b>Maupassant主题优化、屠城hexo主题优化版</b></span>
-            </a>
-        </h2>
-            <span class="post-data"><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;2018-07-14-星期六
-            &nbsp;&nbsp;<i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;幻凡ss&nbsp;
-            </span>&nbsp;&nbsp;
+    <hr class="zdyhr">
+       
     </section>
 
-        <section class="typo zdydl">
-        <div>
-            <a title="点击阅读全文" href="/2018/Maupassant主题、屠城主题优化版.html">
-                
-                    <img class="post_list_img" src="https://blog-1252958858.file.myqcloud.com/2018/12/upload_ee8ca2_167d9ee016e__8000_00000016.jpg">
-                
-            </a>
-        </div>
+    <section class="article typo">
 
-    <a title="点击阅读全文" style="text-decoration: none" href="/2018/Maupassant主题、屠城主题优化版.html">
-        <div class="zdya">
-        基于屠城hexo主题优化版,个人自用版;优化部分显示效果，增加部分配置;增加强制https 开关.底部文件集成 关于我、微信
+        <div class="article-entry" itemprop="articleBody">
+            <p>主流的部署方式一般都是github、coding、码云、七牛</p>
+<p>但是其实也可以有更多的选择，比如FTP服务器和腾讯云COS</p>
+<h2 id="部署至FTP服务器："><a href="#部署至FTP服务器：" class="headerlink" title="部署至FTP服务器："></a>部署至FTP服务器：</h2><p>一般有自己的服务器的都喜欢搭建在自己的服务器上，因为主流的服务器都是有不稳定的因素在，时长崩溃，自己有服务器，做个FTP用来存文件也是不错的选择，顺便放放hexo也算物尽其用</p>
+<h3 id="1-安装插件"><a href="#1-安装插件" class="headerlink" title="1.安装插件"></a>1.安装插件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-ftpsync –save</span><br></pre></td></tr></table></figure>
+<h3 id="2-修改配置"><a href="#2-修改配置" class="headerlink" title="2.修改配置"></a>2.修改配置</h3><p>根目录下config.yml增加以下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: ftpsync #上传方式，固定ftpsync</span><br><span class="line">  host: hfanss.ftp-gz01.com #ftp地址</span><br><span class="line">  user: ****	#帐号</span><br><span class="line">  pass: ****	#密码</span><br><span class="line">  remote: /webroot/ #上传至哪个目录</span><br><span class="line">  port: 8010	#端口</span><br></pre></td></tr></table></figure>
+<h2 id="部署至腾讯云COS："><a href="#部署至腾讯云COS：" class="headerlink" title="部署至腾讯云COS："></a>部署至腾讯云COS：</h2><h3 id="1-安装插件："><a href="#1-安装插件：" class="headerlink" title="1.安装插件："></a>1.安装插件：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-cos --save</span><br></pre></td></tr></table></figure>
+<h3 id="2-修改配置："><a href="#2-修改配置：" class="headerlink" title="2.修改配置："></a>2.修改配置：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> type: cos	#上传方式，固定cos</span><br><span class="line"> appId: 12529*****  #cos的appId</span><br><span class="line"> secretId: AKIDa0CAuP5hW6***********  #cos的secretId</span><br><span class="line"> secretKey: ********** #cos的secretKey</span><br><span class="line"> bucket: *********  #cos的bucket</span><br><span class="line"> region: ap-shanghai  #cos的region</span><br></pre></td></tr></table></figure>
+<h2 id="部署至多个地址："><a href="#部署至多个地址：" class="headerlink" title="部署至多个地址："></a>部署至多个地址：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">   -type: cos</span><br><span class="line">    appId: ***</span><br><span class="line">   -type: git</span><br><span class="line">    repository: *****   #git地址 </span><br><span class="line">  	branch: master</span><br><span class="line">   -type: git</span><br><span class="line">    repository: *****   #git地址 </span><br><span class="line">  	branch: master</span><br><span class="line">   -type: ftpsync</span><br><span class="line">    host: hfanss.ftp-gz01.com</span><br><span class="line">    ....</span><br></pre></td></tr></table></figure>
+<p>npm安装不成功使用<a href="https://hfanss.com/2019/hexo%E4%BD%BF%E7%94%A8%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8FCNPM%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6.html">cnpm</a></p>
+<blockquote>
+<p>记录贴，大神勿喷！</p>
+</blockquote>
         </div>
-    </a>
-    </section>
+        <br><br>
+
+<div title="未经允许不得转载" class="post-copyright">未经允许不得转载： 幻凡ss » <span style="color: #ce8134">hexo部署至FTP-COS</span></div>
+
+
+
+ 
+<div class="share">
+<span style="vertical-align: text-bottom;font-size:14px">分享到：</span>
+<a title="分享到微博" href="javascript:" onclick="window.open('http://service.weibo.com/share/share.php?url=https://hfanss.com/2019/hexo部署至FTP-COS.html&sharesource=weibo&title=【hexo部署至FTP-COS - 幻凡ss】 hexo部署至FTP服务器和腾讯云cos的方法，除了部署至github和coding等主流的服务器上，还可以有更多的选择...&pic=https://blog-1252958858.file.myqcloud.com/2019/03/hexo-ftp-cos.png&appkey=2706825840','','height=400,width=711,left=100,right=100,scrollbars=yes,status=yes')">
+
+<span class="iconfont icon-weibo"></span>
+
+<a title="分享到QQ空间" href="javascript:" onclick="window.open('https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://hfanss.com/2019/hexo部署至FTP-COS.html&sharesource=qzone&title=【hexo部署至FTP-COS - 幻凡ss】&pics=https://blog-1252958858.file.myqcloud.com/2019/03/hexo-ftp-cos.png&summary=hexo部署至FTP服务器和腾讯云cos的方法，除了部署至github和coding等主流的服务器上，还可以有更多的选择...','','height=598,width=711,scrollbars=yes,status=yes')">
+
+<span class="iconfont icon-qqkongjian"></span>
+
+<a title="分享到QQ好友" href="javascript:" onclick="window.open('http://connect.qq.com/widget/shareqq/index.html?url=https://hfanss.com/2019/hexo部署至FTP-COS.html&title=【hexo部署至FTP-COS - 幻凡ss】&pics=https://blog-1252958858.file.myqcloud.com/2019/03/hexo-ftp-cos.png&summary=幻凡ss&desc=','','height=598,width=711,scrollbars=yes,status=yes')">
+
+<span class="iconfont icon-QQ"></span>
+
+</a></a></a></div>
+
+
+
+       
+            <div class="article-tags tags">
+                
+                   <a href="/tags/hexo部署至FTP/"><i class="fa fa-tag fa-fw" aria-hidden="true"></i>&nbsp;hexo部署至FTP</a>
+                
+                   <a href="/tags/hexo部署至COS/"><i class="fa fa-tag fa-fw" aria-hidden="true"></i>&nbsp;hexo部署至COS</a>
+                
+            </div>
+        
+
+        
+            <div class="prev-next">
+                
+                    <div class="fenge">
+                    </div>
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>下一篇&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/2019/hexo使用淘宝镜像CNPM安装插件.html" rel="next" title="hexo使用淘宝镜像CNPM安装插件">
+                                    
+                                        hexo使用淘宝镜像CNPM安装插件
+                                    
+                                </a>
+                            </h4>
+                        </span></section></div>
+                    </section>
+                        
+            
+    
+
 </article>
-        </div>
-    
-</section>
+
+<br>
+
+<!-- 显示推荐文章和评论 -->
+
+    <article class="post white-box comments">
+        <section class="article typo">
+            
+                <div class="recommended_posts">
+        <h4><i class="fa fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;文章推荐</h4>
+        <ul>
+            
+                <li><a href="https://hfanss.com/2019/hexo使用淘宝镜像CNPM安装插件.html">hexo使用淘宝镜像CNPM安装插件</a></li>
+            
+                <li><a href="https://hfanss.com/2019/在页面标签内实现随机颜色.html">在页面标签内实现随机颜色</a></li>
+            
+                <li><a href="https://hfanss.com/2019/快速搭建Java生产环境.html">快速搭建Java生产环境</a></li>
+            
+                <li><a href="https://hfanss.com/2019/对list中对象的某一属性排序.html">对list中对象的某一属性排序</a></li>
+            
+                <li><a href="https://hfanss.com/2019/Tomcat配置ssl证书.html">Tomcat配置ssl证书</a></li>
+            
+        </ul>
+    </div>
+            
+
+            
+                <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                <script src="https://unpkg.com/valine@1.3.4/dist/Valine.min.js"></script>
+                <h4><i class="fa fa-comments fa-fw" aria-hidden="true"></i>&nbsp;发表评论</h4>
+                <div class="subtitle">
+                  <h6><b>文明评论，请勿灌水。</b>
+                <div>
+                <div id="vcomments" style="background: url('/img/commentbox2.jpg') top no-repeat"></div>
+                <script>
+                  new Valine({
+                        el:'#vcomments',
+                        appId:'5GMAO3V5MqR9DTfMnd73m8zT-gzGzoHsz',
+                        appKey:'f6Ve1tpYqYSBefe5xp0OCKxR',
+                        placeholder:'　',
+                        avatar:'monsterid',
+                        pageSize:'10'
+                    })
+                </script>
+        
+
+        </div></h6></div></section>
+    </article>
+
+
+<script>
+    window.subData = {
+        title: 'hexo部署至FTP-COS',
+        tools: true
+    }
+</script>
         </div>
         <aside class="l_side">
             <section class="m_widget author">
@@ -311,7 +422,14 @@
     
 
     
-        
+        <section class="m_widget toc-wrapper">
+        <div class="celan-title"><div class="celan-title-i"><i style="color:#0099FF" class="fa fa-list-ul"></i></div>目录</div>
+<!--             <div class='wrapper'><a style="margin-right: 30px;" class="s-toc rightBtn" title="固定到顶部"
+             rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fa fa-thumbtack fa-fw"></i></a></div> -->
+        <div class="content">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#部署至FTP服务器："><span class="toc-text">部署至FTP服务器：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-安装插件"><span class="toc-text">1.安装插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-修改配置"><span class="toc-text">2.修改配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署至腾讯云COS："><span class="toc-text">部署至腾讯云COS：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-安装插件："><span class="toc-text">1.安装插件：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-修改配置："><span class="toc-text">2.修改配置：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署至多个地址："><span class="toc-text">部署至多个地址：</span></a></li></ol>
+        </div>
+    </section>
     
 
     
@@ -474,6 +592,11 @@ function show_runtime(){
 
 
 
+    
+
+
+
+
 
 
 <script>
@@ -507,6 +630,37 @@ function show_runtime(){
     },
     
   })  
+</script>
+
+
+
+
+
+<script type="text/javascript">
+function over(){
+  var div = document.getElementById('article-cpoyright');
+  var text = document.getElementById('c-text');
+  text.style.display="block";
+
+}
+function out(){
+  var div = document.getElementById('article-cpoyright');
+  var text = document.getElementById('c-text');
+  text.style.display="none";
+}
+</script>
+
+<script type="text/javascript">
+function copyArticle(event) {
+  const range = document.createRange();
+  range.selectNode(document.getElementById('copyLink'));
+
+  const selection = window.getSelection();
+  if(selection.rangeCount > 0) selection.removeAllRanges();
+  selection.addRange(range);
+  document.execCommand('copy');
+}
+document.getElementById('copyBT').addEventListener('click', copyArticle, false);
 </script>
 
 
