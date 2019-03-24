@@ -6,7 +6,7 @@ tags:
 categories: 
 - Java
 img:  https://blog-1252958858.file.myqcloud.com/2019/03/timg.jpg
-newimg: true
+newimg: false
 comments: true
 zhailu: 本文指导开发者如何快速搭建一个Java生产环境，适用于windows系统下的使用
 ---
