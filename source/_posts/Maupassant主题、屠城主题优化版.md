@@ -21,11 +21,11 @@ zhailu: 基于屠城hexo主题优化版,个人自用版;优化部分显示效果
 
 ------
 
-# 原版主题
+## 原版主题
 
 > <https://www.haomwei.com/technology/maupassant.html>
 
-## 屠城hexo版
+### 屠城hexo版
 
 > github地址：
 >
@@ -39,7 +39,7 @@ zhailu: 基于屠城hexo主题优化版,个人自用版;优化部分显示效果
 >
 > <https://www.haomwei.com/>
 
-## 本优化版
+### 本优化版
 
 > github地址：
 >
@@ -55,9 +55,9 @@ zhailu: 基于屠城hexo主题优化版,个人自用版;优化部分显示效果
 
 ------
 
-# 现版主题
+## 现版主题
 
-## 主要优化点
+### 主要优化点
 
 - 增加强制https 开关
 - 归档页集成分类、标签、全部文章
@@ -80,7 +80,7 @@ zhailu: 基于屠城hexo主题优化版,个人自用版;优化部分显示效果
 
 [![img](https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/2018/08/QQ%E5%9B%BE%E7%89%8720180804130958.jpg)](https://huanfan-1252958858.cos.ap-shanghai.myqcloud.com/2018/08/QQ%E5%9B%BE%E7%89%8720180804130958.jpg)
 
-## 增加配置开关
+### 增加配置开关
 
 ```
 valine: ## https://valine.js.org        评论系统
@@ -259,14 +259,14 @@ version: 0.1.0
 
 ------
 
-# 使用方法
+## 使用方法
 
-## 下载主题
+### 下载主题
 
 > <https://github.com/iyohei/maupassant-hexo-hfanss>
 > 如下载不下来可从备份地址下载：[点我](https://gitee.com/iyohei/hfanss)
 
-# 安装插件
+### 安装插件
 
 ```
 npm install --save hexo-deployer-git hexo-generator-archive hexo-generator-category hexo-generator-index-pin-top hexo-generator-search hexo-generator-tag hexo-helper-qrcode hexo-renderer-ejs hexo-renderer-marked hexo-renderer-pug hexo-renderer-sass hexo-renderer-stylus hexo-server hexo-tag-aplayer hexo-wordcount
@@ -274,7 +274,7 @@ npm install --save hexo-deployer-git hexo-generator-archive hexo-generator-categ
 
 安装不成功可以通过 [淘宝镜像](https://npm.taobao.org) 下载
 
-# 修改配置
+### 修改配置
 
 ```
 博客根目录下
