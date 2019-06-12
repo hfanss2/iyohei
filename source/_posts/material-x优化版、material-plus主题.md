@@ -9,7 +9,7 @@ tags:
 categories: 
 - hexo
 img: https://blog-1252958858.file.myqcloud.com/2019/03/material-plus.png
-newimg: true
+newimg: false
 zhailu: 基于material-x主题魔改的hexo主题，material-plus主题，增添了部分功能，集成统计，广告。。。。。
 ---
 

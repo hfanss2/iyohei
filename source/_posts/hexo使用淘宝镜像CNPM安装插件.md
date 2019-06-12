@@ -7,7 +7,7 @@ tags:
 categories: 
 - hexo
 img: https://blog-1252958858.file.myqcloud.com/2019/03/hexo-cnpm.png
-newimg: true
+newimg: false
 comments: true
 zhailu: 本文简单介绍下通过cnpm安装hexo锁使用的插件的方法。npm安装插件一直受国内网速的限制很慢，使用cnpm后速度提升很快
 ---

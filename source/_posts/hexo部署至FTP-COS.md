@@ -7,7 +7,7 @@ tags:
 categories: 
 - hexo
 img: https://blog-1252958858.file.myqcloud.com/2019/03/hexo-ftp-cos.png
-newimg: true
+newimg: false
 comments: true
 zhailu: hexo部署至FTP服务器和腾讯云cos的方法，除了部署至github和coding等主流的服务器上，还可以有更多的选择
 ---
