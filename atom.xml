@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hfanss.com/"/>
-  <updated>2019-03-31T09:12:56.944Z</updated>
+  <updated>2019-06-12T11:30:55.962Z</updated>
   <id>https://hfanss.com/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Thymeleaf模版中的取值</title>
+    <link href="https://hfanss.com/2019/Thymeleaf%E6%A8%A1%E7%89%88%E4%B8%ADjs%E5%8F%96jstl%E7%9A%84%E5%80%BC.html"/>
+    <id>https://hfanss.com/2019/Thymeleaf模版中js取jstl的值.html</id>
+    <published>2019-05-01T05:12:38.000Z</published>
+    <updated>2019-06-12T11:30:55.962Z</updated>
+    
+    <content type="html"><![CDATA[<p>springBootd </p><p>最近在项目中使用到了springBoot自带的Thymeleaf模版，之前也没用过，研究了一下它的语法，在此记录下</p><p>js取model的值</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script th:inline=&quot;javascript&quot;&gt;</span><br><span class="line">    var message = [[$&#123;message&#125;]];</span><br><span class="line">    console.log(message);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>页面取值</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;a th:text=&quot;$&#123;name&#125;&quot;&gt;&lt;/a&gt;</span><br><span class="line">或者</span><br><span class="line">&lt;a th:value=&quot;$&#123;name&#125;&quot;&gt;&lt;/a&gt;</span><br></pre></td></tr></table></figure><p>循环取值</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;tr th:each=&quot;article: $&#123;articleList&#125;&quot;&gt; </span><br><span class="line">    &lt;td th:text=&quot;$&#123;article.title&#125;&quot;&gt;&lt;/td&gt; </span><br><span class="line">    &lt;td th:text=&quot;$&#123;article.name&#125;&quot;&gt;&lt;/td&gt; </span><br><span class="line">    &lt;td th:text=&quot;$&#123;article.vcTitle&#125;&quot;&gt;&lt;/td&gt; </span><br><span class="line">    &lt;td th:text=&quot;$&#123;article.read&#125;&quot;&gt;&lt;/td&gt; </span><br><span class="line">    &lt;td th:text=&quot;$&#123;article.author&#125;&quot;&gt;&lt;/td&gt; </span><br><span class="line">&lt;/tr&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;springBootd &lt;/p&gt;
+&lt;p&gt;最近在项目中使用到了springBoot自带的Thymeleaf模版，之前也没用过，研究了一下它的语法，在此记录下&lt;/p&gt;
+&lt;p&gt;js取model的值&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;tabl
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://hfanss.com/categories/Java/"/>
+    
+    
+      <category term="Tomcat" scheme="https://hfanss.com/tags/Tomcat/"/>
+    
+      <category term="SpringBoot" scheme="https://hfanss.com/tags/SpringBoot/"/>
+    
+      <category term="Thymeleaf" scheme="https://hfanss.com/tags/Thymeleaf/"/>
+    
+  </entry>
+  
+  <entry>
     <title>material-x优化版、material-plus主题</title>
     <link href="https://hfanss.com/2019/material-x%E4%BC%98%E5%8C%96%E7%89%88%E3%80%81material-plus%E4%B8%BB%E9%A2%98.html"/>
     <id>https://hfanss.com/2019/material-x优化版、material-plus主题.html</id>
     <published>2019-03-31T07:54:38.000Z</published>
-    <updated>2019-03-31T09:12:56.944Z</updated>
+    <updated>2019-06-12T11:31:17.059Z</updated>
     
     <content type="html"><![CDATA[<h2 id="主题介绍"><a href="#主题介绍" class="headerlink" title="主题介绍"></a>主题介绍</h2><p>本主题基于 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" rel="noopener">material-x</a> 主题魔改，原作者 <a href="https://www.wushile.top/" target="_blank" rel="noopener">小吴博客</a> ，在征得作者同意下开源。此版本在他的基础上加入了一些常用功能</p><h3 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h3><p><a href="hfanss.com">hfanss.com</a></p><p><img src="https://blog-1252958858.file.myqcloud.com/2019/03/demo1.png" alt=""></p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><h3 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h3><blockquote><p><a href="https://github.com/iyohei/hexo-material-plus/tree/master" target="_blank" rel="noopener">https://github.com/iyohei/hexo-material-plus/tree/master</a></p></blockquote><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>下载后是文件夹形式，将全部文件覆盖到你的目录下</p><h3 id="详细说明"><a href="#详细说明" class="headerlink" title="详细说明"></a>详细说明</h3><p>所有配置均在根目录下config.yml中进行</p><p>内部所有配置均有中文说明，以下仅特别强调几点</p><p>1.文章页标签</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 博文标题</span><br><span class="line">date: 2019-03-31 15:54:38  #书写日期+时间</span><br><span class="line">tags: #标签</span><br><span class="line">- hexo主题</span><br><span class="line">- material-x优化版</span><br><span class="line">- material-plus</span><br><span class="line">categories: #分类</span><br><span class="line">- hexo</span><br><span class="line">img: https://blog-1252958858.file.myqcloud.com/2019/03/material-plus.png #博文封面。本地图片显示方式为  /img/***.jpg </span><br><span class="line">newimg: true    #是否显示  new 标签</span><br><span class="line">zhailu: 基于material-x主题魔改的hexo主题，material-plus主题，增添了部分功能，集成统计，广告。。。。。  #文章摘录。最少70字，否则封面会显示错乱</span><br><span class="line">comments: false   #是否开启评论，默认true</span><br><span class="line">toc: false     #是否显示目录，可在config.yml中统一配置</span><br><span class="line">---</span><br></pre></td></tr></table></figure><p>2.DIY</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">留言板/source/comment/index.html</span><br><span class="line">友链 /source/links/index.html</span><br><span class="line">关于博主/source/about2/index.html</span><br><span class="line">关于本站/source/about/index.html</span><br></pre></td></tr></table></figure><p>就说这么多吧，暂时也想不起太多，在使用中遇到问题，也可在下面留言咨询</p>]]></content>
     
@@ -52,7 +84,7 @@
     <link href="https://hfanss.com/2019/hexo%E9%83%A8%E7%BD%B2%E8%87%B3FTP-COS.html"/>
     <id>https://hfanss.com/2019/hexo部署至FTP-COS.html</id>
     <published>2019-03-24T07:13:38.000Z</published>
-    <updated>2019-03-24T07:37:20.830Z</updated>
+    <updated>2019-06-12T11:31:39.930Z</updated>
     
     <content type="html"><![CDATA[<p>主流的部署方式一般都是github、coding、码云、七牛</p><p>但是其实也可以有更多的选择，比如FTP服务器和腾讯云COS</p><h2 id="部署至FTP服务器："><a href="#部署至FTP服务器：" class="headerlink" title="部署至FTP服务器："></a>部署至FTP服务器：</h2><p>一般有自己的服务器的都喜欢搭建在自己的服务器上，因为主流的服务器都是有不稳定的因素在，时长崩溃，自己有服务器，做个FTP用来存文件也是不错的选择，顺便放放hexo也算物尽其用</p><h3 id="1-安装插件"><a href="#1-安装插件" class="headerlink" title="1.安装插件"></a>1.安装插件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-ftpsync –save</span><br></pre></td></tr></table></figure><h3 id="2-修改配置"><a href="#2-修改配置" class="headerlink" title="2.修改配置"></a>2.修改配置</h3><p>根目录下config.yml增加以下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: ftpsync #上传方式，固定ftpsync</span><br><span class="line">  host: hfanss.ftp-gz01.com #ftp地址</span><br><span class="line">  user: ****#帐号</span><br><span class="line">  pass: ****#密码</span><br><span class="line">  remote: /webroot/ #上传至哪个目录</span><br><span class="line">  port: 8010#端口</span><br></pre></td></tr></table></figure><h2 id="部署至腾讯云COS："><a href="#部署至腾讯云COS：" class="headerlink" title="部署至腾讯云COS："></a>部署至腾讯云COS：</h2><h3 id="1-安装插件："><a href="#1-安装插件：" class="headerlink" title="1.安装插件："></a>1.安装插件：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-cos --save</span><br></pre></td></tr></table></figure><h3 id="2-修改配置："><a href="#2-修改配置：" class="headerlink" title="2.修改配置："></a>2.修改配置：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> type: cos#上传方式，固定cos</span><br><span class="line"> appId: 12529*****  #cos的appId</span><br><span class="line"> secretId: AKIDa0CAuP5hW6***********  #cos的secretId</span><br><span class="line"> secretKey: ********** #cos的secretKey</span><br><span class="line"> bucket: *********  #cos的bucket</span><br><span class="line"> region: ap-shanghai  #cos的region</span><br></pre></td></tr></table></figure><h2 id="部署至多个地址："><a href="#部署至多个地址：" class="headerlink" title="部署至多个地址："></a>部署至多个地址：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">   -type: cos</span><br><span class="line">    appId: ***</span><br><span class="line">   -type: git</span><br><span class="line">    repository: *****   #git地址 </span><br><span class="line">  branch: master</span><br><span class="line">   -type: git</span><br><span class="line">    repository: *****   #git地址 </span><br><span class="line">  branch: master</span><br><span class="line">   -type: ftpsync</span><br><span class="line">    host: hfanss.ftp-gz01.com</span><br><span class="line">    ....</span><br></pre></td></tr></table></figure><p>npm安装不成功使用<a href="https://hfanss.com/2019/hexo%E4%BD%BF%E7%94%A8%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8FCNPM%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6.html">cnpm</a></p><blockquote><p>记录贴，大神勿喷！</p></blockquote>]]></content>
     
@@ -81,7 +113,7 @@
     <link href="https://hfanss.com/2019/hexo%E4%BD%BF%E7%94%A8%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8FCNPM%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6.html"/>
     <id>https://hfanss.com/2019/hexo使用淘宝镜像CNPM安装插件.html</id>
     <published>2019-03-24T06:50:38.000Z</published>
-    <updated>2019-03-24T07:08:42.539Z</updated>
+    <updated>2019-06-12T11:31:58.712Z</updated>
     
     <content type="html"><![CDATA[<p>每次通过npm安装插件都要忍受奇慢无比的网速，后来发现了cnpm，发现速度非常快，特开贴记录</p><p>使用方式：</p><p>1.首先安装淘宝镜像</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><p>2.安装模块</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install [name]</span><br></pre></td></tr></table></figure><p>name即为插件的名字</p><p>例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-ftpsync –save</span><br></pre></td></tr></table></figure><p>更改后：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install hexo-deployer-ftpsync –save</span><br></pre></td></tr></table></figure><p>淘宝镜像为阿里云产物，服务器架设在国内，当cnpm上没有你需要的插件时，它会自动去npm服务器上寻找同时在保存至cnpm服务器上</p><blockquote><p>官方文档：<a href="https://npm.taobao.org/" target="_blank" rel="noopener">点我</a></p></blockquote>]]></content>
     
@@ -267,6 +299,35 @@
   </entry>
   
   <entry>
+    <title>JDBC链接数据库</title>
+    <link href="https://hfanss.com/2018/Java%E5%88%A9%E7%94%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%AF%B9%E5%AE%9E%E4%BD%93%E7%B1%BB%E7%9A%84%E5%B1%9E%E6%80%A7%E8%BF%9B%E8%A1%8C%E5%88%9D%E5%A7%8B%E5%8C%96.html"/>
+    <id>https://hfanss.com/2018/Java利用构造函数对实体类的属性进行初始化.html</id>
+    <published>2018-12-25T12:29:38.000Z</published>
+    <updated>2019-03-10T08:30:28.396Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>学习记录：复习</p><p>JDBC简单链接数据库</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">/**    关闭资源用*/</span><br><span class="line">Connection conn = null;</span><br><span class="line">Statement stmt = null;</span><br><span class="line">ResultSet rest = null;</span><br><span class="line">/**设置url,user,password,sql*/</span><br><span class="line">String url = &quot;jdbc:mysql://localhost:3306/kevin?useUnicode=true&amp;characterEncoding=utf-8&quot;;</span><br><span class="line">String user = &quot;root&quot;;</span><br><span class="line">String password = &quot;123456&quot;;</span><br><span class="line">String sql = &quot;select * from blog&quot;;</span><br><span class="line">try</span><br><span class="line">&#123;</span><br><span class="line">// 注册驱动</span><br><span class="line">Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</span><br><span class="line">// 获得数据库链接</span><br><span class="line">conn = DriverManager.getConnection(url, user, password);</span><br><span class="line">// 获得Statement</span><br><span class="line">stmt = conn.createStatement();</span><br><span class="line">rest = stmt.executeQuery(sql);</span><br><span class="line">while (rest.next())</span><br><span class="line">&#123;</span><br><span class="line">System.out.println(rest.getString(&quot;title&quot;) + &quot;_&quot; + rest.getString(&quot;viceTitle&quot;));</span><br><span class="line">&#125;</span><br><span class="line">&#125; catch (Exception e)</span><br><span class="line">&#123;</span><br><span class="line">System.err.println(&quot;发生异常：&quot;+e);</span><br><span class="line">&#125; finally</span><br><span class="line">&#123;//关闭资源</span><br><span class="line">rest.close();</span><br><span class="line">stmt.close();</span><br><span class="line">conn.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>关闭资源放在finally中</p><p>需引入mysql-connector-java-***.jar，如果没有使用maven可在<a href="https://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-5.1.47.zip" target="_blank" rel="noopener">官网下载</a>或 <a href="https://pan.baidu.com/s/1_xQ_KfLhJ7skTJDfK5V8vg#list/path=%2Fjava%2Fmysql&amp;parentPath=%2Fjava" target="_blank" rel="noopener">我的网盘</a></p><p><a href="javascript:void(0" target="_blank" rel="noopener"><img src="https://blog-1252958858.file.myqcloud.com/2019/01/upload__72bb97c_16828430b8f__8000_00000001.jpg" alt="QQ图片20180919200826.jpg"></a>;)</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;学习记录：复习&lt;/p&gt;
+&lt;p&gt;JDBC简单链接数据库&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://hfanss.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="https://hfanss.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>jsp网站ico图标设置</title>
     <link href="https://hfanss.com/2018/jsp%E7%BD%91%E7%AB%99ico%E5%9B%BE%E6%A0%87%E8%AE%BE%E7%BD%AE.html"/>
     <id>https://hfanss.com/2018/jsp网站ico图标设置.html</id>
@@ -329,35 +390,6 @@
   </entry>
   
   <entry>
-    <title>JDBC链接数据库</title>
-    <link href="https://hfanss.com/2018/Java%E5%88%A9%E7%94%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%AF%B9%E5%AE%9E%E4%BD%93%E7%B1%BB%E7%9A%84%E5%B1%9E%E6%80%A7%E8%BF%9B%E8%A1%8C%E5%88%9D%E5%A7%8B%E5%8C%96.html"/>
-    <id>https://hfanss.com/2018/Java利用构造函数对实体类的属性进行初始化.html</id>
-    <published>2018-12-25T12:29:38.000Z</published>
-    <updated>2019-03-10T08:30:28.396Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>学习记录：复习</p><p>JDBC简单链接数据库</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">/**    关闭资源用*/</span><br><span class="line">Connection conn = null;</span><br><span class="line">Statement stmt = null;</span><br><span class="line">ResultSet rest = null;</span><br><span class="line">/**设置url,user,password,sql*/</span><br><span class="line">String url = &quot;jdbc:mysql://localhost:3306/kevin?useUnicode=true&amp;characterEncoding=utf-8&quot;;</span><br><span class="line">String user = &quot;root&quot;;</span><br><span class="line">String password = &quot;123456&quot;;</span><br><span class="line">String sql = &quot;select * from blog&quot;;</span><br><span class="line">try</span><br><span class="line">&#123;</span><br><span class="line">// 注册驱动</span><br><span class="line">Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</span><br><span class="line">// 获得数据库链接</span><br><span class="line">conn = DriverManager.getConnection(url, user, password);</span><br><span class="line">// 获得Statement</span><br><span class="line">stmt = conn.createStatement();</span><br><span class="line">rest = stmt.executeQuery(sql);</span><br><span class="line">while (rest.next())</span><br><span class="line">&#123;</span><br><span class="line">System.out.println(rest.getString(&quot;title&quot;) + &quot;_&quot; + rest.getString(&quot;viceTitle&quot;));</span><br><span class="line">&#125;</span><br><span class="line">&#125; catch (Exception e)</span><br><span class="line">&#123;</span><br><span class="line">System.err.println(&quot;发生异常：&quot;+e);</span><br><span class="line">&#125; finally</span><br><span class="line">&#123;//关闭资源</span><br><span class="line">rest.close();</span><br><span class="line">stmt.close();</span><br><span class="line">conn.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>关闭资源放在finally中</p><p>需引入mysql-connector-java-***.jar，如果没有使用maven可在<a href="https://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-5.1.47.zip" target="_blank" rel="noopener">官网下载</a>或 <a href="https://pan.baidu.com/s/1_xQ_KfLhJ7skTJDfK5V8vg#list/path=%2Fjava%2Fmysql&amp;parentPath=%2Fjava" target="_blank" rel="noopener">我的网盘</a></p><p><a href="javascript:void(0" target="_blank" rel="noopener"><img src="https://blog-1252958858.file.myqcloud.com/2019/01/upload__72bb97c_16828430b8f__8000_00000001.jpg" alt="QQ图片20180919200826.jpg"></a>;)</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;学习记录：复习&lt;/p&gt;
-&lt;p&gt;JDBC简单链接数据库&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=
-      
-    
-    </summary>
-    
-      <category term="Java" scheme="https://hfanss.com/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="https://hfanss.com/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Java代码的优化</title>
     <link href="https://hfanss.com/2018/Java%E4%BB%A3%E7%A0%81%E7%9A%84%E4%BC%98%E5%8C%96.html"/>
     <id>https://hfanss.com/2018/Java代码的优化.html</id>
@@ -379,38 +411,6 @@
     
     
       <category term="Java代码优化" scheme="https://hfanss.com/tags/Java%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>500小时学习计划</title>
-    <link href="https://hfanss.com/2018/500%E5%B0%8F%E6%97%B6%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92.html"/>
-    <id>https://hfanss.com/2018/500小时学习计划.html</id>
-    <published>2018-08-13T12:29:38.000Z</published>
-    <updated>2019-03-10T08:30:44.794Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>脑子是个好东西</p><p>自制力是管好脑子的唯一基础</p></blockquote><p>一直都有想对自己的学习时间做一些规划，但是一直都没有去执行，今天抽出时间来对个人的学习时间做一个计划，希望在接下来的日子中养成学习的好习惯</p><hr><p><code>在没有这个想法之前，一直都是脑子一热开始学习了，脑子一冷又不学了，对个人的成长其实非常不好。良好的学习习惯对自身的提升至关重要！</code></p><p><code>总结了个人的上班时间和对业余时间的安排，暂提出了  500小时/年的学习规划（最开始想的是1年1000小时，仔细一考量觉得有可能完不成，到时候对士气的打击很严重，就定500吧）</code></p><table><thead><tr><th>年</th><th>1</th><th>500h</th></tr></thead><tbody><tr><td>月</td><td>12</td><td>42h</td></tr><tr><td>周</td><td>52</td><td>10h</td></tr><tr><td>日</td><td>365</td><td>1.5h</td></tr></tbody></table><p><code>从表中看出来，500H的学习时间，分摊到每天来说只有1.5H,完全有能力，甚至可以超出（稳妥点）</code></p><p><code>工作日因为可能会加班，调至1H，剩余分摊至周六周日，那么最后的分配如下：</code></p><p><code>工作日：1H</code></p><p><code>非工作日：2.5H</code></p><p><code>这个时间点的安排还是完全有能力实现的，关键还是在于坚持，为此，做了一个简单打卡表，每天学习完后打卡</code></p><p>···emmmm</p><p><code>之前做了一个打卡表，但是发现有点想太多了，并不是每天都有时间开自己的电脑，工作一忙起来的时候，家里的电脑真的开不了，而工作闲的时候，可能在上班时间就把学习时间执行过了，所有还是把这个打卡表去掉，时间上来 按照一周10H的时间来计划，工作忙的时候可以将时间转移、累积，闲的时候就可以补回来，反正总时数不能少，这样自由度更高些！</code></p><p>关键还是看自制力，希望大家都能有所进步，博主的学习就以博客文章为参照了，学习过的东西，会固定周期总结成博文分享出来，也是对自己学习成果的一种记录！共勉！</p><blockquote><p>希望在看这篇博文的你能有一些对学习时间上的启发</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;脑子是个好东西&lt;/p&gt;
-&lt;p&gt;自制力是管好脑子的唯一基础&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;一直都有想对自己的学习时间做一些规划，但是一直都没有去执行，今天抽出时间来对个人的学习时间做一个计划，希望在接下来的日子中养成学习的好习惯&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="点滴生活" scheme="https://hfanss.com/categories/%E7%82%B9%E6%BB%B4%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="学习计划" scheme="https://hfanss.com/tags/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/"/>
-    
-      <category term="年度计划" scheme="https://hfanss.com/tags/%E5%B9%B4%E5%BA%A6%E8%AE%A1%E5%88%92/"/>
     
   </entry>
   
@@ -469,6 +469,38 @@
       <category term="码云+hexo" scheme="https://hfanss.com/tags/%E7%A0%81%E4%BA%91-hexo/"/>
     
       <category term="gitee+hexo" scheme="https://hfanss.com/tags/gitee-hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>500小时学习计划</title>
+    <link href="https://hfanss.com/2018/500%E5%B0%8F%E6%97%B6%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92.html"/>
+    <id>https://hfanss.com/2018/500小时学习计划.html</id>
+    <published>2018-08-13T12:29:38.000Z</published>
+    <updated>2019-03-10T08:30:44.794Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>脑子是个好东西</p><p>自制力是管好脑子的唯一基础</p></blockquote><p>一直都有想对自己的学习时间做一些规划，但是一直都没有去执行，今天抽出时间来对个人的学习时间做一个计划，希望在接下来的日子中养成学习的好习惯</p><hr><p><code>在没有这个想法之前，一直都是脑子一热开始学习了，脑子一冷又不学了，对个人的成长其实非常不好。良好的学习习惯对自身的提升至关重要！</code></p><p><code>总结了个人的上班时间和对业余时间的安排，暂提出了  500小时/年的学习规划（最开始想的是1年1000小时，仔细一考量觉得有可能完不成，到时候对士气的打击很严重，就定500吧）</code></p><table><thead><tr><th>年</th><th>1</th><th>500h</th></tr></thead><tbody><tr><td>月</td><td>12</td><td>42h</td></tr><tr><td>周</td><td>52</td><td>10h</td></tr><tr><td>日</td><td>365</td><td>1.5h</td></tr></tbody></table><p><code>从表中看出来，500H的学习时间，分摊到每天来说只有1.5H,完全有能力，甚至可以超出（稳妥点）</code></p><p><code>工作日因为可能会加班，调至1H，剩余分摊至周六周日，那么最后的分配如下：</code></p><p><code>工作日：1H</code></p><p><code>非工作日：2.5H</code></p><p><code>这个时间点的安排还是完全有能力实现的，关键还是在于坚持，为此，做了一个简单打卡表，每天学习完后打卡</code></p><p>···emmmm</p><p><code>之前做了一个打卡表，但是发现有点想太多了，并不是每天都有时间开自己的电脑，工作一忙起来的时候，家里的电脑真的开不了，而工作闲的时候，可能在上班时间就把学习时间执行过了，所有还是把这个打卡表去掉，时间上来 按照一周10H的时间来计划，工作忙的时候可以将时间转移、累积，闲的时候就可以补回来，反正总时数不能少，这样自由度更高些！</code></p><p>关键还是看自制力，希望大家都能有所进步，博主的学习就以博客文章为参照了，学习过的东西，会固定周期总结成博文分享出来，也是对自己学习成果的一种记录！共勉！</p><blockquote><p>希望在看这篇博文的你能有一些对学习时间上的启发</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;脑子是个好东西&lt;/p&gt;
+&lt;p&gt;自制力是管好脑子的唯一基础&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;一直都有想对自己的学习时间做一些规划，但是一直都没有去执行，今天抽出时间来对个人的学习时间做一个计划，希望在接下来的日子中养成学习的好习惯&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="点滴生活" scheme="https://hfanss.com/categories/%E7%82%B9%E6%BB%B4%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="学习计划" scheme="https://hfanss.com/tags/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/"/>
+    
+      <category term="年度计划" scheme="https://hfanss.com/tags/%E5%B9%B4%E5%BA%A6%E8%AE%A1%E5%88%92/"/>
     
   </entry>
   
