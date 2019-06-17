@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>hexo部署至FTP-COS-幻凡ss
+  <title>Mybatis自动生成实体类及xml-幻凡ss
   </title>
   <meta name="description" content="专注Java • 分享生活 • 记录人生">
   
@@ -189,18 +189,18 @@
     <div>
     <div class="container clearfix">
         <div class="l_main">
-      <article id="post-hexo部署至FTP-COS" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
+      <article id="post-Mybatis自动生成实体类及xml" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
     <section class="meta">
 
         <h1 class="title">
-            <center>hexo部署至FTP-COS</center>
+            <center>Mybatis自动生成实体类及xml</center>
         </h1>
 
 
  <center>
     <time>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
-    <span>发表于 </span>2019-03-24-星期日&nbsp;&nbsp;|&nbsp;&nbsp;
+    <span>发表于 </span>2019-06-17-星期一&nbsp;&nbsp;|&nbsp;&nbsp;
     <i class="fa fa-eye fa-fw" aria-hidden="true"></i>&nbsp;
     阅读 &nbsp;(
     <span id="busuanzi_value_page_pv">计算中...</span>&nbsp;)
@@ -217,38 +217,39 @@
     <section class="article typo">
 
         <div class="article-entry" itemprop="articleBody">
-            <p>主流的部署方式一般都是github、coding、码云、七牛</p>
-<p>但是其实也可以有更多的选择，比如FTP服务器和腾讯云COS</p>
-<h2 id="部署至FTP服务器："><a href="#部署至FTP服务器：" class="headerlink" title="部署至FTP服务器："></a>部署至FTP服务器：</h2><p>一般有自己的服务器的都喜欢搭建在自己的服务器上，因为主流的服务器都是有不稳定的因素在，时长崩溃，自己有服务器，做个FTP用来存文件也是不错的选择，顺便放放hexo也算物尽其用</p>
-<h3 id="1-安装插件"><a href="#1-安装插件" class="headerlink" title="1.安装插件"></a>1.安装插件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-ftpsync –save</span><br></pre></td></tr></table></figure>
-<h3 id="2-修改配置"><a href="#2-修改配置" class="headerlink" title="2.修改配置"></a>2.修改配置</h3><p>根目录下config.yml增加以下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: ftpsync #上传方式，固定ftpsync</span><br><span class="line">  host: hfanss.ftp-gz01.com #ftp地址</span><br><span class="line">  user: ****	#帐号</span><br><span class="line">  pass: ****	#密码</span><br><span class="line">  remote: /webroot/ #上传至哪个目录</span><br><span class="line">  port: 8010	#端口</span><br></pre></td></tr></table></figure>
-<h2 id="部署至腾讯云COS："><a href="#部署至腾讯云COS：" class="headerlink" title="部署至腾讯云COS："></a>部署至腾讯云COS：</h2><h3 id="1-安装插件："><a href="#1-安装插件：" class="headerlink" title="1.安装插件："></a>1.安装插件：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-cos --save</span><br></pre></td></tr></table></figure>
-<h3 id="2-修改配置："><a href="#2-修改配置：" class="headerlink" title="2.修改配置："></a>2.修改配置：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> type: cos	#上传方式，固定cos</span><br><span class="line"> appId: 12529*****  #cos的appId</span><br><span class="line"> secretId: AKIDa0CAuP5hW6***********  #cos的secretId</span><br><span class="line"> secretKey: ********** #cos的secretKey</span><br><span class="line"> bucket: *********  #cos的bucket</span><br><span class="line"> region: ap-shanghai  #cos的region</span><br></pre></td></tr></table></figure>
-<h2 id="部署至多个地址："><a href="#部署至多个地址：" class="headerlink" title="部署至多个地址："></a>部署至多个地址：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">   -type: cos</span><br><span class="line">    appId: ***</span><br><span class="line">   -type: git</span><br><span class="line">    repository: *****   #git地址 </span><br><span class="line">  	branch: master</span><br><span class="line">   -type: git</span><br><span class="line">    repository: *****   #git地址 </span><br><span class="line">  	branch: master</span><br><span class="line">   -type: ftpsync</span><br><span class="line">    host: hfanss.ftp-gz01.com</span><br><span class="line">    ....</span><br></pre></td></tr></table></figure>
-<p>npm安装不成功使用<a href="https://hfanss.com/2019/hexo%E4%BD%BF%E7%94%A8%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8FCNPM%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6.html">cnpm</a></p>
-<blockquote>
-<p>记录贴，大神勿喷！</p>
+            <blockquote>
+<p>Mybatis自动生成实体类及xml</p>
 </blockquote>
+<p>如果自己根据表手动生成需要的java文件无疑是非常麻烦的，在公司用的是自己写的一段代码生成，比较复杂，代码量也非常大，这几天刚好做一个boot的小demo，于是把mybatis的generator自动生成工具使用整理记录下</p>
+<p>1.引入jar包-pom.xml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependencies&gt;</span><br><span class="line">	&lt;!-- ..... --&gt;</span><br><span class="line">    &lt;!-- mysql驱动 --&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;5.1.35&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;!-- mysql自动生成实体类--&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;org.mybatis.generator&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;mybatis-generator-core&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;1.3.5&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">&lt;dependencies&gt;</span><br></pre></td></tr></table></figure>
+<p>2.resources文件夹下增加mybatis-generator.xml文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;!DOCTYPE generatorConfiguration   PUBLIC &quot;-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN&quot;   &quot;http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd&quot;&gt;</span><br><span class="line">&lt;generatorConfiguration&gt;</span><br><span class="line">	&lt;context id=&quot;DB2Tables&quot; targetRuntime=&quot;MyBatis3Simple&quot;&gt;</span><br><span class="line">		&lt;commentGenerator&gt;</span><br><span class="line">			&lt;property name=&quot;suppressDate&quot; value=&quot;true&quot; /&gt;                 </span><br><span class="line">			&lt;!-- 是否去除自动生成的注释 true：是 ： false:否 --&gt;</span><br><span class="line">			&lt;!-- 这个注释是generator的注释。不是建表时手输的，没什么卵用--&gt;</span><br><span class="line">			&lt;property name=&quot;suppressAllComments&quot; value=&quot;true&quot; /&gt;</span><br><span class="line">		&lt;/commentGenerator&gt;          		</span><br><span class="line">		&lt;!--数据库链接URL，用户名、密码 --&gt;</span><br><span class="line">		&lt;jdbcConnection driverClass=&quot;com.mysql.jdbc.Driver&quot;</span><br><span class="line">			connectionURL=&quot;jdbc:mysql://localhost:3306/hfanss?characterEncoding=utf-8&quot;</span><br><span class="line">			userId=&quot;root&quot; password=&quot;123456&quot;&gt;</span><br><span class="line">		&lt;/jdbcConnection&gt;</span><br><span class="line">		&lt;javaTypeResolver&gt;</span><br><span class="line">			&lt;property name=&quot;forceBigDecimals&quot; value=&quot;false&quot; /&gt;</span><br><span class="line">		&lt;/javaTypeResolver&gt; 		</span><br><span class="line">		&lt;!-- 设置Java类生成的位置 --&gt;</span><br><span class="line">		&lt;javaModelGenerator targetPackage=&quot;com.hfanss.blog.VO&quot;</span><br><span class="line">			targetProject=&quot;.\src\main\java&quot;&gt;</span><br><span class="line">			&lt;property name=&quot;enableSubPackages&quot; value=&quot;true&quot; /&gt;</span><br><span class="line">			&lt;property name=&quot;trimStrings&quot; value=&quot;true&quot; /&gt;</span><br><span class="line">		&lt;/javaModelGenerator&gt; 				</span><br><span class="line">		&lt;!-- 生成映射文件的包名和位置 ***mapper.xml--&gt;</span><br><span class="line">		&lt;sqlMapGenerator targetPackage=&quot;\spring\sqlMap&quot;</span><br><span class="line">			targetProject=&quot;.\src\main\resources&quot;&gt;</span><br><span class="line">			&lt;property name=&quot;enableSubPackages&quot; value=&quot;true&quot; /&gt;</span><br><span class="line">		&lt;/sqlMapGenerator&gt; 				</span><br><span class="line">		&lt;!-- 生成DAO的包名和位置 ***mapper.java--&gt;</span><br><span class="line">		&lt;javaClientGenerator type=&quot;XMLMAPPER&quot;</span><br><span class="line">			targetPackage=&quot;com.hfanss.blog.dao&quot; targetProject=&quot;.\src\main\java&quot;&gt;</span><br><span class="line">			&lt;property name=&quot;enableSubPackages&quot; value=&quot;true&quot; /&gt;</span><br><span class="line">		&lt;/javaClientGenerator&gt; 		</span><br><span class="line">		&lt;!-- 所有要生成的表名 --&gt;</span><br><span class="line">		&lt;table tableName=&quot;info&quot;&gt;&lt;/table&gt;</span><br><span class="line">		&lt;table tableName=&quot;article&quot;&gt;&lt;/table&gt;</span><br><span class="line">		&lt;table tableName=&quot;comments&quot;&gt;&lt;/table&gt;</span><br><span class="line">		&lt;table tableName=&quot;links&quot;&gt;&lt;/table&gt;</span><br><span class="line">		&lt;table tableName=&quot;menus&quot;&gt;&lt;/table&gt;</span><br><span class="line">		&lt;table tableName=&quot;notice&quot;&gt;&lt;/table&gt;</span><br><span class="line">		&lt;table tableName=&quot;articleSort&quot;&gt;&lt;/table&gt;</span><br><span class="line">	&lt;/context&gt;</span><br><span class="line">&lt;/generatorConfiguration&gt;</span><br></pre></td></tr></table></figure>
+<p>3.执行、GetAutoEntityAndDao放在src/test/java文件夹下,右键Aun as</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * 功能描述:自动生成mapper.xml、dao、entity</span><br><span class="line"> * @author: hfanss</span><br><span class="line"> * @date: 2019年6月17日 下午8:25:55 </span><br><span class="line"> */</span><br><span class="line">public class GetAutoEntityAndDao &#123;</span><br><span class="line"></span><br><span class="line">	// 该配置文件放在src\\main\\resources\\该路径下即可</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		args = new String[] &#123; &quot;-configfile&quot;, &quot;src\\main\\resources\\mybatis-generator.xml&quot;, &quot;-overwrite&quot; &#125;;</span><br><span class="line">		ShellRunner.main(args);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>问题：实体类没有注释，十分不方便。</p>
+<p>看了下源码。嗯，如果不改源码是不能实现生成自定义注释的。改天有时间再研究下！</p>
+<p>附上项目及文件位置截图</p>
+<p><img src="https://blog-1252958858.file.myqcloud.com/2019/06/20190617221035.png" alt=""></p>
         </div>
         <br><br>
 
-<div title="未经允许不得转载" class="post-copyright">未经允许不得转载： 幻凡ss » <span style="color: #ce8134">hexo部署至FTP-COS</span></div>
+<div title="未经允许不得转载" class="post-copyright">未经允许不得转载： 幻凡ss » <span style="color: #ce8134">Mybatis自动生成实体类及xml</span></div>
 
 
 
  
 <div class="share">
 <span style="vertical-align: text-bottom;font-size:14px">分享到：</span>
-<a title="分享到微博" href="javascript:" onclick="window.open('http://service.weibo.com/share/share.php?url=https://hfanss.com/2019/hexo部署至FTP-COS.html&sharesource=weibo&title=【hexo部署至FTP-COS - 幻凡ss】 hexo部署至FTP服务器和腾讯云cos的方法，除了部署至github和coding等主流的服务器上，还可以有更多的选择...&pic=https://blog-1252958858.file.myqcloud.com/2019/03/hexo-ftp-cos.png&appkey=2706825840','','height=400,width=711,left=100,right=100,scrollbars=yes,status=yes')">
+<a title="分享到微博" href="javascript:" onclick="window.open('http://service.weibo.com/share/share.php?url=https://hfanss.com/2019/Mybatis自动生成实体类及xml.html&sharesource=weibo&title=【Mybatis自动生成实体类及xml - 幻凡ss】 开发中经常都是现有数据字典，再建表开发的情况，很少有现有java文件再有表的情况，那么在这个时候，一个简便的根据表生成java文件的代码便有了...&pic=https://blog-1252958858.file.myqcloud.com/2019/06/mybatis-generator.jpg&appkey=2706825840','','height=400,width=711,left=100,right=100,scrollbars=yes,status=yes')">
 
 <span class="iconfont icon-weibo"></span>
 
-<a title="分享到QQ空间" href="javascript:" onclick="window.open('https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://hfanss.com/2019/hexo部署至FTP-COS.html&sharesource=qzone&title=【hexo部署至FTP-COS - 幻凡ss】&pics=https://blog-1252958858.file.myqcloud.com/2019/03/hexo-ftp-cos.png&summary=hexo部署至FTP服务器和腾讯云cos的方法，除了部署至github和coding等主流的服务器上，还可以有更多的选择...','','height=598,width=711,scrollbars=yes,status=yes')">
+<a title="分享到QQ空间" href="javascript:" onclick="window.open('https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://hfanss.com/2019/Mybatis自动生成实体类及xml.html&sharesource=qzone&title=【Mybatis自动生成实体类及xml - 幻凡ss】&pics=https://blog-1252958858.file.myqcloud.com/2019/06/mybatis-generator.jpg&summary=开发中经常都是现有数据字典，再建表开发的情况，很少有现有java文件再有表的情况，那么在这个时候，一个简便的根据表生成java文件的代码便有了...','','height=598,width=711,scrollbars=yes,status=yes')">
 
 <span class="iconfont icon-qqkongjian"></span>
 
-<a title="分享到QQ好友" href="javascript:" onclick="window.open('http://connect.qq.com/widget/shareqq/index.html?url=https://hfanss.com/2019/hexo部署至FTP-COS.html&title=【hexo部署至FTP-COS - 幻凡ss】&pics=https://blog-1252958858.file.myqcloud.com/2019/03/hexo-ftp-cos.png&summary=幻凡ss&desc=','','height=598,width=711,scrollbars=yes,status=yes')">
+<a title="分享到QQ好友" href="javascript:" onclick="window.open('http://connect.qq.com/widget/shareqq/index.html?url=https://hfanss.com/2019/Mybatis自动生成实体类及xml.html&title=【Mybatis自动生成实体类及xml - 幻凡ss】&pics=https://blog-1252958858.file.myqcloud.com/2019/06/mybatis-generator.jpg&summary=幻凡ss&desc=','','height=598,width=711,scrollbars=yes,status=yes')">
 
 <span class="iconfont icon-QQ"></span>
 
@@ -259,9 +260,11 @@
        
             <div class="article-tags tags">
                 
-                   <a href="/tags/hexo部署至FTP/"><i class="fa fa-tag fa-fw" aria-hidden="true"></i>&nbsp;hexo部署至FTP</a>
+                   <a href="/tags/Java/"><i class="fa fa-tag fa-fw" aria-hidden="true"></i>&nbsp;Java</a>
                 
-                   <a href="/tags/hexo部署至COS/"><i class="fa fa-tag fa-fw" aria-hidden="true"></i>&nbsp;hexo部署至COS</a>
+                   <a href="/tags/Mybatis/"><i class="fa fa-tag fa-fw" aria-hidden="true"></i>&nbsp;Mybatis</a>
+                
+                   <a href="/tags/mybatis-generator/"><i class="fa fa-tag fa-fw" aria-hidden="true"></i>&nbsp;mybatis-generator</a>
                 
             </div>
         
@@ -269,18 +272,6 @@
         
             <div class="prev-next">
                 
-                    <section class="prev">
-                        <span class="art-item-left">
-                            <h6><i class="fa fa-chevron-left" aria-hidden="true"></i>&nbsp;上一篇</h6>
-                            <h4>
-                                <a href="/2019/material-x优化版、material-plus主题.html" rel="prev" title="material-x优化版、material-plus主题">
-                                  
-                                      material-x优化版、material-plus主题
-                                  
-                                </a>
-                            </h4>
-                    </span></section>
-                    
                     <div class="fenge">
                     </div>
                 
@@ -288,9 +279,9 @@
                         <span class="art-item-right" aria-hidden="true">
                             <h6>下一篇&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></h6>
                             <h4>
-                                <a href="/2019/hexo使用淘宝镜像CNPM安装插件.html" rel="next" title="hexo使用淘宝镜像CNPM安装插件">
+                                <a href="/2019/Thymeleaf模版中js取jstl的值.html" rel="next" title="Thymeleaf模版中的取值">
                                     
-                                        hexo使用淘宝镜像CNPM安装插件
+                                        Thymeleaf模版中的取值
                                     
                                 </a>
                             </h4>
@@ -317,11 +308,11 @@
             
                 <li><a href="https://hfanss.com/2019/material-x优化版、material-plus主题.html">material-x优化版、material-plus主题</a></li>
             
+                <li><a href="https://hfanss.com/2019/hexo部署至FTP-COS.html">hexo部署至FTP-COS</a></li>
+            
                 <li><a href="https://hfanss.com/2019/hexo使用淘宝镜像CNPM安装插件.html">hexo使用淘宝镜像CNPM安装插件</a></li>
             
                 <li><a href="https://hfanss.com/2019/在页面标签内实现随机颜色.html">在页面标签内实现随机颜色</a></li>
-            
-                <li><a href="https://hfanss.com/2019/快速搭建Java生产环境.html">快速搭建Java生产环境</a></li>
             
         </ul>
     </div>
@@ -353,7 +344,7 @@
 
 <script>
     window.subData = {
-        title: 'hexo部署至FTP-COS',
+        title: 'Mybatis自动生成实体类及xml',
         tools: true
     }
 </script>
@@ -434,14 +425,7 @@
     
 
     
-        <section class="m_widget toc-wrapper">
-        <div class="celan-title"><div class="celan-title-i"><i style="color:#0099FF" class="fa fa-list-ul"></i></div>目录</div>
-<!--             <div class='wrapper'><a style="margin-right: 30px;" class="s-toc rightBtn" title="固定到顶部"
-             rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fa fa-thumbtack fa-fw"></i></a></div> -->
-        <div class="content">
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#部署至FTP服务器："><span class="toc-text">部署至FTP服务器：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-安装插件"><span class="toc-text">1.安装插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-修改配置"><span class="toc-text">2.修改配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署至腾讯云COS："><span class="toc-text">部署至腾讯云COS：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-安装插件："><span class="toc-text">1.安装插件：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-修改配置："><span class="toc-text">2.修改配置：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署至多个地址："><span class="toc-text">部署至多个地址：</span></a></li></ol>
-        </div>
-    </section>
+        
     
 
     
