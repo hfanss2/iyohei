@@ -350,13 +350,13 @@ deploy:
   repository: https://gitee.com/iyohei/iyohei.git
   branch: dev
 ##  百度ftp
-- type: ftpsync 
-  host: hfanss.ftp-gz01.bcehost.com
-  user: hfanss
-  pass: 533520
-  remote: /webroot/
-  port: 8010
-  verbose: true
+#- type: ftpsync 
+#  host: hfanss.ftp-gz01.bcehost.com
+#  user: hfanss
+#  pass: 533520
+#  remote: /webroot/
+#  port: 8010
+#  verbose: true
 ## 多平台部署
 # deploy: 
 #   type: git
