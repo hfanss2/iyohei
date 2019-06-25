@@ -8,12 +8,10 @@ tags:
 categories: 
 - Java
 img:  https://blog-1252958858.file.myqcloud.com/2019/06/timg65875.jpg
-newimg: true
+newimg: false
 comments: true
 zhailu: 最近在项目中使用到了springBoot自带的Thymeleaf模版，之前也没用过，研究了一下它的语法，在此记录下
 ---
-springBootd 
-
 最近在项目中使用到了springBoot自带的Thymeleaf模版，之前也没用过，研究了一下它的语法，在此记录下
 
 js取model的值
