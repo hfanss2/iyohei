@@ -8,7 +8,7 @@ tags:
 categories: 
 - Java
 img:  https://blog-1252958858.file.myqcloud.com/2019/06/mybatis-generator.jpg
-newimg: true
+newimg: false
 zhailu: 开发中经常都是现有数据字典，再建表开发的情况，很少有现有java文件再有表的情况，那么在这个时候，一个简便的根据表生成java文件的代码便有了
 ---
 > Mybatis自动生成实体类及xml

@@ -7,7 +7,7 @@ tags:
 categories: 
 - Java
 img:  https://blog-1252958858.file.myqcloud.com/2019/06/springbootlanjieqi.jpg
-newimg: true
+newimg: false
 comments: true
 zhailu: 在项目中实现拦截器是最基本的功能，之前用的框架都是spring+mvc，最近用了boot，特此开帖记录下使用方法
 ---
