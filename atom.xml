@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hfanss.com/"/>
-  <updated>2019-10-07T08:54:38.039Z</updated>
+  <updated>2019-10-20T07:13:04.376Z</updated>
   <id>https://hfanss.com/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>初始Python-99乘法表</title>
+    <link href="https://hfanss.com/2019/%E5%88%9D%E5%A7%8BPython-99%E4%B9%98%E6%B3%95%E8%A1%A8.html"/>
+    <id>https://hfanss.com/2019/初始Python-99乘法表.html</id>
+    <published>2019-10-20T06:50:22.000Z</published>
+    <updated>2019-10-20T07:13:04.376Z</updated>
+    
+    <content type="html"><![CDATA[<p>python的份额一年比一年多，今天也来体验下</p><h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h2><p>网上教程很多，随便推荐一篇吧，老廖的</p><p><a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1016959856222624" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/1016959663602400/1016959856222624</a></p><h2 id="2-上手"><a href="#2-上手" class="headerlink" title="2.上手"></a>2.上手</h2><p>因为我是做java开发的，所以使用的IDE是sts,安装了一下插件</p><p><a href="https://blog.csdn.net/qq_36955890/article/details/93191243" target="_blank" rel="noopener">https://blog.csdn.net/qq_36955890/article/details/93191243</a></p><h2 id="3-体验"><a href="#3-体验" class="headerlink" title="3.体验"></a>3.体验</h2><p>来个99乘法表吧</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># -*- coding:utf-8 -*-</span><br><span class="line">&apos;&apos;&apos;</span><br><span class="line">@note:</span><br><span class="line">@author: hfanss</span><br><span class="line">@date: 2019/10/20 14:27:27</span><br><span class="line"></span><br><span class="line">&apos;&apos;&apos;</span><br><span class="line">#打印一个简单的99乘法表</span><br><span class="line">#外层循环  控制左边1-9</span><br><span class="line">for i in range(1,10):</span><br><span class="line">    #内层循环控制 右边1-9</span><br><span class="line">    for j in range(1,i+1):</span><br><span class="line">        #print(&quot;&#123;0&#125;*&#123;1&#125;=&#123;2&#125;&quot;.format(i,j,i*j),end = &quot; &quot;)</span><br><span class="line">        print(&quot;&#123;0&#125;*&#123;1&#125;=&#123;k&#125;&quot;.format(i,j,k=i*j),end = &quot; &quot;)</span><br><span class="line">    print()</span><br></pre></td></tr></table></figure><p>完美打印</p><h2 id="4-随想"><a href="#4-随想" class="headerlink" title="4.随想"></a>4.随想</h2><p>简单来说，python的语法相对来说更简洁些，一些常用的操作做了简化，比如说键盘录入，只需要input()可以了，java中很麻烦</p><p>输出的时候也做了一些定制，上面打印99乘法表的时候就可以看出来了</p><p>嗯，简单体验下，有时间再继续学下去</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;python的份额一年比一年多，今天也来体验下&lt;/p&gt;
+&lt;h2 id=&quot;1-安装&quot;&gt;&lt;a href=&quot;#1-安装&quot; class=&quot;headerlink&quot; title=&quot;1.安装&quot;&gt;&lt;/a&gt;1.安装&lt;/h2&gt;&lt;p&gt;网上教程很多，随便推荐一篇吧，老廖的&lt;/p&gt;
+&lt;p&gt;&lt;a hr
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="https://hfanss.com/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://hfanss.com/tags/Python/"/>
+    
+      <category term="99乘法表" scheme="https://hfanss.com/tags/99%E4%B9%98%E6%B3%95%E8%A1%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>考生分配考场的简单实现</title>
     <link href="https://hfanss.com/2019/%E8%80%83%E7%94%9F%E5%88%86%E9%85%8D%E8%80%83%E5%9C%BA%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0.html"/>
     <id>https://hfanss.com/2019/考生分配考场的简单实现.html</id>
     <published>2019-10-07T07:59:38.000Z</published>
-    <updated>2019-10-07T08:54:38.039Z</updated>
+    <updated>2019-10-20T07:13:35.929Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前段时间有小学弟咨询我考生分配考场的逻辑该怎么做，简单讲解了一下，在这里顺便记录下</p><h2 id="demo逻辑"><a href="#demo逻辑" class="headerlink" title="demo逻辑"></a>demo逻辑</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. 循环班级数组  A</span><br><span class="line">2. 循环每班总座位  B</span><br><span class="line">3. 在B中按照顺序给每个位置分配上  通过随机数取到的随机学号</span><br><span class="line">4. 打印输出</span><br><span class="line">PS:重点要保证3不能重复</span><br></pre></td></tr></table></figure><h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><p>我做的是个非常简单的demo，班级个数和每班人数都是固定的。当然实际生活中可能不是固定的，就需要根据实际情况去优化了</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test1126</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">int</span> banji = <span class="number">10</span>;<span class="comment">//班级个数</span></span><br><span class="line"><span class="keyword">int</span> renShu = <span class="number">50</span>;<span class="comment">//每班座位数</span></span><br><span class="line"><span class="keyword">int</span> renShuTotal = banji * renShu;<span class="comment">//待分配座位总数</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 生成随机的学号list，放在set里没有重复</span></span><br><span class="line"><span class="comment">* 实际情况：该元素应从数据库中查出，且不可能出现重复</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">Set&lt;String&gt;  xueHaoNoList = getXueHaoNo();</span><br><span class="line">Map&lt;Long,String&gt;[] listMap = <span class="keyword">new</span> Map[banji];<span class="comment">//用来存放已生成的座位+学号</span></span><br><span class="line">List&lt;Long&gt; s3 = <span class="keyword">new</span> ArrayList&lt;&gt;();<span class="comment">//用来存放不重复的随机数</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>, index = banji; i&lt;= index; i++)</span><br><span class="line">&#123;</span><br><span class="line">Map&lt;Long,String&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();<span class="comment">//用来存放每个班的座位+学号</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">1</span>,index2=renShu; j&lt;=index2;j++)</span><br><span class="line">&#123;</span><br><span class="line">Long sss = getRandom(renShuTotal,s3);</span><br><span class="line"><span class="keyword">long</span> s2 = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(String xueHao : xueHaoNoList)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">if</span> (s2==sss)</span><br><span class="line">&#123;</span><br><span class="line">map.put((<span class="keyword">long</span>)j,xuehao);</span><br><span class="line">&#125;</span><br><span class="line">s2++;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">listMap[i-<span class="number">1</span>]=map;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//输出确认</span></span><br><span class="line"><span class="keyword">long</span> i2 =<span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span>(Map&lt;Long,String&gt; map : listMap)</span><br><span class="line">&#123;</span><br><span class="line">System.err.println(<span class="string">"第"</span>+i2+<span class="string">"个班级的考生分配情况如下："</span>);</span><br><span class="line">System.err.println(map);</span><br><span class="line">System.err.println(<span class="string">"********************************************"</span>);</span><br><span class="line">｝</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *获取500以内的随机数，这里用了递归，以保证不会重复</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> Long <span class="title">getRandom</span><span class="params">(<span class="keyword">int</span> renShuTotal,List&lt;Long&gt; s3)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">Long sss = (<span class="keyword">long</span>)(Math.random()*renShuTotal);</span><br><span class="line"><span class="keyword">if</span>(s3.contains(sss))</span><br><span class="line">&#123;</span><br><span class="line">sss= getRandom(renShuTotal,s3);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">s3.add(sss);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> sss;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">*获取随机学号，*1000000000用来保证重复几率最小</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> Set&lt;String&gt; <span class="title">getXueHaoNo</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">Set&lt;String&gt; xuehaoNoList = <span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>,index = <span class="number">500</span>; i&lt;index;i++)</span><br><span class="line">&#123;</span><br><span class="line">Long ss = (<span class="keyword">long</span>)(Math.random()*<span class="number">1000000000</span>);</span><br><span class="line">xuehaoNoList.add(ss.toString());</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> xuehaoNoList;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -47,7 +76,7 @@
     <link href="https://hfanss.com/2019/%E8%AE%B0%E4%B8%80%E6%AC%A1%E7%B3%9F%E7%B3%95%E7%9A%84%E9%A9%BE%E7%85%A7%E5%AD%A6%E4%B9%A0%E7%BB%8F%E5%8E%86.html"/>
     <id>https://hfanss.com/2019/记一次糟糕的驾照学习经历.html</id>
     <published>2019-10-01T04:20:38.000Z</published>
-    <updated>2019-10-07T08:56:26.877Z</updated>
+    <updated>2019-10-20T07:13:45.967Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>4月份报了一个驾校，同事推荐的，想着教练是女的，能比较愉快的拿证，就报名了。随之就是噩梦的开始了</p></blockquote><p>科一：</p><p>因为当时上海学习驾照需要居住证，而我一直嫌麻烦没来得及去办，就报了异地（南通）考试的，报名之后就开始催考科一（因为我在报名之前就已经在APP上学习了科一），但是驾校竟然拖了半个月才给我去报名（what  fuck？），就是所谓的录个人脸之类的，5分钟搞定的事情，要跑一趟南通。。。但是更奇葩的是，驾校包的车竟然没人跟着过去，司机拉到指定位置就让我们下车，根本不知道在哪啊？给教练打电话，回复：自己找！fuck!幸好是找到了。。但是这个办事方式真的是。。。*<em>&amp;￥%……@</em>%#@#……</p><p>好了。报上名原本想很快就会考科一。不然，这次又拖了半个月。。。跟上次一样，没人带（fuck..fuck）</p><p>科二：</p><p>科一完了，终于科可以车了，去练车场（一个废弃的公路，画了几条线就是练车场了^-^）,教练说要练静车（既报废的车辆，让你在上面练习起步，停车，打方向盘），这些不是科三才开始的吗？。。。</p><p>练了3天静车，终于可以摸车了，下班去了后，教练说，你先跟那位同学（一位练了很久的学员）练，于是我就开始了为期两个月的跟同学学车的时光，期间还是我主动找教练让她教我一下，她只教了我不到10分钟！到快考试的时候，才跟着教的多了一会！</p><p>南通考试：</p><p>很多细节上海教练根本没讲，比如说，上车准备步骤，遇到突发情况该怎么处理。。都是南通这边给讲的。</p><p>所以，不可避免的，我挂科了。不知道是紧张还是怎么滴，走神了，回过神来 点早过了。。。崩溃！</p><p>然后回上海后，我就开始催补考。催了俩月，你敢信？那段时间气坏了。别人挂科的都又去考试了，新学员也去考试了，就我T.M的说报不上。气死了。。。</p><p>好吧，第二次科二，本来想着一把过的。没想到又出问题了，倒挡偶发性挂不上，两次都挂不上，卡在倒车入库那里，但是侧方入库一下就挂上了。等我两次机会用完，我又挂了一下，这次却挂上了。。。悲催（倒挡是基本操作，不可能是技术问题）其他人用那个车都没问题。。我只好又 ‘被‘ 挂科了。。。</p><p>现在已经10.1号了。还在等着补考，不知道这次要等多久。很崩溃。发帖吐槽吐槽，这段时间为了练车，博客基本没怎么更新，没想到要三进宫的节奏。。</p><p>吐槽：</p><p>报了这个驾校真的很后悔，槽点太多我给总结了一下</p><p>1.异地跟上海的合作不紧密，去那边人家不怎么管，爱搭不理的</p><p>2.练车环境太low，用的车全部是年检不合格的车，破破烂烂的，总担心练着练着趴窝了</p><p>3.教练太少（只有两个，科二一个，科三一个），态度不好，教你的时候的就不说了，没教你的时候，什么，别给车撞坏了，不要开空调，动不动就是车坏了要赔钱之类的。。。关键是  这车本来就破的不行了。。</p><p>4.乱收费比较严重，随意征收费用，科二，科三练车前必须先交考试钱，才让练车，不然不让摸车，挂科后，需要交200元补练车费用。。。后来升到600。。。</p><p>5.练车时间随意更改，刚报名的时候是早9-晚8练车，中午不休息，后来改为下午2点-下午8点，再后来改为下午4点-8点，然后又改为下午2点-下午5点，现在又改为早9-晚5，中午休息一小时，我本来就在这附近上班，原本想着中午可以来练1个小时，下班来练俩小时，，等考完科一后，全部泡汤</p><p>如果可以重新选择一次驾校的话，我绝对不会选它了</p><p>上海外培驾校-上海浦东新区财神庙附近练车</p><p>大家要是在这附近的千万别报他们驾校了。。。</p>]]></content>
     
@@ -415,26 +444,24 @@
   </entry>
   
   <entry>
-    <title>jsp网站ico图标设置</title>
-    <link href="https://hfanss.com/2018/jsp%E7%BD%91%E7%AB%99ico%E5%9B%BE%E6%A0%87%E8%AE%BE%E7%BD%AE.html"/>
-    <id>https://hfanss.com/2018/jsp网站ico图标设置.html</id>
+    <title>Java利用构造函数对实体类的属性进行初始化</title>
+    <link href="https://hfanss.com/2018/%E5%88%A9%E7%94%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%AF%B9%E5%AE%9E%E4%BD%93%E7%B1%BB%E7%9A%84%E5%B1%9E%E6%80%A7%E8%BF%9B%E8%A1%8C%E5%88%9D%E5%A7%8B%E5%8C%96.html"/>
+    <id>https://hfanss.com/2018/利用构造函数对实体类的属性进行初始化.html</id>
     <published>2018-12-25T12:29:38.000Z</published>
-    <updated>2019-03-10T08:30:22.301Z</updated>
+    <updated>2019-03-10T08:30:08.082Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>学习记录：小技巧</p><p>web项目中设置ico图标</p></blockquote><blockquote><p>ico图标放在webapp下</p></blockquote><p>在jsp页面中引入（ps:每个jsp都要引入,最好放在header或者footer既头部或尾部页面中，可以做到一处引用，多处使用）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--  网站图标 --&gt;&lt;link rel=&quot;shortcut icon&quot; href=&quot;../static/img/favicon.ico&quot;&gt;</span><br></pre></td></tr></table></figure><p><a href="javascript:void(0" target="_blank" rel="noopener"><img src="https://blog-1252958858.file.myqcloud.com/2019/01/upload__72bb97c_16828430b8f__8000_00000000.jpg" alt="QQ图片20181024210453.jpg"></a>;)</p><p>各位可根据目录结构和引入地址适当更改</p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>利用构造函数对实体类的属性进行初始化</p><p>无参构造函数设置默认值</p></blockquote><p>在java代码书写中经常能碰到空指针异常，一般我们会去抓取异常，但是对实体类设置默认值也是一种简便的解决方法</p><p>设置默认值一般有两种方法：</p><ul><li>直接属性等于默认值</li><li>通过构造方法设置</li></ul><blockquote><p>第一种方法：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">private Long id;  private String name=&quot;&quot;;  private String note=&quot;&quot;;  private Date date=new Date();  ptivate String time = &quot;&quot;;</span><br></pre></td></tr></table></figure><p>直接赋值，最简单的写法，但是并没有在java代码书写规范中，而且ali出的规范也不建议这样写，所以直接舍去</p><blockquote><p>第二种方法：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">private Long id;  private String name;  private String note;  private Date date;  private String time;  public Test001VO() &#123;      super();      this.name=&quot;&quot;;      this.note=&quot;&quot;;      this.date= new Date();      this.time=&quot;&quot;;  &#125;</span><br></pre></td></tr></table></figure><p>通过无参构造函数对实体类赋值，方便快捷，而且自由度更高，更可以在构造函数中写一些代码，比如对时间的格式化。</p><blockquote><p>无参构造函数的快捷键：</p></blockquote><h4 id="shift-alt-s-gt-Generate-Constructors-from-Superclass…"><a href="#shift-alt-s-gt-Generate-Constructors-from-Superclass…" class="headerlink" title="shift+alt+s   -&gt;Generate Constructors from  Superclass…"></a>shift+alt+s   -&gt;Generate Constructors from  Superclass…</h4>]]></content>
     
     <summary type="html">
     
       
       
         &lt;blockquote&gt;
-&lt;p&gt;学习记录：小技巧&lt;/p&gt;
-&lt;p&gt;web项目中设置ico图标&lt;/p&gt;
+&lt;p&gt;利用构造函数对实体类的属性进行初始化&lt;/p&gt;
+&lt;p&gt;无参构造函数设置默认值&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;ico图标放在webapp下&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;在jsp页面中引入（ps:每个jsp都要引入,最
+&lt;p&gt;在java代码书写中经常能碰到空指针异常，一般我们会去抓取异常，但是对实体类设置默认值也是一种简便的解决方法&lt;/p&gt;
+&lt;p&gt;设置默
       
     
     </summary>
@@ -501,24 +528,26 @@
   </entry>
   
   <entry>
-    <title>Java利用构造函数对实体类的属性进行初始化</title>
-    <link href="https://hfanss.com/2018/%E5%88%A9%E7%94%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%AF%B9%E5%AE%9E%E4%BD%93%E7%B1%BB%E7%9A%84%E5%B1%9E%E6%80%A7%E8%BF%9B%E8%A1%8C%E5%88%9D%E5%A7%8B%E5%8C%96.html"/>
-    <id>https://hfanss.com/2018/利用构造函数对实体类的属性进行初始化.html</id>
+    <title>jsp网站ico图标设置</title>
+    <link href="https://hfanss.com/2018/jsp%E7%BD%91%E7%AB%99ico%E5%9B%BE%E6%A0%87%E8%AE%BE%E7%BD%AE.html"/>
+    <id>https://hfanss.com/2018/jsp网站ico图标设置.html</id>
     <published>2018-12-25T12:29:38.000Z</published>
-    <updated>2019-03-10T08:30:08.082Z</updated>
+    <updated>2019-03-10T08:30:22.301Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>利用构造函数对实体类的属性进行初始化</p><p>无参构造函数设置默认值</p></blockquote><p>在java代码书写中经常能碰到空指针异常，一般我们会去抓取异常，但是对实体类设置默认值也是一种简便的解决方法</p><p>设置默认值一般有两种方法：</p><ul><li>直接属性等于默认值</li><li>通过构造方法设置</li></ul><blockquote><p>第一种方法：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">private Long id;  private String name=&quot;&quot;;  private String note=&quot;&quot;;  private Date date=new Date();  ptivate String time = &quot;&quot;;</span><br></pre></td></tr></table></figure><p>直接赋值，最简单的写法，但是并没有在java代码书写规范中，而且ali出的规范也不建议这样写，所以直接舍去</p><blockquote><p>第二种方法：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">private Long id;  private String name;  private String note;  private Date date;  private String time;  public Test001VO() &#123;      super();      this.name=&quot;&quot;;      this.note=&quot;&quot;;      this.date= new Date();      this.time=&quot;&quot;;  &#125;</span><br></pre></td></tr></table></figure><p>通过无参构造函数对实体类赋值，方便快捷，而且自由度更高，更可以在构造函数中写一些代码，比如对时间的格式化。</p><blockquote><p>无参构造函数的快捷键：</p></blockquote><h4 id="shift-alt-s-gt-Generate-Constructors-from-Superclass…"><a href="#shift-alt-s-gt-Generate-Constructors-from-Superclass…" class="headerlink" title="shift+alt+s   -&gt;Generate Constructors from  Superclass…"></a>shift+alt+s   -&gt;Generate Constructors from  Superclass…</h4>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>学习记录：小技巧</p><p>web项目中设置ico图标</p></blockquote><blockquote><p>ico图标放在webapp下</p></blockquote><p>在jsp页面中引入（ps:每个jsp都要引入,最好放在header或者footer既头部或尾部页面中，可以做到一处引用，多处使用）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--  网站图标 --&gt;&lt;link rel=&quot;shortcut icon&quot; href=&quot;../static/img/favicon.ico&quot;&gt;</span><br></pre></td></tr></table></figure><p><a href="javascript:void(0" target="_blank" rel="noopener"><img src="https://blog-1252958858.file.myqcloud.com/2019/01/upload__72bb97c_16828430b8f__8000_00000000.jpg" alt="QQ图片20181024210453.jpg"></a>;)</p><p>各位可根据目录结构和引入地址适当更改</p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;blockquote&gt;
-&lt;p&gt;利用构造函数对实体类的属性进行初始化&lt;/p&gt;
-&lt;p&gt;无参构造函数设置默认值&lt;/p&gt;
+&lt;p&gt;学习记录：小技巧&lt;/p&gt;
+&lt;p&gt;web项目中设置ico图标&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;在java代码书写中经常能碰到空指针异常，一般我们会去抓取异常，但是对实体类设置默认值也是一种简便的解决方法&lt;/p&gt;
-&lt;p&gt;设置默
+&lt;blockquote&gt;
+&lt;p&gt;ico图标放在webapp下&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在jsp页面中引入（ps:每个jsp都要引入,最
       
     
     </summary>
@@ -554,38 +583,6 @@
     
     
       <category term="腾讯云COS图床" scheme="https://hfanss.com/tags/%E8%85%BE%E8%AE%AF%E4%BA%91COS%E5%9B%BE%E5%BA%8A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>500小时学习计划</title>
-    <link href="https://hfanss.com/2018/500%E5%B0%8F%E6%97%B6%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92.html"/>
-    <id>https://hfanss.com/2018/500小时学习计划.html</id>
-    <published>2018-08-13T12:29:38.000Z</published>
-    <updated>2019-03-10T08:30:44.794Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>脑子是个好东西</p><p>自制力是管好脑子的唯一基础</p></blockquote><p>一直都有想对自己的学习时间做一些规划，但是一直都没有去执行，今天抽出时间来对个人的学习时间做一个计划，希望在接下来的日子中养成学习的好习惯</p><hr><p><code>在没有这个想法之前，一直都是脑子一热开始学习了，脑子一冷又不学了，对个人的成长其实非常不好。良好的学习习惯对自身的提升至关重要！</code></p><p><code>总结了个人的上班时间和对业余时间的安排，暂提出了  500小时/年的学习规划（最开始想的是1年1000小时，仔细一考量觉得有可能完不成，到时候对士气的打击很严重，就定500吧）</code></p><table><thead><tr><th>年</th><th>1</th><th>500h</th></tr></thead><tbody><tr><td>月</td><td>12</td><td>42h</td></tr><tr><td>周</td><td>52</td><td>10h</td></tr><tr><td>日</td><td>365</td><td>1.5h</td></tr></tbody></table><p><code>从表中看出来，500H的学习时间，分摊到每天来说只有1.5H,完全有能力，甚至可以超出（稳妥点）</code></p><p><code>工作日因为可能会加班，调至1H，剩余分摊至周六周日，那么最后的分配如下：</code></p><p><code>工作日：1H</code></p><p><code>非工作日：2.5H</code></p><p><code>这个时间点的安排还是完全有能力实现的，关键还是在于坚持，为此，做了一个简单打卡表，每天学习完后打卡</code></p><p>···emmmm</p><p><code>之前做了一个打卡表，但是发现有点想太多了，并不是每天都有时间开自己的电脑，工作一忙起来的时候，家里的电脑真的开不了，而工作闲的时候，可能在上班时间就把学习时间执行过了，所有还是把这个打卡表去掉，时间上来 按照一周10H的时间来计划，工作忙的时候可以将时间转移、累积，闲的时候就可以补回来，反正总时数不能少，这样自由度更高些！</code></p><p>关键还是看自制力，希望大家都能有所进步，博主的学习就以博客文章为参照了，学习过的东西，会固定周期总结成博文分享出来，也是对自己学习成果的一种记录！共勉！</p><blockquote><p>希望在看这篇博文的你能有一些对学习时间上的启发</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;脑子是个好东西&lt;/p&gt;
-&lt;p&gt;自制力是管好脑子的唯一基础&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;一直都有想对自己的学习时间做一些规划，但是一直都没有去执行，今天抽出时间来对个人的学习时间做一个计划，希望在接下来的日子中养成学习的好习惯&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="点滴生活" scheme="https://hfanss.com/categories/%E7%82%B9%E6%BB%B4%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="学习计划" scheme="https://hfanss.com/tags/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/"/>
-    
-      <category term="年度计划" scheme="https://hfanss.com/tags/%E5%B9%B4%E5%BA%A6%E8%AE%A1%E5%88%92/"/>
     
   </entry>
   
