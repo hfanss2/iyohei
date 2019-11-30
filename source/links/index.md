@@ -19,14 +19,12 @@ zdyhr: false
 |<img style="margin:5px auto;" width="50px" src="https://blog.wzdxy.com/">|网中的小鱼|https://blog.wzdxy.com/|
 |<img style="margin:5px auto;" width="50px" src="">|零一序列|http://www.booolen.com|
 |<img style="margin:5px auto;" width="50px" src="">|voicezyx|http://voicezyx.top/|
-|<img style="margin:5px auto;" width="50px" src="https://zzmao.top/">|Mr.zhang|https://zzmao.top/|
 |<img style="margin:5px auto;" width="50px" src="https://blog.creat.kim/assets/avatar.png">|青松吐丝|https://blog.creat.kim/|
 |<img style="margin:5px auto;" width="50px" src="">|Fangzh|http://fangzh.top/|
-|<img style="margin:5px auto;" width="50px" src="https://staunchkai.com/images/avatar.jpg">|StaunchKai|https://staunchkai.com|
 |<img style="margin:5px auto;" width="50px" src="https://sxxkearth.github.io/images/avatar.jpg">|嗜血星空earth|https://sxxkearth.github.io|
 |<img style="margin:5px auto;" width="50px" src="https://q2.qlogo.cn/headimg_dl?dst_uin=473989356&spec=100">|王旭阳个人博客|https://wxy97.com/|
-|<img style="margin:5px auto;" width="50px" src="https://s1.ax1x.com/2018/11/20/F9COpt.png">|一帐空 の Blog|https://naoki.cn/|
-|<img style="margin:5px auto;" width="50px" src="">|Whyvv Blog|https://whyvv.top|
+<br>
+### 博主会定期清理无用友链，如误删请@博主
 <div align=center> 
   <div style="width:80%;margin-top:-50px;" class="back"> 
       <a href="mailto:hfans@foxmail.com?subject=申请向幻凡ss博客交换友链&body=你好，我希望和贵博客交换友情链接。我已在贵博客的申请友情链接页中阅读过申请条件和申请须知，并且我确定我的博客符合申请要求，在申请成功后也会继续遵守相关规定。我已将贵博客添加到了我的博客的友情链接中。我的博客链接是：（填写博客网址），我需要在贵博客的友情链接列表上显示的名称是：（填写博客名称）。我希望请贵博客在24小时内及时将我的博客添加至友情链接列表中。">

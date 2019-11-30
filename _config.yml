@@ -18,8 +18,8 @@ runtime:
   enable: true  #是否启用
   span: 本站已稳定运行：  #开头显示的文本
   year: 2018  #年
-  month: 4  #月
-  day: 01  #日
+  month: 7  #月
+  day: 14  #日
   hour: 01  #时
   minute: 01  #分
   second: 01  #秒
@@ -62,15 +62,9 @@ nav_menu:
   - name: 时间轴
     slug: archives
     url: /archives/index.html
-#  - name: 资源分享
-#    slug: ziyuanfenx
-#    url: /ziyuanfenx/index.html
   - name: 开源项目
     slug: open
     url: /tags/开源项目/index.html
-  - name: 电影
-    slug: movies
-    url: /movies/index.html
   - name: 友链
     slug: links
     url: /links/index.html
@@ -137,19 +131,7 @@ widgets:
     avatar: /img/hotrec-all.png
     url: /2018/hexo博客常用插件及教程.html
 
-douban:
-  user: 174968217
-  builtin: true
-  #book:
-  #  title: '小说'
-   # quote: '书籍分享'
-  movie:
-    title: '电影'
-    quote: '电影分享'
-  #game:
-  #  title: '游戏'
-  #  quote: '游戏分享'
-  timeout: 10000 
+
 # 顶部公告
 topnotice:
   enable: true #是否启用公告 false为不启用
