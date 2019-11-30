@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>标签: Mybatis-幻凡ss
+  <title>初识Python-99乘法表-幻凡ss
   </title>
   <meta name="description" content="专注Java • 分享生活 • 记录人生">
   
@@ -173,51 +173,160 @@
     <div>
     <div class="container clearfix">
         <div class="l_main">
-      <div class="catags"> 
-  Mybatis
-</div>
+      <article id="post-初始Python-99乘法表" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
+    <section class="meta">
 
-<section class="post-list">
+        <h1 class="title">
+            <center>初识Python-99乘法表</center>
+        </h1>
+
+
+ <center>
+    <time>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+    <span>发表于 </span>2019-10-20-星期日&nbsp;&nbsp;|&nbsp;&nbsp;
+    <i class="fa fa-eye fa-fw" aria-hidden="true"></i>&nbsp;
+    阅读 &nbsp;(
+    <span id="busuanzi_value_page_pv">计算中...</span>&nbsp;)
     
-        <div class="post-wrapper">
-            <article class="hover-bgcolor post">
+    </time>
+</center>
 
 
-      
 
-        <section class="meta mpost">
-   <div class="cats">
-        <a href="/categories/Java/">Java</a>
-    </div>
-        <h2>
-            <a title="点击阅读全文" href="/2019/Mybatis自动生成实体类及xml.html">
-               <span class="post-title"><b>Mybatis自动生成实体类及xml</b></span>
-            </a>
-        </h2>
-            <span class="post-data"><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;2019-06-17-星期一
-            &nbsp;&nbsp;<i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;幻凡ss&nbsp;
-            </span>&nbsp;&nbsp;
+    <hr class="zdyhr">
+       
     </section>
 
-        <section class="typo zdydl">
-        <div>
-            <a title="点击阅读全文" href="/2019/Mybatis自动生成实体类及xml.html">
-                
-                    <img class="post_list_img" src="https://blog-1252958858.file.myqcloud.com/2019/06/mybatis-generator.jpg">
-                
-            </a>
-        </div>
+    <section class="article typo">
 
-    <a title="点击阅读全文" style="text-decoration: none" href="/2019/Mybatis自动生成实体类及xml.html">
-        <div class="zdya">
-        开发中经常都是现有数据字典，再建表开发的情况，很少有现有java文件再有表的情况，那么在这个时候，一个简便的根据表生成java文件的代码便有了
+        <div class="article-entry" itemprop="articleBody">
+            <p>python的份额一年比一年多，今天也来体验下</p>
+<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h2><p>网上教程很多，随便推荐一篇吧，老廖的</p>
+<p><a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1016959856222624" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/1016959663602400/1016959856222624</a></p>
+<h2 id="2-上手"><a href="#2-上手" class="headerlink" title="2.上手"></a>2.上手</h2><p>因为我是做java开发的，所以使用的IDE是sts,安装了一下插件</p>
+<p><a href="https://blog.csdn.net/qq_36955890/article/details/93191243" target="_blank" rel="noopener">https://blog.csdn.net/qq_36955890/article/details/93191243</a></p>
+<h2 id="3-体验"><a href="#3-体验" class="headerlink" title="3.体验"></a>3.体验</h2><p>来个99乘法表吧</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># -*- coding:utf-8 -*-</span><br><span class="line">&apos;&apos;&apos;</span><br><span class="line">@note:</span><br><span class="line">@author: hfanss</span><br><span class="line">@date: 2019/10/20 14:27:27</span><br><span class="line"></span><br><span class="line">&apos;&apos;&apos;</span><br><span class="line">#打印一个简单的99乘法表</span><br><span class="line">#外层循环  控制左边1-9</span><br><span class="line">for i in range(1,10):</span><br><span class="line">    #内层循环控制 右边1-9</span><br><span class="line">    for j in range(1,i+1):</span><br><span class="line">        #print(&quot;&#123;0&#125;*&#123;1&#125;=&#123;2&#125;&quot;.format(i,j,i*j),end = &quot; &quot;)</span><br><span class="line">        print(&quot;&#123;0&#125;*&#123;1&#125;=&#123;k&#125;&quot;.format(i,j,k=i*j),end = &quot; &quot;)</span><br><span class="line">    print()</span><br></pre></td></tr></table></figure>
+<p>完美打印</p>
+<h2 id="4-随想"><a href="#4-随想" class="headerlink" title="4.随想"></a>4.随想</h2><p>简单来说，python的语法相对来说更简洁些，一些常用的操作做了简化，比如说键盘录入，只需要input()可以了，java中很麻烦</p>
+<p>输出的时候也做了一些定制，上面打印99乘法表的时候就可以看出来了</p>
+<p>嗯，简单体验下，有时间再继续学下去</p>
         </div>
-    </a>
-    </section>
+        <br><br>
+
+<div title="未经允许不得转载" class="post-copyright">未经允许不得转载： 幻凡ss » <span style="color: #ce8134">初识Python-99乘法表</span></div>
+
+
+
+ 
+<div class="share">
+<span style="vertical-align: text-bottom;font-size:14px">分享到：</span>
+<a title="分享到微博" href="javascript:" onclick="window.open('http://service.weibo.com/share/share.php?url=https://hfanss.com/2019/初始Python-99乘法表.html&sharesource=weibo&title=【初识Python-99乘法表 - 幻凡ss】 都说人生苦短，要用python，听说有些省市还将此语言列为小学计算机课程，今天也来尝试下...&pic=https://blog-1252958858.file.myqcloud.com/2019/10/python.jpg&appkey=2706825840','','height=400,width=711,left=100,right=100,scrollbars=yes,status=yes')">
+
+<span class="iconfont icon-weibo"></span>
+
+<a title="分享到QQ空间" href="javascript:" onclick="window.open('https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://hfanss.com/2019/初始Python-99乘法表.html&sharesource=qzone&title=【初识Python-99乘法表 - 幻凡ss】&pics=https://blog-1252958858.file.myqcloud.com/2019/10/python.jpg&summary=都说人生苦短，要用python，听说有些省市还将此语言列为小学计算机课程，今天也来尝试下...','','height=598,width=711,scrollbars=yes,status=yes')">
+
+<span class="iconfont icon-qqkongjian"></span>
+
+<a title="分享到QQ好友" href="javascript:" onclick="window.open('http://connect.qq.com/widget/shareqq/index.html?url=https://hfanss.com/2019/初始Python-99乘法表.html&title=【初识Python-99乘法表 - 幻凡ss】&pics=https://blog-1252958858.file.myqcloud.com/2019/10/python.jpg&summary=幻凡ss&desc=','','height=598,width=711,scrollbars=yes,status=yes')">
+
+<span class="iconfont icon-QQ"></span>
+
+</a></a></a></div>
+
+
+
+       
+            <div class="article-tags tags">
+                
+                   <a href="/tags/Python/"><i class="fa fa-tag fa-fw" aria-hidden="true"></i>&nbsp;Python</a>
+                
+                   <a href="/tags/99乘法表/"><i class="fa fa-tag fa-fw" aria-hidden="true"></i>&nbsp;99乘法表</a>
+                
+            </div>
+        
+
+        
+            <div class="prev-next">
+                
+                    <div class="fenge">
+                    </div>
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>下一篇&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/2019/初识Python-99乘法表.html" rel="next" title="初识Python-99乘法表">
+                                    
+                                        初识Python-99乘法表
+                                    
+                                </a>
+                            </h4>
+                        </span></section></div>
+                    </section>
+                        
+            
+    
+
 </article>
-        </div>
-    
-</section>
+
+<br>
+
+<!-- 显示推荐文章和评论 -->
+
+    <article class="post white-box comments">
+        <section class="article typo">
+            
+                <div class="recommended_posts">
+        <h4><i class="fa fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;文章推荐</h4>
+        <ul>
+            
+                <li><a href="https://hfanss.com/2019/初识Python-99乘法表.html">初识Python-99乘法表</a></li>
+            
+                <li><a href="https://hfanss.com/2019/考生分配考场的简单实现.html">考生分配考场的简单实现</a></li>
+            
+                <li><a href="https://hfanss.com/2019/记一次糟糕的驾照学习经历.html">记一次糟糕的驾照学习经历</a></li>
+            
+                <li><a href="https://hfanss.com/2019/SpringBoot实现拦截器.html">SpringBoot实现拦截器</a></li>
+            
+                <li><a href="https://hfanss.com/2019/Mybatis自动生成实体类及xml.html">Mybatis自动生成实体类及xml</a></li>
+            
+        </ul>
+    </div>
+            
+
+            
+                <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                <script src="https://unpkg.com/valine@1.3.4/dist/Valine.min.js"></script>
+                <h4><i class="fa fa-comments fa-fw" aria-hidden="true"></i>&nbsp;发表评论</h4>
+                <div class="subtitle">
+                  <h6><b>文明评论，请勿灌水。</b>
+                <div>
+                <div id="vcomments" style="background: url('/img/commentbox2.jpg') top no-repeat"></div>
+                <script>
+                  new Valine({
+                        el:'#vcomments',
+                        appId:'5GMAO3V5MqR9DTfMnd73m8zT-gzGzoHsz',
+                        appKey:'f6Ve1tpYqYSBefe5xp0OCKxR',
+                        placeholder:'　',
+                        avatar:'monsterid',
+                        pageSize:'10'
+                    })
+                </script>
+        
+
+        </div></h6></div></section>
+    </article>
+
+
+<script>
+    window.subData = {
+        title: '初识Python-99乘法表',
+        tools: true
+    }
+</script>
         </div>
         <aside class="l_side">
             <section class="m_widget author">
@@ -295,7 +404,14 @@
     
 
     
-        
+        <section class="m_widget toc-wrapper">
+        <div class="celan-title"><div class="celan-title-i"><i style="color:#0099FF" class="fa fa-list-ul"></i></div>目录</div>
+<!--             <div class='wrapper'><a style="margin-right: 30px;" class="s-toc rightBtn" title="固定到顶部"
+             rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fa fa-thumbtack fa-fw"></i></a></div> -->
+        <div class="content">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-安装"><span class="toc-text">1.安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-上手"><span class="toc-text">2.上手</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-体验"><span class="toc-text">3.体验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-随想"><span class="toc-text">4.随想</span></a></li></ol>
+        </div>
+    </section>
     
 
     
@@ -465,6 +581,11 @@ function show_runtime(){
 
 
 
+    
+
+
+
+
 
 
 <script>
@@ -498,6 +619,37 @@ function show_runtime(){
     },
     
   })  
+</script>
+
+
+
+
+
+<script type="text/javascript">
+function over(){
+  var div = document.getElementById('article-cpoyright');
+  var text = document.getElementById('c-text');
+  text.style.display="block";
+
+}
+function out(){
+  var div = document.getElementById('article-cpoyright');
+  var text = document.getElementById('c-text');
+  text.style.display="none";
+}
+</script>
+
+<script type="text/javascript">
+function copyArticle(event) {
+  const range = document.createRange();
+  range.selectNode(document.getElementById('copyLink'));
+
+  const selection = window.getSelection();
+  if(selection.rangeCount > 0) selection.removeAllRanges();
+  selection.addRange(range);
+  document.execCommand('copy');
+}
+document.getElementById('copyBT').addEventListener('click', copyArticle, false);
 </script>
 
 
