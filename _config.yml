@@ -109,7 +109,7 @@ widgets:
   toc: true
 
   # 显示网易云歌单
-  musicid:  2270688529 #填写歌单号
+  musicid:   #填写歌单号，不填就是不用
 
   # 热门推荐
   ## 若不想显示侧栏的热门推荐，注释即可
@@ -136,17 +136,17 @@ widgets:
 topnotice:
   enable: true #是否启用公告 false为不启用
   img: /img/top-notice-img.png #顶部公告图标地址 默认为top-notice-img.png（小喇叭图标）
-  content: 近期在考驾照，博客更新不稳定，见谅！
-  link: javascript:void(0) #文字链接 如果不设置链接请填写javascript:void(0)
+  content: 我胡汉三又回来了  \‘▽′/ 
+  link: https://hfanss.com/2020/%E6%B6%88%E5%A4%B1%E7%9A%84%E6%88%91%E5%8F%88%E5%9B%9E%E6%9D%A5%E4%BA%86.html #javascript:void(0) #文字链接 如果不设置链接请填写javascript:void(0)
 
 # 底部版权信息
 copyrightIcon: true #显示版权C图标
 copyright: 2018 幻凡ss #版权信息
 
 # 底部友链推荐
-bottomlink: 
-  - name:  小吴博客
-    url: https://www.wushile.top
+#bottomlink: 
+#  - name:  小吴博客
+#    url: https://www.wushile.top
 
 # ----------------------------------------------------------------------------------------------------------------------< 更新条目
 # 是否在底部显示图片，图片请到img文件夹替换，制作尺寸为640x640px

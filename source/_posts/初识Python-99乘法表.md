@@ -7,7 +7,7 @@ tags:
 categories: 
 - Python
 img:  https://blog-1252958858.file.myqcloud.com/2019/10/python.jpg
-newimg: true
+newimg: false
 comments: true
 zhailu: 都说人生苦短，要用python，听说有些省市还将此语言列为小学计算机课程，今天也来尝试下
 ---
