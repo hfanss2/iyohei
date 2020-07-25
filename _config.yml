@@ -109,7 +109,7 @@ widgets:
   toc: true
 
   # 显示网易云歌单
-  musicid:   #填写歌单号，不填就是不用
+  musicid:  false #填写歌单号，不填就是不用
 
   # 热门推荐
   ## 若不想显示侧栏的热门推荐，注释即可
@@ -143,10 +143,9 @@ topnotice:
 copyrightIcon: true #显示版权C图标
 copyright: 2018 幻凡ss #版权信息
 
-# 底部友链推荐
-#bottomlink: 
-#  - name:  小吴博客
-#    url: https://www.wushile.top
+# 底部链接  
+bottomlink: true
+baidutongjiurl: https://tongji.baidu.com/web/welcome/ico?s=4e950a5dd7243ac97e882fe04d3fa1f7  ##百度统计网址
 
 # ----------------------------------------------------------------------------------------------------------------------< 更新条目
 # 是否在底部显示图片，图片请到img文件夹替换，制作尺寸为640x640px
@@ -204,7 +203,14 @@ recommended_posts:
 #   enable: true
 #   appId: 
 #   conf: 
-
+## valine评论
+valine: 
+  enable: true
+  appId: 5GMAO3V5MqR9DTfMnd73m8zT-gzGzoHsz
+  appkey: f6Ve1tpYqYSBefe5xp0OCKxR
+  avatar: monsterid ##默认头像 参考 https://valine.js.org/avatar.html
+  placeholder: 　 ## 留言板预设内容
+  pageSize: 10 ##每页显示条数
 # 搜索配置 
 ## Search 确保_config中只有一个search，否则会冲突。
 search:
@@ -304,14 +310,7 @@ css_minifier:
 # 部署
 ## 参考文档: https://hexo.io/docs/deployment.html
 
-#valine
-valine: 
-  enable: true
-  appId: 5GMAO3V5MqR9DTfMnd73m8zT-gzGzoHsz
-  appkey: f6Ve1tpYqYSBefe5xp0OCKxR
-  avatar: monsterid ##默认头像 参考 https://valine.js.org/avatar.html
-  placeholder: 　 ## 留言板预设内容
-  pageSize: 10 ##每页显示条数
+
 beian: 豫ICP备18024944号
 qq: https://wpa.qq.com/msgrd?v=3&uin=2158798&site=qq&menu=yes
 mail: https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d
