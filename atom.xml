@@ -471,36 +471,6 @@
   </entry>
   
   <entry>
-    <title>Java利用构造函数对实体类的属性进行初始化</title>
-    <link href="https://hfanss.com/2018/%E5%88%A9%E7%94%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%AF%B9%E5%AE%9E%E4%BD%93%E7%B1%BB%E7%9A%84%E5%B1%9E%E6%80%A7%E8%BF%9B%E8%A1%8C%E5%88%9D%E5%A7%8B%E5%8C%96.html"/>
-    <id>https://hfanss.com/2018/利用构造函数对实体类的属性进行初始化.html</id>
-    <published>2018-12-25T12:29:38.000Z</published>
-    <updated>2019-03-10T08:30:08.082Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>利用构造函数对实体类的属性进行初始化</p><p>无参构造函数设置默认值</p></blockquote><p>在java代码书写中经常能碰到空指针异常，一般我们会去抓取异常，但是对实体类设置默认值也是一种简便的解决方法</p><p>设置默认值一般有两种方法：</p><ul><li>直接属性等于默认值</li><li>通过构造方法设置</li></ul><blockquote><p>第一种方法：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">private Long id;  private String name=&quot;&quot;;  private String note=&quot;&quot;;  private Date date=new Date();  ptivate String time = &quot;&quot;;</span><br></pre></td></tr></table></figure><p>直接赋值，最简单的写法，但是并没有在java代码书写规范中，而且ali出的规范也不建议这样写，所以直接舍去</p><blockquote><p>第二种方法：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">private Long id;  private String name;  private String note;  private Date date;  private String time;  public Test001VO() &#123;      super();      this.name=&quot;&quot;;      this.note=&quot;&quot;;      this.date= new Date();      this.time=&quot;&quot;;  &#125;</span><br></pre></td></tr></table></figure><p>通过无参构造函数对实体类赋值，方便快捷，而且自由度更高，更可以在构造函数中写一些代码，比如对时间的格式化。</p><blockquote><p>无参构造函数的快捷键：</p></blockquote><h4 id="shift-alt-s-gt-Generate-Constructors-from-Superclass…"><a href="#shift-alt-s-gt-Generate-Constructors-from-Superclass…" class="headerlink" title="shift+alt+s   -&gt;Generate Constructors from  Superclass…"></a>shift+alt+s   -&gt;Generate Constructors from  Superclass…</h4>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;利用构造函数对实体类的属性进行初始化&lt;/p&gt;
-&lt;p&gt;无参构造函数设置默认值&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;在java代码书写中经常能碰到空指针异常，一般我们会去抓取异常，但是对实体类设置默认值也是一种简便的解决方法&lt;/p&gt;
-&lt;p&gt;设置默
-      
-    
-    </summary>
-    
-      <category term="Java" scheme="https://hfanss.com/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="https://hfanss.com/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
     <title>JDBC链接数据库</title>
     <link href="https://hfanss.com/2018/Java%E5%88%A9%E7%94%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%AF%B9%E5%AE%9E%E4%BD%93%E7%B1%BB%E7%9A%84%E5%B1%9E%E6%80%A7%E8%BF%9B%E8%A1%8C%E5%88%9D%E5%A7%8B%E5%8C%96.html"/>
     <id>https://hfanss.com/2018/Java利用构造函数对实体类的属性进行初始化.html</id>
@@ -583,6 +553,36 @@
     
     
       <category term="Java代码优化" scheme="https://hfanss.com/tags/Java%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java利用构造函数对实体类的属性进行初始化</title>
+    <link href="https://hfanss.com/2018/%E5%88%A9%E7%94%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%AF%B9%E5%AE%9E%E4%BD%93%E7%B1%BB%E7%9A%84%E5%B1%9E%E6%80%A7%E8%BF%9B%E8%A1%8C%E5%88%9D%E5%A7%8B%E5%8C%96.html"/>
+    <id>https://hfanss.com/2018/利用构造函数对实体类的属性进行初始化.html</id>
+    <published>2018-12-25T12:29:38.000Z</published>
+    <updated>2019-03-10T08:30:08.082Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>利用构造函数对实体类的属性进行初始化</p><p>无参构造函数设置默认值</p></blockquote><p>在java代码书写中经常能碰到空指针异常，一般我们会去抓取异常，但是对实体类设置默认值也是一种简便的解决方法</p><p>设置默认值一般有两种方法：</p><ul><li>直接属性等于默认值</li><li>通过构造方法设置</li></ul><blockquote><p>第一种方法：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">private Long id;  private String name=&quot;&quot;;  private String note=&quot;&quot;;  private Date date=new Date();  ptivate String time = &quot;&quot;;</span><br></pre></td></tr></table></figure><p>直接赋值，最简单的写法，但是并没有在java代码书写规范中，而且ali出的规范也不建议这样写，所以直接舍去</p><blockquote><p>第二种方法：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">private Long id;  private String name;  private String note;  private Date date;  private String time;  public Test001VO() &#123;      super();      this.name=&quot;&quot;;      this.note=&quot;&quot;;      this.date= new Date();      this.time=&quot;&quot;;  &#125;</span><br></pre></td></tr></table></figure><p>通过无参构造函数对实体类赋值，方便快捷，而且自由度更高，更可以在构造函数中写一些代码，比如对时间的格式化。</p><blockquote><p>无参构造函数的快捷键：</p></blockquote><h4 id="shift-alt-s-gt-Generate-Constructors-from-Superclass…"><a href="#shift-alt-s-gt-Generate-Constructors-from-Superclass…" class="headerlink" title="shift+alt+s   -&gt;Generate Constructors from  Superclass…"></a>shift+alt+s   -&gt;Generate Constructors from  Superclass…</h4>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;利用构造函数对实体类的属性进行初始化&lt;/p&gt;
+&lt;p&gt;无参构造函数设置默认值&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在java代码书写中经常能碰到空指针异常，一般我们会去抓取异常，但是对实体类设置默认值也是一种简便的解决方法&lt;/p&gt;
+&lt;p&gt;设置默
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://hfanss.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="https://hfanss.com/tags/Java/"/>
     
   </entry>
   
