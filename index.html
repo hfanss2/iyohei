@@ -173,7 +173,16 @@
     <div>
     <div class="container clearfix">
         <div class="l_main">
-      <div id="notice-bar-off" class="notice-bar text-container">
+      <script>
+ var url = window.location.href;
+ if(url.indexOf("localhost") < 0){if (url.indexOf("https") < 0) {url = url.replace("http:", "https:");window.location.replace(url);}}
+</script>
+
+
+
+
+
+	<div id="notice-bar-off" class="notice-bar text-container">
 	<!-- <img class="notice-bar-img" src="/img/top-notice-img.png"/> -->
 	&nbsp;<i class="fa fa-volume-down" aria-hidden="true"></i>&nbsp;
 
