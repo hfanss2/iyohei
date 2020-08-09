@@ -321,7 +321,7 @@ csdn: https://me.csdn.net/q2158798
 deploy:
 # coding
 - type: git    
-  repository: git@git.coding.net:HFanss/hfanss.git
+  repository: git@e.coding.net:HFanss/hfanss.git
   branch: master
 #- type: git
 #  repository: https://github.com/iyohei/iyohei.git
