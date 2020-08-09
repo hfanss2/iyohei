@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>标签: 开源项目-幻凡ss
+  <title>hexo部署至Dcloud-幻凡ss
   </title>
   <meta name="description" content="专注Java • 分享生活 • 记录人生">
   
@@ -173,89 +173,174 @@
     <div>
     <div class="container clearfix">
         <div class="l_main">
-      <div class="catags"> 
-  开源项目
-</div>
+      <article id="post-hexo部署至Dcloud" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
+    <section class="meta">
 
-<section class="post-list">
+        <h1 class="title">
+            <center>hexo部署至Dcloud</center>
+        </h1>
+
+
+ <center>
+    <time>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+    <span>发表于 </span>2020-08-09-星期日&nbsp;&nbsp;|&nbsp;&nbsp;
+    <i class="fa fa-eye fa-fw" aria-hidden="true"></i>&nbsp;
+    阅读 &nbsp;(
+    <span id="busuanzi_value_page_pv">计算中...</span>&nbsp;)
     
-        <div class="post-wrapper">
-            <article class="hover-bgcolor post">
+    </time>
+</center>
 
 
-      
 
-        <section class="meta mpost">
-   <div class="cats">
-        <a href="/categories/hexo/">hexo</a>
-    </div>
-        <h2>
-            <a title="点击阅读全文" href="/2019/material-x优化版、material-plus主题.html">
-               <span class="post-title"><b>material-x优化版、material-plus主题</b></span>
-            </a>
-        </h2>
-            <span class="post-data"><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;2019-03-31-星期日
-            &nbsp;&nbsp;<i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;幻凡ss&nbsp;
-            </span>&nbsp;&nbsp;
+    <hr class="zdyhr">
+       
     </section>
 
-        <section class="typo zdydl">
-        <div>
-            <a title="点击阅读全文" href="/2019/material-x优化版、material-plus主题.html">
-                
-                    <img class="post_list_img" src="https://blog-1252958858.file.myqcloud.com/2019/03/material-plus.png">
-                
-            </a>
-        </div>
+    <section class="article typo">
 
-    <a title="点击阅读全文" style="text-decoration: none" href="/2019/material-x优化版、material-plus主题.html">
-        <div class="zdya">
-        基于material-x主题魔改的hexo主题，material-plus主题，增添了部分功能，集成统计，广告。。。。。
+        <div class="article-entry" itemprop="articleBody">
+            <p>先放上官方简介</p>
+<p><a href="https://uniapp.dcloud.io/uniCloud/hosting?id=%e7%ae%80%e4%bb%8b" target="_blank" rel="noopener">https://uniapp.dcloud.io/uniCloud/hosting?id=%e7%ae%80%e4%bb%8b</a></p>
+<p>具体步骤大致说一下</p>
+<p>1.申请uniCloud账号</p>
+<p>2.创建服务空间</p>
+<p>3.下载HBuilderX ，并登陆刚才的账号</p>
+<p>4.选中你本地的hexo生成后的public文件夹</p>
+<p>5.右键点击发行-上传到网站服务器</p>
+<p>6.网站打开刚才创建的服务空间</p>
+<p>左侧点击前端网页托管，右侧点击参数管理</p>
+<p>这里可以配置自定义域名、添加证书</p>
+<p>注意事项：</p>
+<p>1.发行的时候，它会提示你是否替换源文件，这里建议全部替换，因为不管你是修改老文件还是新增文件都会涉及到原来文件，不过这里说一下，它的速度很慢，文件少就快，文件多就慢，你也可以选择在web控制台上传，那个会很快</p>
+<p>2.既然免费就会有一定的不足，它最大的不足就是不主动提供https服务，即使你提供了https证书</p>
+<p>当然这里也有解决方式：修改index模版，位置在主题的layout根目录，一般名字为index.ejs，</p>
+<p>打开后在最顶部加入如下代码，完美解决</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> &lt;script&gt;</span><br><span class="line"> var url = window.location.href; if(url.indexOf(&quot;localhost&quot;) &lt; 0)&#123;if (url.indexOf(&quot;https&quot;) &lt; 0) &#123;url = url.replace(&quot;http:&quot;, &quot;https:&quot;);window.location.replace(url);&#125;&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>3.还有最为诟病的一点，并非即时部署，发行完之后，大概会有5-10分钟的延时，不过可以接受</p>
+<p>4.当然最主要的优点还是国内阿里云服务器，免费，自带CDN，操作简单</p>
+<p>我个人备份了一个</p>
+<p><a href="https://blog.hfanss.com/" target="_blank" rel="noopener">blog.hfanss.com</a></p>
+<p>目前本站主站coding，副站dcloud，源代码部署在gitee上</p>
+<p>有问题下方留言</p>
         </div>
-    </a>
-    </section>
+        <br><br>
+
+<div title="未经允许不得转载" class="post-copyright">未经允许不得转载： 幻凡ss » <span style="color: #ce8134">hexo部署至Dcloud</span></div>
+
+
+
+ 
+<div class="share">
+<span style="vertical-align: text-bottom;font-size:14px">分享到：</span>
+<a title="分享到微博" href="javascript:" onclick="window.open('http://service.weibo.com/share/share.php?url=https://hfanss.com/2020/hexo部署至Dcloud.html&sharesource=weibo&title=【hexo部署至Dcloud - 幻凡ss】 新发现一个部署hexo的好地方，且自带CDN，完全免费，操作也异常简单，发帖共享下...&pic=https://blog-1252958858.file.myqcloud.com/2020/08/hexo-dcloud.jpg&appkey=2706825840','','height=400,width=711,left=100,right=100,scrollbars=yes,status=yes')">
+
+<span class="iconfont icon-weibo"></span>
+
+<a title="分享到QQ空间" href="javascript:" onclick="window.open('https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://hfanss.com/2020/hexo部署至Dcloud.html&sharesource=qzone&title=【hexo部署至Dcloud - 幻凡ss】&pics=https://blog-1252958858.file.myqcloud.com/2020/08/hexo-dcloud.jpg&summary=新发现一个部署hexo的好地方，且自带CDN，完全免费，操作也异常简单，发帖共享下...','','height=598,width=711,scrollbars=yes,status=yes')">
+
+<span class="iconfont icon-qqkongjian"></span>
+
+<a title="分享到QQ好友" href="javascript:" onclick="window.open('http://connect.qq.com/widget/shareqq/index.html?url=https://hfanss.com/2020/hexo部署至Dcloud.html&title=【hexo部署至Dcloud - 幻凡ss】&pics=https://blog-1252958858.file.myqcloud.com/2020/08/hexo-dcloud.jpg&summary=幻凡ss&desc=','','height=598,width=711,scrollbars=yes,status=yes')">
+
+<span class="iconfont icon-QQ"></span>
+
+</a></a></a></div>
+
+
+
+       
+            <div class="article-tags tags">
+                
+                   <a href="/tags/技术/"><i class="fa fa-tag fa-fw" aria-hidden="true"></i>&nbsp;技术</a>
+                
+                   <a href="/tags/hexo部署/"><i class="fa fa-tag fa-fw" aria-hidden="true"></i>&nbsp;hexo部署</a>
+                
+                   <a href="/tags/Dcloud/"><i class="fa fa-tag fa-fw" aria-hidden="true"></i>&nbsp;Dcloud</a>
+                
+            </div>
+        
+
+        
+            <div class="prev-next">
+                
+                    <div class="fenge">
+                    </div>
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>下一篇&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/2020/消失的我又回来了.html" rel="next" title="消失的我又回来了">
+                                    
+                                        消失的我又回来了
+                                    
+                                </a>
+                            </h4>
+                        </span></section></div>
+                    </section>
+                        
+            
+    
+
 </article>
-        </div>
-    
-        <div class="post-wrapper">
-            <article class="hover-bgcolor post">
 
+<br>
 
-      
+<!-- 显示推荐文章和评论 -->
 
-        <section class="meta mpost">
-   <div class="cats">
-        <a href="/categories/hexo/">hexo</a>
+    <article class="post white-box comments">
+        <section class="article typo">
+            
+                <div class="recommended_posts">
+        <h4><i class="fa fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;文章推荐</h4>
+        <ul>
+            
+                <li><a href="https://hfanss.com/2020/消失的我又回来了.html">消失的我又回来了</a></li>
+            
+                <li><a href="https://hfanss.com/2019/初识Python-99乘法表.html">初识Python-99乘法表</a></li>
+            
+                <li><a href="https://hfanss.com/2019/考生分配考场的简单实现.html">考生分配考场的简单实现</a></li>
+            
+                <li><a href="https://hfanss.com/2019/记一次糟糕的驾照学习经历.html">记一次糟糕的驾照学习经历</a></li>
+            
+                <li><a href="https://hfanss.com/2019/SpringBoot实现拦截器.html">SpringBoot实现拦截器</a></li>
+            
+        </ul>
     </div>
-        <h2>
-            <a title="点击阅读全文" href="/2018/Maupassant主题、屠城主题优化版.html">
-               <span class="post-title"><b>Maupassant主题优化、屠城hexo主题优化版</b></span>
-            </a>
-        </h2>
-            <span class="post-data"><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;2018-07-14-星期六
-            &nbsp;&nbsp;<i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;幻凡ss&nbsp;
-            </span>&nbsp;&nbsp;
-    </section>
+            
 
-        <section class="typo zdydl">
-        <div>
-            <a title="点击阅读全文" href="/2018/Maupassant主题、屠城主题优化版.html">
-                
-                    <img class="post_list_img" src="https://blog-1252958858.file.myqcloud.com/2018/12/upload_ee8ca2_167d9ee016e__8000_00000016.jpg">
-                
-            </a>
-        </div>
+            
+                <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                <script src="https://unpkg.com/valine@1.3.4/dist/Valine.min.js"></script>
+                <h4><i class="fa fa-comments fa-fw" aria-hidden="true"></i>&nbsp;发表评论</h4>
+                <div class="subtitle">
+                  <h6><b>文明评论，请勿灌水。</b>
+                <div>
+                <div id="vcomments" style="background: url('/img/commentbox2.jpg') top no-repeat"></div>
+                <script>
+                  new Valine({
+                        el:'#vcomments',
+                        appId:'5GMAO3V5MqR9DTfMnd73m8zT-gzGzoHsz',
+                        appKey:'f6Ve1tpYqYSBefe5xp0OCKxR',
+                        placeholder:'　',
+                        avatar:'monsterid',
+                        pageSize:'10'
+                    })
+                </script>
+        
 
-    <a title="点击阅读全文" style="text-decoration: none" href="/2018/Maupassant主题、屠城主题优化版.html">
-        <div class="zdya">
-        基于屠城hexo主题优化版,个人自用版;优化部分显示效果，增加部分配置;增加强制https 开关.底部文件集成 关于我、微信
-        </div>
-    </a>
-    </section>
-</article>
-        </div>
-    
-</section>
+        </div></h6></div></section>
+    </article>
+
+
+<script>
+    window.subData = {
+        title: 'hexo部署至Dcloud',
+        tools: true
+    }
+</script>
         </div>
         <aside class="l_side">
             <section class="m_widget author">
@@ -483,6 +568,11 @@ function show_runtime(){
 
 
 
+    
+
+
+
+
 
 
 <script>
@@ -516,6 +606,37 @@ function show_runtime(){
     },
     
   })  
+</script>
+
+
+
+
+
+<script type="text/javascript">
+function over(){
+  var div = document.getElementById('article-cpoyright');
+  var text = document.getElementById('c-text');
+  text.style.display="block";
+
+}
+function out(){
+  var div = document.getElementById('article-cpoyright');
+  var text = document.getElementById('c-text');
+  text.style.display="none";
+}
+</script>
+
+<script type="text/javascript">
+function copyArticle(event) {
+  const range = document.createRange();
+  range.selectNode(document.getElementById('copyLink'));
+
+  const selection = window.getSelection();
+  if(selection.rangeCount > 0) selection.removeAllRanges();
+  selection.addRange(range);
+  document.execCommand('copy');
+}
+document.getElementById('copyBT').addEventListener('click', copyArticle, false);
 </script>
 
 
