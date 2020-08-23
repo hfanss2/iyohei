@@ -30,7 +30,7 @@ zdyhr: false
 
 本站建立之初使用的是屠城大佬移植的一款maupassant主题，相当简洁，[地址](https://www.haomwei.com/technology/maupassant-hexo.html)
 
-后期自己又在此基础上魔改了一番，并开源了出去，[地址](https://www.hfanss.com/2018/Maupassant主题优化、屠城主题优化版.html)
+后期自己又在此基础上魔改了一番，并开源了出去，[地址](https://www.hfanss.com/2018/Maupassant主题、屠城主题优化版.html)
 
 在此之后又陆续更换或尝试过一些主题：
 
