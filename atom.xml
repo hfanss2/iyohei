@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hfanss.com/"/>
-  <updated>2020-08-09T04:00:27.594Z</updated>
+  <updated>2020-09-16T10:42:29.571Z</updated>
   <id>https://hfanss.com/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>域名做个邮箱</title>
+    <link href="https://hfanss.com/2020/%E5%9F%9F%E5%90%8D%E5%81%9A%E4%B8%AA%E9%82%AE%E7%AE%B1.html"/>
+    <id>https://hfanss.com/2020/域名做个邮箱.html</id>
+    <published>2020-09-09T10:51:22.000Z</published>
+    <updated>2020-09-16T10:42:29.571Z</updated>
+    
+    <content type="html"><![CDATA[<p>既然目的是邮箱，那咱们就选最简单的一个方式</p><p>1.打开<a href="http://ym.163.com/" target="_blank" rel="noopener">网易企业邮箱</a>，点击免费创建</p><p>2.填写自己的域名(确保自己能解析)，组织机构名称随便填一下就可以，下一步</p><p>3.填写管理员信息，下一步</p><p>4.验证域名，根据图文指示就行(解析过网站的都会，不会的百度下解析网站)，下一步</p><p>5.创建成功，并点击登录</p><p>6.会提示你需要实名认证+MX解析(正在验证中)，一般12小时会通过，会给你的密保邮箱发个通过邮件</p><p>7.打开<a href="http://ym.163.com/" target="_blank" rel="noopener">网易企业邮箱</a>，登录 完毕</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;既然目的是邮箱，那咱们就选最简单的一个方式&lt;/p&gt;
+&lt;p&gt;1.打开&lt;a href=&quot;http://ym.163.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;网易企业邮箱&lt;/a&gt;，点击免费创建&lt;/p&gt;
+&lt;p&gt;2.填写自己的域名(确保自己能解析)，
+      
+    
+    </summary>
+    
+      <category term="学习记录" scheme="https://hfanss.com/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="疫情" scheme="https://hfanss.com/tags/%E7%96%AB%E6%83%85/"/>
+    
+      <category term="生活" scheme="https://hfanss.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo部署至Dcloud</title>
     <link href="https://hfanss.com/2020/hexo%E9%83%A8%E7%BD%B2%E8%87%B3Dcloud.html"/>
     <id>https://hfanss.com/2020/hexo部署至Dcloud.html</id>
     <published>2020-08-09T03:14:22.000Z</published>
-    <updated>2020-08-09T04:00:27.594Z</updated>
+    <updated>2020-09-16T10:45:10.320Z</updated>
     
     <content type="html"><![CDATA[<p>先放上官方简介</p><p><a href="https://uniapp.dcloud.io/uniCloud/hosting?id=%e7%ae%80%e4%bb%8b" target="_blank" rel="noopener">https://uniapp.dcloud.io/uniCloud/hosting?id=%e7%ae%80%e4%bb%8b</a></p><p>具体步骤大致说一下</p><p>1.申请uniCloud账号</p><p>2.创建服务空间</p><p>3.下载HBuilderX ，并登陆刚才的账号</p><p>4.选中你本地的hexo生成后的public文件夹</p><p>5.右键点击发行-上传到网站服务器</p><p>6.网站打开刚才创建的服务空间</p><p>左侧点击前端网页托管，右侧点击参数管理</p><p>这里可以配置自定义域名、添加证书</p><p>注意事项：</p><p>1.发行的时候，它会提示你是否替换源文件，这里建议全部替换，因为不管你是修改老文件还是新增文件都会涉及到原来文件，不过这里说一下，它的速度很慢，文件少就快，文件多就慢，你也可以选择在web控制台上传，那个会很快</p><p>2.既然免费就会有一定的不足，它最大的不足就是不主动提供https服务，即使你提供了https证书</p><p>当然这里也有解决方式：修改index模版，位置在主题的layout根目录，一般名字为index.ejs，</p><p>打开后在最顶部加入如下代码，完美解决</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> &lt;script&gt;</span><br><span class="line"> var url = window.location.href; if(url.indexOf(&quot;localhost&quot;) &lt; 0)&#123;if (url.indexOf(&quot;https&quot;) &lt; 0) &#123;url = url.replace(&quot;http:&quot;, &quot;https:&quot;);window.location.replace(url);&#125;&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>3.还有最为诟病的一点，并非即时部署，发行完之后，大概会有5-10分钟的延时，不过可以接受</p><p>4.当然最主要的优点还是国内阿里云服务器，免费，自带CDN，操作简单</p><p>我个人备份了一个</p><p><a href="https://blog.hfanss.com/" target="_blank" rel="noopener">blog.hfanss.com</a></p><p>目前本站主站coding，副站dcloud，源代码部署在gitee上</p><p>有问题下方留言</p>]]></content>
     
@@ -501,53 +530,26 @@
   </entry>
   
   <entry>
-    <title>Java利用构造函数对实体类的属性进行初始化</title>
-    <link href="https://hfanss.com/2018/%E5%88%A9%E7%94%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%AF%B9%E5%AE%9E%E4%BD%93%E7%B1%BB%E7%9A%84%E5%B1%9E%E6%80%A7%E8%BF%9B%E8%A1%8C%E5%88%9D%E5%A7%8B%E5%8C%96.html"/>
-    <id>https://hfanss.com/2018/利用构造函数对实体类的属性进行初始化.html</id>
+    <title>jsp网站ico图标设置</title>
+    <link href="https://hfanss.com/2018/jsp%E7%BD%91%E7%AB%99ico%E5%9B%BE%E6%A0%87%E8%AE%BE%E7%BD%AE.html"/>
+    <id>https://hfanss.com/2018/jsp网站ico图标设置.html</id>
     <published>2018-12-25T12:29:38.000Z</published>
-    <updated>2019-03-10T08:30:08.082Z</updated>
+    <updated>2019-03-10T08:30:22.301Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>利用构造函数对实体类的属性进行初始化</p><p>无参构造函数设置默认值</p></blockquote><p>在java代码书写中经常能碰到空指针异常，一般我们会去抓取异常，但是对实体类设置默认值也是一种简便的解决方法</p><p>设置默认值一般有两种方法：</p><ul><li>直接属性等于默认值</li><li>通过构造方法设置</li></ul><blockquote><p>第一种方法：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">private Long id;  private String name=&quot;&quot;;  private String note=&quot;&quot;;  private Date date=new Date();  ptivate String time = &quot;&quot;;</span><br></pre></td></tr></table></figure><p>直接赋值，最简单的写法，但是并没有在java代码书写规范中，而且ali出的规范也不建议这样写，所以直接舍去</p><blockquote><p>第二种方法：</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">private Long id;  private String name;  private String note;  private Date date;  private String time;  public Test001VO() &#123;      super();      this.name=&quot;&quot;;      this.note=&quot;&quot;;      this.date= new Date();      this.time=&quot;&quot;;  &#125;</span><br></pre></td></tr></table></figure><p>通过无参构造函数对实体类赋值，方便快捷，而且自由度更高，更可以在构造函数中写一些代码，比如对时间的格式化。</p><blockquote><p>无参构造函数的快捷键：</p></blockquote><h4 id="shift-alt-s-gt-Generate-Constructors-from-Superclass…"><a href="#shift-alt-s-gt-Generate-Constructors-from-Superclass…" class="headerlink" title="shift+alt+s   -&gt;Generate Constructors from  Superclass…"></a>shift+alt+s   -&gt;Generate Constructors from  Superclass…</h4>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>学习记录：小技巧</p><p>web项目中设置ico图标</p></blockquote><blockquote><p>ico图标放在webapp下</p></blockquote><p>在jsp页面中引入（ps:每个jsp都要引入,最好放在header或者footer既头部或尾部页面中，可以做到一处引用，多处使用）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--  网站图标 --&gt;&lt;link rel=&quot;shortcut icon&quot; href=&quot;../static/img/favicon.ico&quot;&gt;</span><br></pre></td></tr></table></figure><p><a href="javascript:void(0" target="_blank" rel="noopener"><img src="https://blog-1252958858.file.myqcloud.com/2019/01/upload__72bb97c_16828430b8f__8000_00000000.jpg" alt="QQ图片20181024210453.jpg"></a>;)</p><p>各位可根据目录结构和引入地址适当更改</p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;blockquote&gt;
-&lt;p&gt;利用构造函数对实体类的属性进行初始化&lt;/p&gt;
-&lt;p&gt;无参构造函数设置默认值&lt;/p&gt;
+&lt;p&gt;学习记录：小技巧&lt;/p&gt;
+&lt;p&gt;web项目中设置ico图标&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;在java代码书写中经常能碰到空指针异常，一般我们会去抓取异常，但是对实体类设置默认值也是一种简便的解决方法&lt;/p&gt;
-&lt;p&gt;设置默
-      
-    
-    </summary>
-    
-      <category term="Java" scheme="https://hfanss.com/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="https://hfanss.com/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JDBC链接数据库</title>
-    <link href="https://hfanss.com/2018/Java%E5%88%A9%E7%94%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%AF%B9%E5%AE%9E%E4%BD%93%E7%B1%BB%E7%9A%84%E5%B1%9E%E6%80%A7%E8%BF%9B%E8%A1%8C%E5%88%9D%E5%A7%8B%E5%8C%96.html"/>
-    <id>https://hfanss.com/2018/Java利用构造函数对实体类的属性进行初始化.html</id>
-    <published>2018-12-25T12:29:38.000Z</published>
-    <updated>2019-03-10T08:30:28.396Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>学习记录：复习</p><p>JDBC简单链接数据库</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">/**    关闭资源用*/</span><br><span class="line">Connection conn = null;</span><br><span class="line">Statement stmt = null;</span><br><span class="line">ResultSet rest = null;</span><br><span class="line">/**设置url,user,password,sql*/</span><br><span class="line">String url = &quot;jdbc:mysql://localhost:3306/kevin?useUnicode=true&amp;characterEncoding=utf-8&quot;;</span><br><span class="line">String user = &quot;root&quot;;</span><br><span class="line">String password = &quot;123456&quot;;</span><br><span class="line">String sql = &quot;select * from blog&quot;;</span><br><span class="line">try</span><br><span class="line">&#123;</span><br><span class="line">// 注册驱动</span><br><span class="line">Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</span><br><span class="line">// 获得数据库链接</span><br><span class="line">conn = DriverManager.getConnection(url, user, password);</span><br><span class="line">// 获得Statement</span><br><span class="line">stmt = conn.createStatement();</span><br><span class="line">rest = stmt.executeQuery(sql);</span><br><span class="line">while (rest.next())</span><br><span class="line">&#123;</span><br><span class="line">System.out.println(rest.getString(&quot;title&quot;) + &quot;_&quot; + rest.getString(&quot;viceTitle&quot;));</span><br><span class="line">&#125;</span><br><span class="line">&#125; catch (Exception e)</span><br><span class="line">&#123;</span><br><span class="line">System.err.println(&quot;发生异常：&quot;+e);</span><br><span class="line">&#125; finally</span><br><span class="line">&#123;//关闭资源</span><br><span class="line">rest.close();</span><br><span class="line">stmt.close();</span><br><span class="line">conn.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>关闭资源放在finally中</p><p>需引入mysql-connector-java-***.jar，如果没有使用maven可在<a href="https://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-5.1.47.zip" target="_blank" rel="noopener">官网下载</a>或 <a href="https://pan.baidu.com/s/1_xQ_KfLhJ7skTJDfK5V8vg#list/path=%2Fjava%2Fmysql&amp;parentPath=%2Fjava" target="_blank" rel="noopener">我的网盘</a></p><p><a href="javascript:void(0" target="_blank" rel="noopener"><img src="https://blog-1252958858.file.myqcloud.com/2019/01/upload__72bb97c_16828430b8f__8000_00000001.jpg" alt="QQ图片20180919200826.jpg"></a>;)</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;学习记录：复习&lt;/p&gt;
-&lt;p&gt;JDBC简单链接数据库&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ico图标放在webapp下&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=
+&lt;p&gt;在jsp页面中引入（ps:每个jsp都要引入,最
       
     
     </summary>
