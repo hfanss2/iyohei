@@ -8,7 +8,7 @@ tags:
 categories: 
 - hexo
 img:  https://blog-1252958858.file.myqcloud.com/2020/08/hexo-dcloud.jpg
-newimg: true
+newimg: false
 comments: true
 zhailu: 新发现一个部署hexo的好地方，且自带CDN，完全免费，操作也异常简单，发帖共享下
 ---
