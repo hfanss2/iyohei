@@ -23,6 +23,7 @@ zdyhr: false
 |<img style="margin:5px auto;" width="50px" src="">|Fangzh|http://fangzh.top/|
 |<img style="margin:5px auto;" width="50px" src="https://sxxkearth.github.io/images/avatar.jpg">|嗜血星空earth|https://sxxkearth.github.io|
 |<img style="margin:5px auto;" width="50px" src="https://q2.qlogo.cn/headimg_dl?dst_uin=473989356&spec=100">|王旭阳个人博客|https://wxy97.com/|
+|<img style="margin:5px auto;" width="50px" src="https://www.79bk.cn/image/logo.png">|乔越博客|https://www.79bk.cn/|
 <br>
 ### 博主会定期清理无用友链，如误删请@博主
 <div align=center> 
