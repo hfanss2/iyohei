@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hfanss.com/links/index.html</loc>
+    
+    <lastmod>2020-11-07T04:40:20.300Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://hfanss.com/2020/hexo%E9%83%A8%E7%BD%B2%E8%87%B3Dcloud.html</loc>
     
     <lastmod>2020-09-16T10:45:10.320Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>https://hfanss.com/2019/%E8%80%83%E7%94%9F%E5%88%86%E9%85%8D%E8%80%83%E5%9C%BA%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0.html</loc>
     
     <lastmod>2019-10-20T07:13:35.929Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hfanss.com/links/index.html</loc>
-    
-    <lastmod>2019-10-20T06:35:59.836Z</lastmod>
     
   </url>
   
