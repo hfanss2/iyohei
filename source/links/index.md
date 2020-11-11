@@ -13,19 +13,16 @@ zdyhr: false
 
 |头像|名称|网站
 |:-:|:-:|:-:|
-|<img style="margin:5px auto;" width="50px" src="">|赵俊|http://www.zhaojun.im/|
-|<img style="margin:5px auto;" width="50px" src="https://cn.gravatar.com/avatar/cf3cd6d0f9c165d5eba205b2c9fb444e?s=40&d=mm&r=g">|游魂|https://www.iyouhun.com/|
-|<img style="margin:5px auto;" width="50px" src="https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg">|hojun|http://www.hojun.cn/|
-|<img style="margin:5px auto;" width="50px" src="https://blog.wzdxy.com/">|网中的小鱼|https://blog.wzdxy.com/|
-|<img style="margin:5px auto;" width="50px" src="">|零一序列|http://www.booolen.com|
-|<img style="margin:5px auto;" width="50px" src="">|voicezyx|http://voicezyx.top/|
-|<img style="margin:5px auto;" width="50px" src="https://blog.creat.kim/assets/avatar.png">|青松吐丝|https://blog.creat.kim/|
-|<img style="margin:5px auto;" width="50px" src="">|Fangzh|http://fangzh.top/|
-|<img style="margin:5px auto;" width="50px" src="https://sxxkearth.github.io/images/avatar.jpg">|嗜血星空earth|https://sxxkearth.github.io|
+|<img style="margin:5px auto;" width="50px" src="https://blog-1252958858.file.myqcloud.com/2020/11/zhaojun.jpg">|赵俊|http://www.zhaojun.im/|
+|<img style="margin:5px auto;" width="50px" src="https://www.iyouhun.com/content/uploadfile/202006/youhun.jpg">|游魂|https://www.iyouhun.com/|
+|<img style="margin:5px auto;" width="50px" src="https://cdn.jsdelivr.net/gh/honjun/ImageHosting/sina/006bYVyvgy1ftand2qurdj303c03cdfv.jpg">|hojun|http://www.hojun.cn/|
+|<img style="margin:5px auto;" width="50px" src="https://blog.wzdxy.com/images/zchi.jpg">|网中的小鱼|https://blog.wzdxy.com/|
+|<img style="margin:5px auto;" width="50px" src="https://sxxkearth.github.io/img/avatar.svg">|嗜血星空earth|https://sxxkearth.github.io|
 |<img style="margin:5px auto;" width="50px" src="https://q2.qlogo.cn/headimg_dl?dst_uin=473989356&spec=100">|王旭阳个人博客|https://wxy97.com/|
 |<img style="margin:5px auto;" width="50px" src="https://www.79bk.cn/image/logo.png">|乔越博客|https://www.79bk.cn/|
 <br>
 ### 博主会定期清理无用友链，如误删请@博主
+(前段时间删了一些，网站都打不开了，可以看出来都是一时兴起玩一玩)
 <div align=center> 
   <div style="width:80%;margin-top:-50px;" class="back"> 
       <a href="mailto:hfans@foxmail.com?subject=申请向幻凡ss博客交换友链&body=你好，我希望和贵博客交换友情链接。我已在贵博客的申请友情链接页中阅读过申请条件和申请须知，并且我确定我的博客符合申请要求，在申请成功后也会继续遵守相关规定。我已将贵博客添加到了我的博客的友情链接中。我的博客链接是：（填写博客网址），我需要在贵博客的友情链接列表上显示的名称是：（填写博客名称）。我希望请贵博客在24小时内及时将我的博客添加至友情链接列表中。">
