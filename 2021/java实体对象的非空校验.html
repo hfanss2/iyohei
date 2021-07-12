@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>标签: 年度计划-幻凡ss
+  <title>java实体对象的非空校验-幻凡ss
   </title>
   <meta name="description" content="专注Java • 分享生活 • 记录人生">
   
@@ -173,51 +173,156 @@
     <div>
     <div class="container clearfix">
         <div class="l_main">
-      <div class="catags"> 
-  年度计划
-</div>
+      <article id="post-java实体对象的非空校验" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
+    <section class="meta">
 
-<section class="post-list">
+        <h1 class="title">
+            <center>java实体对象的非空校验</center>
+        </h1>
+
+
+ <center>
+    <time>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+    <span>发表于 </span>2021-07-12-星期一&nbsp;&nbsp;|&nbsp;&nbsp;
+    <i class="fa fa-eye fa-fw" aria-hidden="true"></i>&nbsp;
+    阅读 &nbsp;(
+    <span id="busuanzi_value_page_pv">计算中...</span>&nbsp;)
     
-        <div class="post-wrapper">
-            <article class="hover-bgcolor post">
+    </time>
+</center>
 
 
-      
 
-        <section class="meta mpost">
-   <div class="cats">
-        <a href="/categories/点滴生活/">点滴生活</a>
-    </div>
-        <h2>
-            <a title="点击阅读全文" href="/2018/500小时学习计划.html">
-               <span class="post-title"><b>500小时学习计划</b></span>
-            </a>
-        </h2>
-            <span class="post-data"><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;2018-08-13-星期一
-            &nbsp;&nbsp;<i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;幻凡ss&nbsp;
-            </span>&nbsp;&nbsp;
+    <hr class="zdyhr">
+       
     </section>
 
-        <section class="typo zdydl">
-        <div>
-            <a title="点击阅读全文" href="/2018/500小时学习计划.html">
-                
-                    <img class="post_list_img" src="https://blog-1252958858.file.myqcloud.com/2018/12/upload_ee8ca2_167d9ee016e__8000_00000024.jpg">
-                
-            </a>
-        </div>
+    <section class="article typo">
 
-    <a title="点击阅读全文" style="text-decoration: none" href="/2018/500小时学习计划.html">
-        <div class="zdya">
-        一直都有想对自己的学习时间做一些规划，但是一直都没有去执行，今天抽出时间来对个人的学习时间做一个计划，希望在接下来的日子中养成
+        <div class="article-entry" itemprop="articleBody">
+            <p>工作中遇到针对API中存在的实体类的非空校验，如果不封装只能一个一个获取再校验。比较麻烦，所以写了个通用工具类，通过反射去实现效果</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 功能描述:对象非空校验</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@author</span>: hfanss</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@date</span>: 2021-07-12 6:52:11 PM</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">vaildate</span><span class="params">(Object vo, List&lt;String&gt; parms)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		Field[] fields = vo.getClass().getDeclaredFields();</span><br><span class="line">		<span class="keyword">try</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">for</span> (String validName : parms)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">for</span> (Field fi : fields)</span><br><span class="line">				&#123;</span><br><span class="line">					fi.setAccessible(<span class="keyword">true</span>);<span class="comment">// 打开私有属性，否则只能获取到共有属性</span></span><br><span class="line">					String name = fi.getName();<span class="comment">// 获取属性名称</span></span><br><span class="line">					<span class="keyword">if</span> (!validName.equals(name))</span><br><span class="line">						<span class="keyword">continue</span>;</span><br><span class="line">					String value = fi.get(vo) == <span class="keyword">null</span> ? <span class="string">""</span> : fi.get(vo).toString();</span><br><span class="line">					<span class="keyword">if</span> (StringUtils.isBlank(value))</span><br><span class="line">					&#123;</span><br><span class="line">						System.out.println(<span class="string">"参数：&#123;"</span>+name+<span class="string">"&#125;值为空"</span>);</span><br><span class="line">						<span class="keyword">break</span>;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; <span class="keyword">catch</span> (IllegalArgumentException | IllegalAccessException e)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="comment">// 记录日志</span></span><br><span class="line">			System.out.println(<span class="string">"校验对象失败：&#123;"</span> + vo + <span class="string">"&#125;,异常信息：&#123;"</span> + e + <span class="string">"&#125;"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p>调用方式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		TestVO vo = <span class="keyword">new</span> TestVO();</span><br><span class="line"></span><br><span class="line">		vo.setId(<span class="number">1</span>);</span><br><span class="line"><span class="comment">//		vo.setName("hfanss");</span></span><br><span class="line">		vo.setSf(<span class="string">"111"</span>);</span><br><span class="line">		List&lt;String&gt; parms = Arrays.asList(<span class="string">"name"</span>, <span class="string">"number"</span>);</span><br><span class="line">		vaildate(vo, parms);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p>实体类参数</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">int</span> id;</span><br><span class="line"><span class="keyword">private</span> String name;</span><br><span class="line"><span class="keyword">private</span> String number;</span><br><span class="line"><span class="keyword">private</span> String sf;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getId</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> id;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setId</span><span class="params">(<span class="keyword">int</span> id)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.id = id;</span><br><span class="line">&#125;</span><br><span class="line">................................</span><br></pre></td></tr></table></figure>
+<p>测试结果</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">控制台输出  </span><br><span class="line">参数：&#123;name&#125;值为空</span><br><span class="line">参数：&#123;number&#125;值为空</span><br></pre></td></tr></table></figure>
+<p>代码地址 ： <a href="https://gitee.com/iyohei/hfanssutils/blob/master/src/main/java/com/hfanss/utils/EntityUtils.java" target="_blank" rel="noopener">点我</a></p>
         </div>
-    </a>
-    </section>
+        <br><br>
+
+<div title="未经允许不得转载" class="post-copyright">未经允许不得转载： 幻凡ss » <span style="color: #ce8134">java实体对象的非空校验</span></div>
+
+
+
+ 
+<div class="share">
+<span style="vertical-align: text-bottom;font-size:14px">分享到：</span>
+<a title="分享到微博" href="javascript:" onclick="window.open('http://service.weibo.com/share/share.php?url=https://hfanss.com/2021/java实体对象的非空校验.html&sharesource=weibo&title=【java实体对象的非空校验 - 幻凡ss】 工作中遇到针对API中存在的实体类的非空校验，写了个通用工具类，通过反射去实现效果...&pic=https://blog-1252958858.file.myqcloud.com/2021/07/%E5%9B%BE%E7%89%871.jpg&appkey=2706825840','','height=400,width=711,left=100,right=100,scrollbars=yes,status=yes')">
+
+<span class="iconfont icon-weibo"></span>
+
+<a title="分享到QQ空间" href="javascript:" onclick="window.open('https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://hfanss.com/2021/java实体对象的非空校验.html&sharesource=qzone&title=【java实体对象的非空校验 - 幻凡ss】&pics=https://blog-1252958858.file.myqcloud.com/2021/07/%E5%9B%BE%E7%89%871.jpg&summary=工作中遇到针对API中存在的实体类的非空校验，写了个通用工具类，通过反射去实现效果...','','height=598,width=711,scrollbars=yes,status=yes')">
+
+<span class="iconfont icon-qqkongjian"></span>
+
+<a title="分享到QQ好友" href="javascript:" onclick="window.open('http://connect.qq.com/widget/shareqq/index.html?url=https://hfanss.com/2021/java实体对象的非空校验.html&title=【java实体对象的非空校验 - 幻凡ss】&pics=https://blog-1252958858.file.myqcloud.com/2021/07/%E5%9B%BE%E7%89%871.jpg&summary=幻凡ss&desc=','','height=598,width=711,scrollbars=yes,status=yes')">
+
+<span class="iconfont icon-QQ"></span>
+
+</a></a></a></div>
+
+
+
+       
+            <div class="article-tags tags">
+                
+                   <a href="/tags/Java/"><i class="fa fa-tag fa-fw" aria-hidden="true"></i>&nbsp;Java</a>
+                
+            </div>
+        
+
+        
+            <div class="prev-next">
+                
+                    <div class="fenge">
+                    </div>
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>下一篇&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/2020/魔都又限行了啊.html" rel="next" title="魔都又限行了啊">
+                                    
+                                        魔都又限行了啊
+                                    
+                                </a>
+                            </h4>
+                        </span></section></div>
+                    </section>
+                        
+            
+    
+
 </article>
-        </div>
-    
-</section>
+
+<br>
+
+<!-- 显示推荐文章和评论 -->
+
+    <article class="post white-box comments">
+        <section class="article typo">
+            
+                <div class="recommended_posts">
+        <h4><i class="fa fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;文章推荐</h4>
+        <ul>
+            
+                <li><a href="https://hfanss.com/2020/魔都又限行了啊.html">魔都又限行了啊</a></li>
+            
+                <li><a href="https://hfanss.com/2020/域名做个邮箱.html">域名做个邮箱</a></li>
+            
+                <li><a href="https://hfanss.com/2020/hexo部署至Dcloud.html">hexo部署至Dcloud</a></li>
+            
+                <li><a href="https://hfanss.com/2020/消失的我又回来了.html">消失的我又回来了</a></li>
+            
+                <li><a href="https://hfanss.com/2019/初识Python-99乘法表.html">初识Python-99乘法表</a></li>
+            
+        </ul>
+    </div>
+            
+
+            
+                <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                <script src="https://unpkg.com/valine@1.3.4/dist/Valine.min.js"></script>
+                <h4><i class="fa fa-comments fa-fw" aria-hidden="true"></i>&nbsp;发表评论</h4>
+                <div class="subtitle">
+                  <h6><b>文明评论，请勿灌水。</b>
+                <div>
+                <div id="vcomments" style="background: url('/img/commentbox2.jpg') top no-repeat"></div>
+                <script>
+                  new Valine({
+                        el:'#vcomments',
+                        appId:'5GMAO3V5MqR9DTfMnd73m8zT-gzGzoHsz',
+                        appKey:'f6Ve1tpYqYSBefe5xp0OCKxR',
+                        placeholder:'　',
+                        avatar:'monsterid',
+                        pageSize:'10'
+                    })
+                </script>
+        
+
+        </div></h6></div></section>
+    </article>
+
+
+<script>
+    window.subData = {
+        title: 'java实体对象的非空校验',
+        tools: true
+    }
+</script>
         </div>
         <aside class="l_side">
             <section class="m_widget author">
@@ -445,6 +550,11 @@ function show_runtime(){
 
 
 
+    
+
+
+
+
 
 
 <script>
@@ -478,6 +588,37 @@ function show_runtime(){
     },
     
   })  
+</script>
+
+
+
+
+
+<script type="text/javascript">
+function over(){
+  var div = document.getElementById('article-cpoyright');
+  var text = document.getElementById('c-text');
+  text.style.display="block";
+
+}
+function out(){
+  var div = document.getElementById('article-cpoyright');
+  var text = document.getElementById('c-text');
+  text.style.display="none";
+}
+</script>
+
+<script type="text/javascript">
+function copyArticle(event) {
+  const range = document.createRange();
+  range.selectNode(document.getElementById('copyLink'));
+
+  const selection = window.getSelection();
+  if(selection.rangeCount > 0) selection.removeAllRanges();
+  selection.addRange(range);
+  document.execCommand('copy');
+}
+document.getElementById('copyBT').addEventListener('click', copyArticle, false);
 </script>
 
 

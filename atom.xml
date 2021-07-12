@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hfanss.com/"/>
-  <updated>2020-11-11T11:43:49.040Z</updated>
+  <updated>2021-07-12T11:45:09.274Z</updated>
   <id>https://hfanss.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>java实体对象的非空校验</title>
+    <link href="https://hfanss.com/2021/java%E5%AE%9E%E4%BD%93%E5%AF%B9%E8%B1%A1%E7%9A%84%E9%9D%9E%E7%A9%BA%E6%A0%A1%E9%AA%8C.html"/>
+    <id>https://hfanss.com/2021/java实体对象的非空校验.html</id>
+    <published>2021-07-12T11:31:22.000Z</published>
+    <updated>2021-07-12T11:45:09.274Z</updated>
+    
+    <content type="html"><![CDATA[<p>工作中遇到针对API中存在的实体类的非空校验，如果不封装只能一个一个获取再校验。比较麻烦，所以写了个通用工具类，通过反射去实现效果</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 功能描述:对象非空校验</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span>: hfanss</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span>: 2021-07-12 6:52:11 PM</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">vaildate</span><span class="params">(Object vo, List&lt;String&gt; parms)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">Field[] fields = vo.getClass().getDeclaredFields();</span><br><span class="line"><span class="keyword">try</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">for</span> (String validName : parms)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">for</span> (Field fi : fields)</span><br><span class="line">&#123;</span><br><span class="line">fi.setAccessible(<span class="keyword">true</span>);<span class="comment">// 打开私有属性，否则只能获取到共有属性</span></span><br><span class="line">String name = fi.getName();<span class="comment">// 获取属性名称</span></span><br><span class="line"><span class="keyword">if</span> (!validName.equals(name))</span><br><span class="line"><span class="keyword">continue</span>;</span><br><span class="line">String value = fi.get(vo) == <span class="keyword">null</span> ? <span class="string">""</span> : fi.get(vo).toString();</span><br><span class="line"><span class="keyword">if</span> (StringUtils.isBlank(value))</span><br><span class="line">&#123;</span><br><span class="line">System.out.println(<span class="string">"参数：&#123;"</span>+name+<span class="string">"&#125;值为空"</span>);</span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125; <span class="keyword">catch</span> (IllegalArgumentException | IllegalAccessException e)</span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">// 记录日志</span></span><br><span class="line">System.out.println(<span class="string">"校验对象失败：&#123;"</span> + vo + <span class="string">"&#125;,异常信息：&#123;"</span> + e + <span class="string">"&#125;"</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>调用方式</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">TestVO vo = <span class="keyword">new</span> TestVO();</span><br><span class="line"></span><br><span class="line">vo.setId(<span class="number">1</span>);</span><br><span class="line"><span class="comment">//vo.setName("hfanss");</span></span><br><span class="line">vo.setSf(<span class="string">"111"</span>);</span><br><span class="line">List&lt;String&gt; parms = Arrays.asList(<span class="string">"name"</span>, <span class="string">"number"</span>);</span><br><span class="line">vaildate(vo, parms);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>实体类参数</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">int</span> id;</span><br><span class="line"><span class="keyword">private</span> String name;</span><br><span class="line"><span class="keyword">private</span> String number;</span><br><span class="line"><span class="keyword">private</span> String sf;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getId</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">return</span> id;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setId</span><span class="params">(<span class="keyword">int</span> id)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">this</span>.id = id;</span><br><span class="line">&#125;</span><br><span class="line">................................</span><br></pre></td></tr></table></figure><p>测试结果</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">控制台输出  </span><br><span class="line">参数：&#123;name&#125;值为空</span><br><span class="line">参数：&#123;number&#125;值为空</span><br></pre></td></tr></table></figure><p>代码地址 ： <a href="https://gitee.com/iyohei/hfanssutils/blob/master/src/main/java/com/hfanss/utils/EntityUtils.java" target="_blank" rel="noopener">点我</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;工作中遇到针对API中存在的实体类的非空校验，如果不封装只能一个一个获取再校验。比较麻烦，所以写了个通用工具类，通过反射去实现效果&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://hfanss.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="https://hfanss.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>魔都又限行了啊</title>
     <link href="https://hfanss.com/2020/%E9%AD%94%E9%83%BD%E5%8F%88%E9%99%90%E8%A1%8C%E4%BA%86%E5%95%8A.html"/>
     <id>https://hfanss.com/2020/魔都又限行了啊.html</id>
     <published>2020-11-11T10:45:22.000Z</published>
-    <updated>2020-11-11T11:43:49.040Z</updated>
+    <updated>2021-07-12T11:45:59.274Z</updated>
     
     <content type="html"><![CDATA[<p>伟大的魔都又限行了，外地牌照真的是越来越难了</p><p>从10.1起，外环内所有高架都不能上了，周六日除外</p><p>明年5.1起，所有外地牌全面限行外环内</p><p>emmm……</p><p>我刚买的车，上的老家的牌子，这就悲催了啊</p><p>很多上海人上的苏州牌子，也很纠结</p><p>一个沪牌10W</p><p>官方的目的是说为了缓解交通拥堵，但其实没有外牌的高架一样很拥堵，</p><p>我认为纯粹的限制外牌根本解决不了拥堵，只是为了推动上海的荣威，名爵电动车的售卖</p><p>真正有效的限行是尾号限行</p><p>可能以后会这样，但是有了现在外牌的限行，以后尾号限行也没外牌啥事了</p><p>此举会导致多少人因为拍照问题离沪呢？</p>]]></content>
     
@@ -332,11 +358,11 @@
     
       <category term="hexo主题" scheme="https://hfanss.com/tags/hexo%E4%B8%BB%E9%A2%98/"/>
     
-      <category term="开源项目" scheme="https://hfanss.com/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
       <category term="material-x优化版" scheme="https://hfanss.com/tags/material-x%E4%BC%98%E5%8C%96%E7%89%88/"/>
     
       <category term="material-plus" scheme="https://hfanss.com/tags/material-plus/"/>
+    
+      <category term="开源项目" scheme="https://hfanss.com/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     
   </entry>
   
@@ -556,35 +582,6 @@
     
     
       <category term="Java打字游戏" scheme="https://hfanss.com/tags/Java%E6%89%93%E5%AD%97%E6%B8%B8%E6%88%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JDBC链接数据库</title>
-    <link href="https://hfanss.com/2018/Java%E5%88%A9%E7%94%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%AF%B9%E5%AE%9E%E4%BD%93%E7%B1%BB%E7%9A%84%E5%B1%9E%E6%80%A7%E8%BF%9B%E8%A1%8C%E5%88%9D%E5%A7%8B%E5%8C%96.html"/>
-    <id>https://hfanss.com/2018/Java利用构造函数对实体类的属性进行初始化.html</id>
-    <published>2018-12-25T12:29:38.000Z</published>
-    <updated>2019-03-10T08:30:28.396Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>学习记录：复习</p><p>JDBC简单链接数据库</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">/**    关闭资源用*/</span><br><span class="line">Connection conn = null;</span><br><span class="line">Statement stmt = null;</span><br><span class="line">ResultSet rest = null;</span><br><span class="line">/**设置url,user,password,sql*/</span><br><span class="line">String url = &quot;jdbc:mysql://localhost:3306/kevin?useUnicode=true&amp;characterEncoding=utf-8&quot;;</span><br><span class="line">String user = &quot;root&quot;;</span><br><span class="line">String password = &quot;123456&quot;;</span><br><span class="line">String sql = &quot;select * from blog&quot;;</span><br><span class="line">try</span><br><span class="line">&#123;</span><br><span class="line">// 注册驱动</span><br><span class="line">Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</span><br><span class="line">// 获得数据库链接</span><br><span class="line">conn = DriverManager.getConnection(url, user, password);</span><br><span class="line">// 获得Statement</span><br><span class="line">stmt = conn.createStatement();</span><br><span class="line">rest = stmt.executeQuery(sql);</span><br><span class="line">while (rest.next())</span><br><span class="line">&#123;</span><br><span class="line">System.out.println(rest.getString(&quot;title&quot;) + &quot;_&quot; + rest.getString(&quot;viceTitle&quot;));</span><br><span class="line">&#125;</span><br><span class="line">&#125; catch (Exception e)</span><br><span class="line">&#123;</span><br><span class="line">System.err.println(&quot;发生异常：&quot;+e);</span><br><span class="line">&#125; finally</span><br><span class="line">&#123;//关闭资源</span><br><span class="line">rest.close();</span><br><span class="line">stmt.close();</span><br><span class="line">conn.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>关闭资源放在finally中</p><p>需引入mysql-connector-java-***.jar，如果没有使用maven可在<a href="https://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-5.1.47.zip" target="_blank" rel="noopener">官网下载</a>或 <a href="https://pan.baidu.com/s/1_xQ_KfLhJ7skTJDfK5V8vg#list/path=%2Fjava%2Fmysql&amp;parentPath=%2Fjava" target="_blank" rel="noopener">我的网盘</a></p><p><a href="javascript:void(0" target="_blank" rel="noopener"><img src="https://blog-1252958858.file.myqcloud.com/2019/01/upload__72bb97c_16828430b8f__8000_00000001.jpg" alt="QQ图片20180919200826.jpg"></a>;)</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;学习记录：复习&lt;/p&gt;
-&lt;p&gt;JDBC简单链接数据库&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=
-      
-    
-    </summary>
-    
-      <category term="Java" scheme="https://hfanss.com/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="https://hfanss.com/tags/Java/"/>
     
   </entry>
   
